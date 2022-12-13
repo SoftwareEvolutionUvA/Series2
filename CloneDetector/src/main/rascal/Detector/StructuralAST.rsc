@@ -10,9 +10,19 @@ import String;
 import util::Math;
 import lang::java::m3::Core;
 import lang::java::m3::AST;
+import Node;
+import Type;
 
 alias CloneClass = set[SerializedAST];
 alias SerializedAST = tuple[Declaration ast, str serializedAST];
+
+str CLASS_CONSTANT = "c";
+str BLOCK_STATEMENT_CONSTANT = "b";
+str EXPRESSION_CONSTANT = "e";
+str OPERATOR_CONSTANT = "o";
+str KEYWORD_CONSTANT = "k";
+str LITERAL_CONSTANT = "l";
+str KEY_CATEGORY = "categoryCloneDetection";
 
 /**
 Get ASTs for each method in a Maven Project.
@@ -29,6 +39,7 @@ list[Declaration] getMethodASTsProject(loc projectLocation) {
 
 /**
 Adds metadata to AST that corresponds to the category of the node.
+!!! there are CONSTANTS defined at the beginning of this file !!!
 - c: Class
 - b: Block & Statement
 - e: Expression
@@ -38,10 +49,82 @@ Adds metadata to AST that corresponds to the category of the node.
 */
 Declaration annotateMethodAST(Declaration method) {
     // TODO
+
+    // start from lowest level and work up
+
+    int a = 1;
+    visit (method) {
+        // SECTION: Literal -> https://docs.oracle.com/javase/specs/jls/se19/html/jls-3.html#jls-3.10
+        // Integer Literal
+        // Floating Literal
+        case node n:\number(_) : setKeywordParameters(n, (KEY_CATEGORY: LITERAL_CONSTANT));
+        // BooleanLiteral
+        case node n:\booleanLiteral(_) : setKeywordParameters(n, (KEY_CATEGORY: LITERAL_CONSTANT));
+        // CharacterLiteral
+        case node n:\characterLiteral(_) : setKeywordParameters(n, (KEY_CATEGORY: LITERAL_CONSTANT));
+        // String Literal
+        // TextBlock Literal -> maybe the same
+        case node n:\stringLiteral(_) : setKeywordParameters(n, (KEY_CATEGORY: LITERAL_CONSTANT));
+        // NullLiteral
+        case node n:\null() : setKeywordParameters(n, (KEY_CATEGORY: LITERAL_CONSTANT));
+        //------------------
+        // SECTION: Keyword -> https://docs.oracle.com/javase/specs/jls/se19/html/jls-3.html#jls-3.9
+        // Modifier
+        case node n:\private() : setKeywordParameters(n, (KEY_CATEGORY: KEYWORD_CONSTANT));
+        case node n:\public() : setKeywordParameters(n, (KEY_CATEGORY: KEYWORD_CONSTANT));
+        case node n:\protected() : setKeywordParameters(n, (KEY_CATEGORY: KEYWORD_CONSTANT));
+        case node n:\friendly() : setKeywordParameters(n, (KEY_CATEGORY: KEYWORD_CONSTANT));
+        case node n:\static() : setKeywordParameters(n, (KEY_CATEGORY: KEYWORD_CONSTANT));
+        case node n:\final() : setKeywordParameters(n, (KEY_CATEGORY: KEYWORD_CONSTANT));
+        case node n:\synchronized() : setKeywordParameters(n, (KEY_CATEGORY: KEYWORD_CONSTANT));
+        case node n:\transient() : setKeywordParameters(n, (KEY_CATEGORY: KEYWORD_CONSTANT));
+        case node n:\abstract() : setKeywordParameters(n, (KEY_CATEGORY: KEYWORD_CONSTANT));
+        case node n:\native() : setKeywordParameters(n, (KEY_CATEGORY: KEYWORD_CONSTANT));
+        case node n:\volatile() : setKeywordParameters(n, (KEY_CATEGORY: KEYWORD_CONSTANT));
+        case node n:\strictfp() : setKeywordParameters(n, (KEY_CATEGORY: KEYWORD_CONSTANT));
+        case node n:\default() : setKeywordParameters(n, (KEY_CATEGORY: KEYWORD_CONSTANT));
+        // statement
+        case node n:\assert(_) : setKeywordParameters(n, (KEY_CATEGORY: KEYWORD_CONSTANT));
+        case node n:\assert(_,_) : setKeywordParameters(n, (KEY_CATEGORY: KEYWORD_CONSTANT));
+        case node n:\break() : setKeywordParameters(n, (KEY_CATEGORY: KEYWORD_CONSTANT));
+        case node n:\break(_) : setKeywordParameters(n, (KEY_CATEGORY: KEYWORD_CONSTANT));
+        case node n:\case(_) : setKeywordParameters(n, (KEY_CATEGORY: KEYWORD_CONSTANT));
+        case node n:\catch(_,_) : setKeywordParameters(n, (KEY_CATEGORY: KEYWORD_CONSTANT));
+        case node n:\continue() : setKeywordParameters(n, (KEY_CATEGORY: KEYWORD_CONSTANT));
+        case node n:\do(_,_) : setKeywordParameters(n, (KEY_CATEGORY: KEYWORD_CONSTANT));
+        // type
+        case node n:\boolean() : setKeywordParameters(n, (KEY_CATEGORY: KEYWORD_CONSTANT));
+        case node n:\byte() : setKeywordParameters(n, (KEY_CATEGORY: KEYWORD_CONSTANT));
+        case node n:\char() : setKeywordParameters(n, (KEY_CATEGORY: KEYWORD_CONSTANT));
+        case node n:\double() : setKeywordParameters(n, (KEY_CATEGORY: KEYWORD_CONSTANT));
+        // declaration
+        case node n:\class(_,_,_,_) : setKeywordParameters(n, (KEY_CATEGORY: KEYWORD_CONSTANT));
+        case node n:\class(_) : setKeywordParameters(n, (KEY_CATEGORY: KEYWORD_CONSTANT));
+        case node n:\enum(_,_,_,_) : setKeywordParameters(n, (KEY_CATEGORY: KEYWORD_CONSTANT));
+        
+    }
+
+    // keyword
+
+    // operator
+
+    // expression
+
+    // block & statement
+
+    // class
+    return method; // TODO: can this be?
 }
 
+/**
+Convert the AST to a string with the characters from keywords
+*/
 SerializedAST serializeAST(Declaration methodAnnotated) {
-    // TODO
+    str ret = "";
+    visit (methodAnnotated) {
+          case node n : ret += typeCast(#str, getKeywordParameters(n)[KEY_CATEGORY]);
+    }
+    return <methodAnnotated, ret>;
 }
 
 /**
