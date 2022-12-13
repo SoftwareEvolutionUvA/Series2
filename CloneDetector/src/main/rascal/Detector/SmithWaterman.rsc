@@ -12,7 +12,7 @@ int smithWaterman(str a, str b, int match, int mismatch, int gap) {
     return lastIdx in H ? H[lastIdx] : 0;
 }
 
-list[list[int]] calculateSubstitutionMatrix(str a, str b, int match, int mismatch) {
+private list[list[int]] calculateSubstitutionMatrix(str a, str b, int match, int mismatch) {
     list[list[int]] s = [];
 
     for (int i <- [0 .. size(a)]) { // row
@@ -27,7 +27,7 @@ list[list[int]] calculateSubstitutionMatrix(str a, str b, int match, int mismatc
     return s;
 }
 
-map[tuple[int, int], int] calculateScoringMatrix(list[list[int]] s, str a, str b, int gap) {
+private map[tuple[int, int], int] calculateScoringMatrix(list[list[int]] s, str a, str b, int gap) {
     map[tuple[int, int], int] H = ();
     for (int i <- [1 .. size(a)]) {
         for (int j <- [1 .. size(b)]) {
