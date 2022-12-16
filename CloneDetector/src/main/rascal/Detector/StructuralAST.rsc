@@ -14,7 +14,7 @@ import Node;
 import Type;
 
 alias CloneClass = set[SerializedAST];
-alias SerializedAST = tuple[Declaration ast, str serializedAST];
+alias SerializedAST = tuple[Declaration ast, map[node, str] labels, str serializedAST];
 
 str CLASS_CONSTANT = "c";
 str BLOCK_STATEMENT_CONSTANT = "b";
@@ -23,6 +23,16 @@ str OPERATOR_CONSTANT = "o";
 str KEYWORD_CONSTANT = "k";
 str LITERAL_CONSTANT = "l";
 str KEY_CATEGORY = "categoryCloneDetection";
+
+// Test area cats
+str DECLARATION_CONSTANT = "d";
+// expression exists
+str STATEMENT_CONSTANT = "s";
+str TYPE_CONSTANT = "t";
+str MODIFIER_CONSTANT = "m";
+
+
+// End area
 
 /**
 Get ASTs for each method in a Maven Project.
@@ -47,84 +57,165 @@ Adds metadata to AST that corresponds to the category of the node.
 - k: Keyword
 - l: Literal
 */
-Declaration annotateMethodAST(Declaration method) {
+SerializedAST annotateMethodAST(Declaration method) {
     // TODO
 
     // start from lowest level and work up
 
-    int a = 1;
+    map[node, str] labels = ();
     visit (method) {
-        // SECTION: Literal -> https://docs.oracle.com/javase/specs/jls/se19/html/jls-3.html#jls-3.10
-        // Integer Literal
-        // Floating Literal
-        case node n:\number(_) : setKeywordParameters(n, (KEY_CATEGORY: LITERAL_CONSTANT));
-        // BooleanLiteral
-        case node n:\booleanLiteral(_) : setKeywordParameters(n, (KEY_CATEGORY: LITERAL_CONSTANT));
-        // CharacterLiteral
-        case node n:\characterLiteral(_) : setKeywordParameters(n, (KEY_CATEGORY: LITERAL_CONSTANT));
-        // String Literal
-        // TextBlock Literal -> maybe the same
-        case node n:\stringLiteral(_) : setKeywordParameters(n, (KEY_CATEGORY: LITERAL_CONSTANT));
-        // NullLiteral
-        case node n:\null() : setKeywordParameters(n, (KEY_CATEGORY: LITERAL_CONSTANT));
-        //------------------
-        // SECTION: Keyword -> https://docs.oracle.com/javase/specs/jls/se19/html/jls-3.html#jls-3.9
         // Modifier
-        case node n:\private() : setKeywordParameters(n, (KEY_CATEGORY: KEYWORD_CONSTANT));
-        case node n:\public() : setKeywordParameters(n, (KEY_CATEGORY: KEYWORD_CONSTANT));
-        case node n:\protected() : setKeywordParameters(n, (KEY_CATEGORY: KEYWORD_CONSTANT));
-        case node n:\friendly() : setKeywordParameters(n, (KEY_CATEGORY: KEYWORD_CONSTANT));
-        case node n:\static() : setKeywordParameters(n, (KEY_CATEGORY: KEYWORD_CONSTANT));
-        case node n:\final() : setKeywordParameters(n, (KEY_CATEGORY: KEYWORD_CONSTANT));
-        case node n:\synchronized() : setKeywordParameters(n, (KEY_CATEGORY: KEYWORD_CONSTANT));
-        case node n:\transient() : setKeywordParameters(n, (KEY_CATEGORY: KEYWORD_CONSTANT));
-        case node n:\abstract() : setKeywordParameters(n, (KEY_CATEGORY: KEYWORD_CONSTANT));
-        case node n:\native() : setKeywordParameters(n, (KEY_CATEGORY: KEYWORD_CONSTANT));
-        case node n:\volatile() : setKeywordParameters(n, (KEY_CATEGORY: KEYWORD_CONSTANT));
-        case node n:\strictfp() : setKeywordParameters(n, (KEY_CATEGORY: KEYWORD_CONSTANT));
-        case node n:\default() : setKeywordParameters(n, (KEY_CATEGORY: KEYWORD_CONSTANT));
-        // statement
-        case node n:\assert(_) : setKeywordParameters(n, (KEY_CATEGORY: KEYWORD_CONSTANT));
-        case node n:\assert(_,_) : setKeywordParameters(n, (KEY_CATEGORY: KEYWORD_CONSTANT));
-        case node n:\break() : setKeywordParameters(n, (KEY_CATEGORY: KEYWORD_CONSTANT));
-        case node n:\break(_) : setKeywordParameters(n, (KEY_CATEGORY: KEYWORD_CONSTANT));
-        case node n:\case(_) : setKeywordParameters(n, (KEY_CATEGORY: KEYWORD_CONSTANT));
-        case node n:\catch(_,_) : setKeywordParameters(n, (KEY_CATEGORY: KEYWORD_CONSTANT));
-        case node n:\continue() : setKeywordParameters(n, (KEY_CATEGORY: KEYWORD_CONSTANT));
-        case node n:\do(_,_) : setKeywordParameters(n, (KEY_CATEGORY: KEYWORD_CONSTANT));
-        // type
-        case node n:\boolean() : setKeywordParameters(n, (KEY_CATEGORY: KEYWORD_CONSTANT));
-        case node n:\byte() : setKeywordParameters(n, (KEY_CATEGORY: KEYWORD_CONSTANT));
-        case node n:\char() : setKeywordParameters(n, (KEY_CATEGORY: KEYWORD_CONSTANT));
-        case node n:\double() : setKeywordParameters(n, (KEY_CATEGORY: KEYWORD_CONSTANT));
-        // declaration
-        case node n:\class(_,_,_,_) : setKeywordParameters(n, (KEY_CATEGORY: KEYWORD_CONSTANT));
-        case node n:\class(_) : setKeywordParameters(n, (KEY_CATEGORY: KEYWORD_CONSTANT));
-        case node n:\enum(_,_,_,_) : setKeywordParameters(n, (KEY_CATEGORY: KEYWORD_CONSTANT));
-        
+        case node n: \private() : labels += (n : MODIFIER_CONSTANT);
+        case node n: \public() : labels += (n : MODIFIER_CONSTANT);
+        case node n: \protected() : labels += (n : MODIFIER_CONSTANT);
+        case node n: \friendly() : labels += (n : MODIFIER_CONSTANT);
+        case node n: \static() : labels += (n : MODIFIER_CONSTANT);
+        case node n: \final() : labels += (n : MODIFIER_CONSTANT);
+        case node n: \synchronized() : labels += (n : MODIFIER_CONSTANT);
+        case node n: \transient() : labels += (n : MODIFIER_CONSTANT);
+        case node n: \abstract() : labels += (n : MODIFIER_CONSTANT);
+        case node n: \native() : labels += (n : MODIFIER_CONSTANT);
+        case node n: \volatile() : labels += (n : MODIFIER_CONSTANT);
+        case node n: \strictfp() : labels += (n : MODIFIER_CONSTANT);
+        case node n: \annotation(_) : labels += (n : MODIFIER_CONSTANT);
+        case node n: \onDemand() : labels += (n : MODIFIER_CONSTANT);
+        case node n: \default() : labels += (n : MODIFIER_CONSTANT);
+
+        // Type
+        case node n: arrayType(_): labels += (n : TYPE_CONSTANT);
+        case node n: parameterizedType(_): labels += (n : TYPE_CONSTANT);
+        case node n: qualifiedType(_, _): labels += (n : TYPE_CONSTANT);
+        case node n: simpleType(_): labels += (n : TYPE_CONSTANT);
+        case node n: unionType(_): labels += (n : TYPE_CONSTANT);
+        case node n: wildcard(): labels += (n : TYPE_CONSTANT);
+        case node n: upperbound(_): labels += (n : TYPE_CONSTANT);
+        case node n: lowerbound(_): labels += (n : TYPE_CONSTANT);
+        case node n: \int(): labels += (n : TYPE_CONSTANT);
+        case node n: short(): labels += (n : TYPE_CONSTANT);
+        case node n: long(): labels += (n : TYPE_CONSTANT);
+        case node n: float(): labels += (n : TYPE_CONSTANT);
+        case node n: double(): labels += (n : TYPE_CONSTANT);
+        case node n: char(): labels += (n : TYPE_CONSTANT);
+        case node n: string(): labels += (n : TYPE_CONSTANT);
+        case node n: byte(): labels += (n : TYPE_CONSTANT);
+        case node n: \void(): labels += (n : TYPE_CONSTANT);
+        case node n: \boolean(): labels += (n : TYPE_CONSTANT);
+
+        // Statement
+        case node n: \assert(_) : labels += (n : STATEMENT_CONSTANT);
+        case node n: \assert(_, _) : labels += (n : STATEMENT_CONSTANT);
+        case node n: \block(_) : labels += (n : STATEMENT_CONSTANT);
+        case node n: \break() : labels += (n : STATEMENT_CONSTANT);
+        case node n: \break(_) : labels += (n : STATEMENT_CONSTANT);
+        case node n: \continue() : labels += (n : STATEMENT_CONSTANT);
+        case node n: \continue(_) : labels += (n : STATEMENT_CONSTANT);
+        case node n: \do(_, _) : labels += (n : STATEMENT_CONSTANT);
+        case node n: \empty() : labels += (n : STATEMENT_CONSTANT);
+        case node n: \foreach(_, _, _) : labels += (n : STATEMENT_CONSTANT);
+        case node n: \for(_, _, _, _) : labels += (n : STATEMENT_CONSTANT);
+        case node n: \for(_, _, _) : labels += (n : STATEMENT_CONSTANT);
+        case node n: \if(_, _) : labels += (n : STATEMENT_CONSTANT);
+        case node n: \if(_, _, _) : labels += (n : STATEMENT_CONSTANT);
+        case node n: \label(_, _) : labels += (n : STATEMENT_CONSTANT);
+        case node n: \return(_) : labels += (n : STATEMENT_CONSTANT);
+        case node n: \return() : labels += (n : STATEMENT_CONSTANT);
+        case node n: \switch(_, _) : labels += (n : STATEMENT_CONSTANT);
+        case node n: \case(_) : labels += (n : STATEMENT_CONSTANT);
+        case node n: \defaultCase() : labels += (n : STATEMENT_CONSTANT);
+        case node n: \synchronizedStatement(_, _) : labels += (n : STATEMENT_CONSTANT);
+        case node n: \throw(_) : labels += (n : STATEMENT_CONSTANT);
+        case node n: \try(_, _) : labels += (n : STATEMENT_CONSTANT);
+        case node n: \try(_, _, _) : labels += (n : STATEMENT_CONSTANT);
+        case node n: \catch(_, _) : labels += (n : STATEMENT_CONSTANT);
+        case node n: \declarationStatement(_) : labels += (n : STATEMENT_CONSTANT);
+        case node n: \while(_, _) : labels += (n : STATEMENT_CONSTANT);
+        case node n: \expressionStatement(_) : labels += (n : STATEMENT_CONSTANT);
+        case node n: \constructorCall(_, _) : labels += (n : STATEMENT_CONSTANT);
+        case node n: \constructorCall(_, _, _) : labels += (n : STATEMENT_CONSTANT);
+
+        // Expression
+        case node n: \arrayAccess(_, _): labels += (n : EXPRESSION_CONSTANT);
+        case node n: \newArray(_, _, _): labels += (n : EXPRESSION_CONSTANT);
+        case node n: \newArray(_, _): labels += (n : EXPRESSION_CONSTANT);
+        case node n: \arrayInitializer(_): labels += (n : EXPRESSION_CONSTANT);
+        case node n: \assignment(_, _, _): labels += (n : EXPRESSION_CONSTANT);
+        case node n: \cast(_, _): labels += (n : EXPRESSION_CONSTANT);
+        case node n: \characterLiteral(_): labels += (n : EXPRESSION_CONSTANT);
+        case node n: \newObject(_, _, _, _): labels += (n : EXPRESSION_CONSTANT);
+        case node n: \newObject(_, _, _): labels += (n : EXPRESSION_CONSTANT);
+        case node n: \newObject(_, _, _): labels += (n : EXPRESSION_CONSTANT);
+        case node n: \newObject(_, _): labels += (n : EXPRESSION_CONSTANT);
+        case node n: \qualifiedName(_, _): labels += (n : EXPRESSION_CONSTANT);
+        case node n: \conditional(_, _, _): labels += (n : EXPRESSION_CONSTANT);
+        case node n: \fieldAccess(_, _, _): labels += (n : EXPRESSION_CONSTANT);
+        case node n: \fieldAccess(_, _): labels += (n : EXPRESSION_CONSTANT);
+        case node n: \instanceof(_, _): labels += (n : EXPRESSION_CONSTANT);
+        case node n: \methodCall(_, _, _): labels += (n : EXPRESSION_CONSTANT);
+        case node n: \methodCall(_, _, _, _): labels += (n : EXPRESSION_CONSTANT);
+        case node n: \null(): labels += (n : EXPRESSION_CONSTANT);
+        case node n: \number(_): labels += (n : EXPRESSION_CONSTANT);
+        case node n: \booleanLiteral(_): labels += (n : EXPRESSION_CONSTANT);
+        case node n: \stringLiteral(_): labels += (n : EXPRESSION_CONSTANT);
+        case node n: \type(_): labels += (n : EXPRESSION_CONSTANT);
+        case node n: \variable(_, _): labels += (n : EXPRESSION_CONSTANT);
+        case node n: \variable(_, _, _): labels += (n : EXPRESSION_CONSTANT);
+        case node n: \bracket(_): labels += (n : EXPRESSION_CONSTANT);
+        case node n: \this(): labels += (n : EXPRESSION_CONSTANT);
+        case node n: \this(_): labels += (n : EXPRESSION_CONSTANT);
+        case node n: \super(): labels += (n : EXPRESSION_CONSTANT);
+        case node n: \declarationExpression(_): labels += (n : EXPRESSION_CONSTANT);
+        case node n: \infix(_, _, _): labels += (n : EXPRESSION_CONSTANT);
+        case node n: \postfix(_, _): labels += (n : EXPRESSION_CONSTANT);
+        case node n: \prefix(_, _): labels += (n : EXPRESSION_CONSTANT);
+        case node n: \simpleName(_): labels += (n : EXPRESSION_CONSTANT);
+        case node n: \markerAnnotation(_): labels += (n : EXPRESSION_CONSTANT);
+        case node n: \normalAnnotation(_, _): labels += (n : EXPRESSION_CONSTANT);
+        case node n: \memberValuePair(_, _): labels += (n : EXPRESSION_CONSTANT);
+        case node n: \singleMemberAnnotation(_, _): labels += (n : EXPRESSION_CONSTANT);
+
+        // Declaration
+        case node n: \compilationUnit(_, _): labels += (n : DECLARATION_CONSTANT);
+        case node n: \compilationUnit(_, _, _): labels += (n : DECLARATION_CONSTANT);
+        case node n: \enum(_, _, _, _): labels += (n : DECLARATION_CONSTANT);
+        case node n: \enumConstant(_, _, _): labels += (n : DECLARATION_CONSTANT);
+        case node n: \enumConstant(_, _): labels += (n : DECLARATION_CONSTANT);
+        case node n: \class(_, _, _, _): labels += (n : DECLARATION_CONSTANT);
+        case node n: \class(_): labels += (n : DECLARATION_CONSTANT);
+        case node n: \class(_, _): labels += (n : DECLARATION_CONSTANT); // added, I think it's missing in documentation
+        case node n: \interface(_, _, _, _): labels += (n : DECLARATION_CONSTANT);
+        case node n: \field(_, _): labels += (n : DECLARATION_CONSTANT);
+        case node n: \initializer(_): labels += (n : DECLARATION_CONSTANT);
+        case node n: \method(_, _, _, _, _): labels += (n : DECLARATION_CONSTANT);
+        case node n: \method(_, _, _, _): labels += (n : DECLARATION_CONSTANT);
+        case node n: \constructor(_, _, _, _): labels += (n : DECLARATION_CONSTANT);
+        case node n: \import(_): labels += (n : DECLARATION_CONSTANT);
+        case node n: \package(_): labels += (n : DECLARATION_CONSTANT);
+        case node n: \package(_, _): labels += (n : DECLARATION_CONSTANT);
+        case node n: \variables(_, _): labels += (n : DECLARATION_CONSTANT);
+        case node n: \typeParameter(_, _): labels += (n : DECLARATION_CONSTANT);
+        case node n: \annotationType(_, _): labels += (n : DECLARATION_CONSTANT);
+        case node n: \annotationTypeMember(_, _): labels += (n : DECLARATION_CONSTANT);
+        case node n: \annotationTypeMember(_, _, _): labels += (n : DECLARATION_CONSTANT);
+        case node n: \parameter(_, _, _): labels += (n : DECLARATION_CONSTANT);
+        case node n: \vararg(_, _): labels += (n : DECLARATION_CONSTANT);
+
+        case node n: println(n);
     }
-
-    // keyword
-
-    // operator
-
-    // expression
-
-    // block & statement
-
-    // class
-    return method; // TODO: can this be?
+    return <method, labels, "">; // TODO: can this be?
 }
 
 /**
 Convert the AST to a string with the characters from keywords
 */
-SerializedAST serializeAST(Declaration methodAnnotated) {
+SerializedAST serializeAST(SerializedAST methodAnnotated) {
     str ret = "";
+    map[node, str] labels = methodAnnotated.labels;
     visit (methodAnnotated) {
-          case node n : ret += typeCast(#str, getKeywordParameters(n)[KEY_CATEGORY]);
+        case node n : ret += n in labels ? labels[n] : "_"; // TODO: weird that it doesn't match
     }
-    return <methodAnnotated, ret>;
+    methodAnnotated.serializedAST = ret;
+    println(ret);
+    return methodAnnotated;
 }
 
 /**
@@ -167,7 +258,9 @@ void reportResults(map[str, value] statistics, loc outputFile) {
     // TODO
 }
 
-void main(loc projectPath) {
+/* REMOVED ARG PROJ PATH FOR TESTING ! */
+void main() {
+    loc projectPath = |project://TestCode|;
     //// 1: Parse AST for project files through M3 model
     // Make AST for each method
     list[Declaration] methodASTs = getMethodASTsProject(projectPath);
@@ -180,7 +273,7 @@ void main(loc projectPath) {
     * Block = multiple statements
     * Symbol = operators, keywords, literals
     */
-    list[Declaration] annotatedASTs = [];
+    list[SerializedAST] annotatedASTs = [];
     for (m <- methodASTs) {
         annotatedASTs += annotateMethodAST(m);
     }
@@ -189,7 +282,7 @@ void main(loc projectPath) {
     // Use visit node
     list[SerializedAST] serializedASTs = [];
     for (m <- annotatedASTs) {
-        serializeASTs += serializeAST(m);
+        serializedASTs += serializeAST(m);
     }
 
 
