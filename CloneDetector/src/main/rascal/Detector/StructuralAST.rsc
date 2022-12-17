@@ -12,6 +12,7 @@ import lang::java::m3::Core;
 import lang::java::m3::AST;
 import Node;
 import Type;
+import DateTime;
 
 alias CloneClass = set[SerializedAST];
 alias SerializedAST = tuple[Declaration ast, map[node, str] labels, str serializedAST];
@@ -214,7 +215,7 @@ SerializedAST serializeAST(SerializedAST methodAnnotated) {
         case node n : ret += n in labels ? labels[n] : "_"; // TODO: weird that it doesn't match
     }
     methodAnnotated.serializedAST = ret;
-    println(ret);
+    //println(ret);
     return methodAnnotated;
 }
 
@@ -222,8 +223,28 @@ SerializedAST serializeAST(SerializedAST methodAnnotated) {
 Calculates the Similarity score between two methods.
 TODO: should be optimized: operands of divisor are calculated multiple times -> use dynamic programing approach
 */
+map[str, int] scoresItself = ();
 real calculateSimilarity(str serializedMethod1, str serializedMethod2) {
-    int divisor = smithWatermanWrapper(serializedMethod1, serializedMethod2) * smithWatermanWrapper(serializedMethod2, serializedMethod2);
+
+    int score1 = -1;
+    int score2 = -1;
+    if (!(serializedMethod1 in scoresItself)) {
+        score1 = smithWatermanWrapper(serializedMethod1, serializedMethod1);
+        scoresItself[serializedMethod1] = score1;
+    }
+    else {
+        score1 = scoresItself[serializedMethod1];
+    }
+
+    if (!(serializedMethod2 in scoresItself)) {
+        score1 = smithWatermanWrapper(serializedMethod2, serializedMethod2);
+        scoresItself[serializedMethod2] = score2;
+    }
+    else {
+        score2 = scoresItself[serializedMethod2];
+    }
+
+    int divisor = score1 * score2;
     return (2.0 * smithWatermanWrapper(serializedMethod1, serializedMethod2)) / divisor;
 }
 
@@ -234,7 +255,15 @@ int smithWatermanWrapper(str a, str b) {
     int match = 2;
     int mismatch = -1;
     int gap = -1;
-    return smithWaterman(a, b, match, mismatch, gap);
+    print(now());
+    print(": Start with ");
+    print(size(a));
+    print(" x ");
+    println(size(b));
+    int ret = smithWaterman(a, b, match, mismatch, gap);
+    print(now());
+    println(": Stop");
+    return ret;
 }
 
 /**
@@ -260,7 +289,7 @@ void reportResults(map[str, value] statistics, loc outputFile) {
 
 /* REMOVED ARG PROJ PATH FOR TESTING ! */
 void main() {
-    loc projectPath = |project://TestCode|;
+    loc projectPath = |project://Series2/Benchmark/CloneBenchmark|;
     //// 1: Parse AST for project files through M3 model
     // Make AST for each method
     list[Declaration] methodASTs = getMethodASTsProject(projectPath);
@@ -287,19 +316,11 @@ void main() {
 
 
     ////* Smith Waterman *////
-    //// 7: Calculate Similarity Scores
-    /** 
-    * For each score_H(A*B):
-    * Take score_H(A*A) and score_H(B*B)
-    * sim = 2 * (score_H(A*B) / (score_H(A*A) + score_H(B*B))) 
-    *
-    * Save sim_scores in tuple[score, tuple[A,B]]   of     map[tuple[A,B], score]
-    */
-
     // TODO: probably symmetric matrix -> no need to calculate both, lower and upper triangle
     map[tuple[SerializedAST, SerializedAST], real] similarityScore = ();
     for (m1 <- serializedASTs) {
         for (m2 <- serializedASTs) {
+            println("SIMILARITY");
             real score = calculateSimilarity(m1.serializedAST, m2.serializedAST);
             similarityScore += (<m1, m2> : score);
         }
@@ -307,14 +328,6 @@ void main() {
 
 
     //// 8: Create clone classes
-    /**
-    * Loop over sim_scores and find all A's in keys
-    * * If score > delta then add pair to new map clone_classes = map[ID, list[A, B, ...]]
-    * * * Remove duplicate sequences from list (or use guard while adding)
-    * 
-    * OPTION: use tuple with [ID, list[A, B, ...], nr_of_clones_in_class]
-    *
-    */
     real delta = 0.9;
     loc outputFile = |path://whatever|;
     set[CloneClass] cloneClasses = {};
