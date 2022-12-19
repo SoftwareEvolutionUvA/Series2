@@ -1,0 +1,210 @@
+{
+"metaData": {
+"relativeDuplicateLines": 0.4167893962,
+"biggestCloneLOC": "|project://Series2/Benchmark/CloneBenchmark/src/main/java/org/example/NoClass.java|(3754,454,<137,40>,<156,5>)",
+"projectLoc": 679,
+"numberCloneClasses": 6,
+"numberClones": 25,
+"biggestCloneClassMembers": "|project://Series2/Benchmark/CloneBenchmark/src/main/java/org/example/BoxClass.java|(1282,481,<53,44>,<72,5>)"},
+"cloneClasses":[
+{
+"id": 1000,
+"name": "cloneClass1"
+},
+{
+"id": 1001,
+"parent": 1000,
+"name": "BoxClass.java(2260,237,<86,81>,<92,9>)",
+"location": "|project://Series2/Benchmark/CloneBenchmark/src/main/java/org/example/BoxClass.java|(2260,237,<86,81>,<92,9>)",
+"size": 7
+},
+{
+"id": 1002,
+"parent": 1000,
+"name": "UnderlinedClass.java(2887,314,<113,81>,<120,9>)",
+"location": "|project://Series2/Benchmark/CloneBenchmark/src/main/java/org/example/UnderlinedClass.java|(2887,314,<113,81>,<120,9>)",
+"size": 7
+},
+{
+"id": 1003,
+"parent": 1000,
+"name": "NoClass.java(3156,237,<116,81>,<122,9>)",
+"location": "|project://Series2/Benchmark/CloneBenchmark/src/main/java/org/example/NoClass.java|(3156,237,<116,81>,<122,9>)",
+"size": 7
+},
+{
+"id": 1004,
+"parent": 1000,
+"name": "NoClass.java(8596,240,<310,81>,<316,9>)",
+"location": "|project://Series2/Benchmark/CloneBenchmark/src/main/java/org/example/NoClass.java|(8596,240,<310,81>,<316,9>)",
+"size": 7
+},
+{
+"id": 1005,
+"parent": 1000,
+"name": "NoClass.java(6923,237,<258,79>,<264,9>)",
+"location": "|project://Series2/Benchmark/CloneBenchmark/src/main/java/org/example/NoClass.java|(6923,237,<258,79>,<264,9>)",
+"size": 7
+},
+{
+"id": 2000,
+"name": "cloneClass2"
+},
+{
+"id": 2001,
+"parent": 2000,
+"name": "NoClass.java(9451,277,<340,53>,<348,13>)",
+"location": "|project://Series2/Benchmark/CloneBenchmark/src/main/java/org/example/NoClass.java|(9451,277,<340,53>,<348,13>)",
+"size": 9
+},
+{
+"id": 2002,
+"parent": 2000,
+"name": "NoClass.java(14942,277,<524,53>,<532,13>)",
+"location": "|project://Series2/Benchmark/CloneBenchmark/src/main/java/org/example/NoClass.java|(14942,277,<524,53>,<532,13>)",
+"size": 9
+},
+{
+"id": 3000,
+"name": "cloneClass3"
+},
+{
+"id": 3001,
+"parent": 3000,
+"name": "BoxClass.java(4804,209,<176,12>,<182,9>)",
+"location": "|project://Series2/Benchmark/CloneBenchmark/src/main/java/org/example/BoxClass.java|(4804,209,<176,12>,<182,9>)",
+"size": 7
+},
+{
+"id": 3002,
+"parent": 3000,
+"name": "NoClass.java(11782,231,<422,12>,<429,9>)",
+"location": "|project://Series2/Benchmark/CloneBenchmark/src/main/java/org/example/NoClass.java|(11782,231,<422,12>,<429,9>)",
+"size": 7
+},
+{
+"id": 4000,
+"name": "cloneClass4"
+},
+{
+"id": 4001,
+"parent": 4000,
+"name": "NoClass.java(3754,454,<137,40>,<156,5>)",
+"location": "|project://Series2/Benchmark/CloneBenchmark/src/main/java/org/example/NoClass.java|(3754,454,<137,40>,<156,5>)",
+"size": 17
+},
+{
+"id": 4002,
+"parent": 4000,
+"name": "NoClass.java(594,586,<24,41>,<44,5>)",
+"location": "|project://Series2/Benchmark/CloneBenchmark/src/main/java/org/example/NoClass.java|(594,586,<24,41>,<44,5>)",
+"size": 17
+},
+{
+"id": 4003,
+"parent": 4000,
+"name": "NoClass.java(1438,501,<55,44>,<74,5>)",
+"location": "|project://Series2/Benchmark/CloneBenchmark/src/main/java/org/example/NoClass.java|(1438,501,<55,44>,<74,5>)",
+"size": 17
+},
+{
+"id": 4004,
+"parent": 4000,
+"name": "BoxClass.java(1282,481,<53,44>,<72,5>)",
+"location": "|project://Series2/Benchmark/CloneBenchmark/src/main/java/org/example/BoxClass.java|(1282,481,<53,44>,<72,5>)",
+"size": 17
+},
+{
+"id": 4005,
+"parent": 4000,
+"name": "UnderlinedClass.java(497,507,<20,41>,<45,5>)",
+"location": "|project://Series2/Benchmark/CloneBenchmark/src/main/java/org/example/UnderlinedClass.java|(497,507,<20,41>,<45,5>)",
+"size": 17
+},
+{
+"id": 4006,
+"parent": 4000,
+"name": "UnderlinedClass.java(1828,526,<80,44>,<99,5>)",
+"location": "|project://Series2/Benchmark/CloneBenchmark/src/main/java/org/example/UnderlinedClass.java|(1828,526,<80,44>,<99,5>)",
+"size": 17
+},
+{
+"id": 4007,
+"parent": 4000,
+"name": "BoxClass.java(2872,573,<107,44>,<128,5>)",
+"location": "|project://Series2/Benchmark/CloneBenchmark/src/main/java/org/example/BoxClass.java|(2872,573,<107,44>,<128,5>)",
+"size": 17
+},
+{
+"id": 4008,
+"parent": 4000,
+"name": "BoxClass.java(519,501,<23,41>,<42,5>)",
+"location": "|project://Series2/Benchmark/CloneBenchmark/src/main/java/org/example/BoxClass.java|(519,501,<23,41>,<42,5>)",
+"size": 17
+},
+{
+"id": 5000,
+"name": "cloneClass5"
+},
+{
+"id": 5001,
+"parent": 5000,
+"name": "UnderlinedClass.java(5442,217,<204,44>,<210,17>)",
+"location": "|project://Series2/Benchmark/CloneBenchmark/src/main/java/org/example/UnderlinedClass.java|(5442,217,<204,44>,<210,17>)",
+"size": 7
+},
+{
+"id": 5002,
+"parent": 5000,
+"name": "NoClass.java(15887,217,<559,21>,<565,17>)",
+"location": "|project://Series2/Benchmark/CloneBenchmark/src/main/java/org/example/NoClass.java|(15887,217,<559,21>,<565,17>)",
+"size": 7
+},
+{
+"id": 6000,
+"name": "cloneClass6"
+},
+{
+"id": 6001,
+"parent": 6000,
+"name": "UnderlinedClass.java(1303,245,<56,38>,<68,5>)",
+"location": "|project://Series2/Benchmark/CloneBenchmark/src/main/java/org/example/UnderlinedClass.java|(1303,245,<56,38>,<68,5>)",
+"size": 11
+},
+{
+"id": 6002,
+"parent": 6000,
+"name": "NoClass.java(2218,206,<85,38>,<95,5>)",
+"location": "|project://Series2/Benchmark/CloneBenchmark/src/main/java/org/example/NoClass.java|(2218,206,<85,38>,<95,5>)",
+"size": 11
+},
+{
+"id": 6003,
+"parent": 6000,
+"name": "NoClass.java(5002,254,<188,41>,<199,5>)",
+"location": "|project://Series2/Benchmark/CloneBenchmark/src/main/java/org/example/NoClass.java|(5002,254,<188,41>,<199,5>)",
+"size": 11
+},
+{
+"id": 6004,
+"parent": 6000,
+"name": "NoClass.java(5551,210,<210,41>,<220,5>)",
+"location": "|project://Series2/Benchmark/CloneBenchmark/src/main/java/org/example/NoClass.java|(5551,210,<210,41>,<220,5>)",
+"size": 11
+},
+{
+"id": 6005,
+"parent": 6000,
+"name": "NoClass.java(4502,212,<167,44>,<177,5>)",
+"location": "|project://Series2/Benchmark/CloneBenchmark/src/main/java/org/example/NoClass.java|(4502,212,<167,44>,<177,5>)",
+"size": 11
+},
+{
+"id": 6006,
+"parent": 6000,
+"name": "NoClass.java(6068,350,<231,44>,<244,5>)",
+"location": "|project://Series2/Benchmark/CloneBenchmark/src/main/java/org/example/NoClass.java|(6068,350,<231,44>,<244,5>)",
+"size": 11
+}
+]
+}

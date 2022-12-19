@@ -168,8 +168,9 @@ void writeClassesToFile(map[loc, CloneClass] classes, map[str, value] metaData, 
         ret += "\"name\": \"cloneClass<classCount>\"\n";
         ret += "},\n";
         bool firstElem = true;
-        int cloneCount = 1;
+        int cloneCount = 0;
         for (clone <- classes[key]) {
+            cloneCount += 1;
             if(!firstElem) {
                 ret += ",\n"; // I hate JSON
             }
@@ -189,7 +190,6 @@ void writeClassesToFile(map[loc, CloneClass] classes, map[str, value] metaData, 
             ret += "\"name\": \"<className><locat>\",\n";
             ret += "\"location\": \"<clone>\",\n";
             ret += "\"size\": <locClones[clone]>\n}";
-            
         }       
     }
     ret += "\n]\n"; // end classes

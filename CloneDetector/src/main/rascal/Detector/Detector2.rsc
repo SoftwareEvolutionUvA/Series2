@@ -13,7 +13,7 @@ set[Declaration] generalize(set[Declaration] ast) {
         case \interface(name, extends, implements, body) => \interface("genericInterface", extends, implements, body)
         case \method(ret, name, parameters, exceptions, impl) => \method(ret, "genericMethod", parameters, exceptions, impl)
         case \constructor(name, parameters, exceptions, impl) => \constructor("genericConstructor", parameters, exceptions, impl)
-        case \typeParameter(name, extendsList) => \typeParameter("genericTypeParameter", extendsList)
+        //case \typeParameter(name, extendsList) => \typeParameter("T", extendsList)
         case \annotationType(name, body) => \annotationType("genericAnnotationType", body)
         case \annotationTypeMember(typ, name) => \annotationTypeMember(typ, "genericAnnotationTypeMember")
         case \annotationTypeMember(typ, name, defaultBlock) => \annotationTypeMember(typ, "genericAnnotationTypeMember", defaultBlock)

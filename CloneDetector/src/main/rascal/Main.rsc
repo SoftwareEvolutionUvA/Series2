@@ -7,13 +7,13 @@ import lang::java::m3::AST;
 
 void main() {
     loc projectPath = |project://Series2/Benchmark/CloneBenchmark|;
-    loc outputPath = |project://Series2/benchmark.json|;
+    loc outputPath = |project://Series2/benchmark_type1.json|;
 
     //loc projectPath = |project://hsqldb-2.3.1|;
-    //loc outputPath = |project://Series2/hsqldb-2.3.1.json|;
+    //loc outputPath = |project://Series2/hsqldb-2.3.1_type1.json|;
     
-    //loc projectPath = |project://hsqldb-2.3.1|;
-    //loc outputPath = |project://Series2/hsqldb-2.3.1.json|;
+    //loc projectPath = |project://smallsql0.21_src|;
+    //loc outputPath = |project://Series2/smallsql0.21_src_type2.json|;
     set[Declaration] asts = createAstsFromMavenProject(projectPath, true);
     
     runDetector1(asts, projectPath, outputPath);
