@@ -1,0 +1,315 @@
+<html>
+
+<head>
+    <title>
+        Software Maintainability Report of |project://hsqldb-2.3.1|
+    </title>
+    <style type="text/css">
+        
+
+        .test-result-table {
+            border: 1px solid black;
+            width: 800px;
+        }
+        
+        .test-result-table-header-cell {
+            border-bottom: 1px solid black;
+            background-color: silver;
+        }
+        
+        .test-result-step-command-cell {
+            border-bottom: 1px solid gray;
+        }
+        
+        .test-result-step-description-cell {
+            border-bottom: 1px solid gray;
+        }
+        
+        .test-result-step-result-cell-ok {
+            border-bottom: 1px solid gray;
+            background-color: green;
+        }
+        
+        .test-result-step-result-cell-failure {
+            border-bottom: 1px solid gray;
+            background-color: red;
+        }
+        
+        .test-result-step-result-cell-notperformed {
+            border-bottom: 1px solid gray;
+            background-color: white;
+        }
+        
+        .test-result-describe-cell {
+            background-color: tan;
+            font-style: italic;
+        }
+        
+        .test-cast-status-box-ok {
+            border: 1px solid black;
+            float: left;
+            margin-right: 10px;
+            width: 45px;
+            height: 25px;
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="test-results-header">
+        Software Clone Report of |project://hsqldb-2.3.1|
+    </h1>
+    <p>Test performed at $T20:08:12.483+00:00$ on the $2022-12-19$.</p>
+    <p>Overall execution time: duration(0,0,0,0,16,32,943).</p>
+    <table class="test-result-table" cellspacing="0">
+        <thead>
+            <tr>
+                <td class="test-result-table-header-cell">
+                    <b>Metric</b>
+                </td>
+                <td class="test-result-table-header-cell">
+                    <b>Value</b>
+                </td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="test-result-step-row test-result-step-row-altone">
+                <td class="test-result-step-command-cell">Relate Number Duplicates (%)</td>
+                <td class="test-result-step-command-cell">7.26732285600%</td>
+            </tr>
+            <tr class="test-result-step-row test-result-step-row-altone">
+                <td class="test-result-step-command-cell">Number of Clones</td>
+                <td class="test-result-step-command-cell">1798</td>
+            </tr>
+            <tr class="test-result-step-row test-result-step-row-altone">
+                <td class="test-result-step-command-cell">Number of Clone Classes</td>
+                <td class="test-result-step-command-cell">690</td>
+            </tr>
+            <tr class="test-result-step-row test-result-step-row-altone">
+                <td class="test-result-step-command-cell">Biggest Clone (LOC)</td>
+                <td class="test-result-step-command-cell">70</td>
+            </tr>
+            <tr class="test-result-step-row test-result-step-row-altone">
+                <td class="test-result-step-command-cell">Biggest Clone Class</td>
+                <td class="test-result-step-command-cell">42</td>
+            </tr>
+        </tbody>
+    </table>
+    <p>In the following, we report the clones from the largest clone class</p>
+    <br>
+    <pre>
+        Clone at location |project://hsqldb-2.3.1/hsqldb/src/org/hsqldb/test/AbstractTestOdbc.java|(7658,195,<195,34>,<200,9>) looks like:<br><br><div style="background-color:#d6d6d6">{
+            junit.framework.AssertionFailedError ase
+                = new junit.framework.AssertionFailedError(se.getMessage());
+            ase.initCause(se);
+            throw ase;
+        }</div><br><br>Clone at location |project://hsqldb-2.3.1/hsqldb/src/org/hsqldb/test/TestOdbcService.java|(5174,195,<137,34>,<142,9>) looks like:<br><br><div style="background-color:#d6d6d6">{
+            junit.framework.AssertionFailedError ase
+                = new junit.framework.AssertionFailedError(se.getMessage());
+            ase.initCause(se);
+            throw ase;
+        }</div><br><br>Clone at location |project://hsqldb-2.3.1/hsqldb/src/org/hsqldb/test/TestOdbcTypes.java|(44985,195,<1197,34>,<1202,9>) looks like:<br><br><div style="background-color:#d6d6d6">{
+            junit.framework.AssertionFailedError ase
+                = new junit.framework.AssertionFailedError(se.getMessage());
+            ase.initCause(se);
+            throw ase;
+        }</div><br><br>Clone at location |project://hsqldb-2.3.1/hsqldb/src/org/hsqldb/test/TestOdbcTypes.java|(49589,195,<1321,34>,<1326,9>) looks like:<br><br><div style="background-color:#d6d6d6">{
+            junit.framework.AssertionFailedError ase
+                = new junit.framework.AssertionFailedError(se.getMessage());
+            ase.initCause(se);
+            throw ase;
+        }</div><br><br>Clone at location |project://hsqldb-2.3.1/hsqldb/src/org/hsqldb/test/TestOdbcTypes.java|(43524,195,<1157,34>,<1162,9>) looks like:<br><br><div style="background-color:#d6d6d6">{
+            junit.framework.AssertionFailedError ase
+                = new junit.framework.AssertionFailedError(se.getMessage());
+            ase.initCause(se);
+            throw ase;
+        }</div><br><br>Clone at location |project://hsqldb-2.3.1/hsqldb/src/org/hsqldb/test/TestOdbcTypes.java|(17183,195,<453,34>,<458,9>) looks like:<br><br><div style="background-color:#d6d6d6">{
+            junit.framework.AssertionFailedError ase
+                = new junit.framework.AssertionFailedError(se.getMessage());
+            ase.initCause(se);
+            throw ase;
+        }</div><br><br>Clone at location |project://hsqldb-2.3.1/hsqldb/src/org/hsqldb/test/TestOdbcTypes.java|(22932,195,<605,34>,<610,9>) looks like:<br><br><div style="background-color:#d6d6d6">{
+            junit.framework.AssertionFailedError ase
+                = new junit.framework.AssertionFailedError(se.getMessage());
+            ase.initCause(se);
+            throw ase;
+        }</div><br><br>Clone at location |project://hsqldb-2.3.1/hsqldb/src/org/hsqldb/test/TestOdbcTypes.java|(42068,195,<1117,34>,<1122,9>) looks like:<br><br><div style="background-color:#d6d6d6">{
+            junit.framework.AssertionFailedError ase
+                = new junit.framework.AssertionFailedError(se.getMessage());
+            ase.initCause(se);
+            throw ase;
+        }</div><br><br>Clone at location |project://hsqldb-2.3.1/hsqldb/src/org/hsqldb/test/TestOdbcTypes.java|(27315,183,<725,34>,<729,9>) looks like:<br><br><div style="background-color:#d6d6d6">{ junit.framework.AssertionFailedError ase
+                = new junit.framework.AssertionFailedError(se.getMessage());
+            ase.initCause(se);
+            throw ase;
+        }</div><br><br>Clone at location |project://hsqldb-2.3.1/hsqldb/src/org/hsqldb/test/TestOdbcTypes.java|(40604,195,<1077,34>,<1082,9>) looks like:<br><br><div style="background-color:#d6d6d6">{
+            junit.framework.AssertionFailedError ase
+                = new junit.framework.AssertionFailedError(se.getMessage());
+            ase.initCause(se);
+            throw ase;
+        }</div><br><br>Clone at location |project://hsqldb-2.3.1/hsqldb/src/org/hsqldb/test/TestOdbcTypes.java|(13926,195,<365,34>,<370,9>) looks like:<br><br><div style="background-color:#d6d6d6">{
+            junit.framework.AssertionFailedError ase
+                = new junit.framework.AssertionFailedError(se.getMessage());
+            ase.initCause(se);
+            throw ase;
+        }</div><br><br>Clone at location |project://hsqldb-2.3.1/hsqldb/src/org/hsqldb/test/TestOdbcTypes.java|(39129,195,<1037,34>,<1042,9>) looks like:<br><br><div style="background-color:#d6d6d6">{
+            junit.framework.AssertionFailedError ase
+                = new junit.framework.AssertionFailedError(se.getMessage());
+            ase.initCause(se);
+            throw ase;
+        }</div><br><br>Clone at location |project://hsqldb-2.3.1/hsqldb/src/org/hsqldb/test/TestOdbcService.java|(13033,195,<343,34>,<348,9>) looks like:<br><br><div style="background-color:#d6d6d6">{
+            junit.framework.AssertionFailedError ase
+                = new junit.framework.AssertionFailedError(se.getMessage());
+            ase.initCause(se);
+            throw ase;
+        }</div><br><br>Clone at location |project://hsqldb-2.3.1/hsqldb/src/org/hsqldb/test/TestOdbcService.java|(8989,195,<239,34>,<244,9>) looks like:<br><br><div style="background-color:#d6d6d6">{
+            junit.framework.AssertionFailedError ase
+                = new junit.framework.AssertionFailedError(se.getMessage());
+            ase.initCause(se);
+            throw ase;
+        }</div><br><br>Clone at location |project://hsqldb-2.3.1/hsqldb/src/org/hsqldb/test/TestOdbcTypes.java|(28665,195,<760,34>,<765,9>) looks like:<br><br><div style="background-color:#d6d6d6">{
+            junit.framework.AssertionFailedError ase
+                = new junit.framework.AssertionFailedError(se.getMessage());
+            ase.initCause(se);
+            throw ase;
+        }</div><br><br>Clone at location |project://hsqldb-2.3.1/hsqldb/src/org/hsqldb/test/TestOdbcTypes.java|(12866,195,<336,34>,<341,9>) looks like:<br><br><div style="background-color:#d6d6d6">{
+            junit.framework.AssertionFailedError ase
+                = new junit.framework.AssertionFailedError(se.getMessage());
+            ase.initCause(se);
+            throw ase;
+        }</div><br><br>Clone at location |project://hsqldb-2.3.1/hsqldb/src/org/hsqldb/test/TestOdbcTypes.java|(51331,195,<1368,34>,<1373,9>) looks like:<br><br><div style="background-color:#d6d6d6">{
+            junit.framework.AssertionFailedError ase
+                = new junit.framework.AssertionFailedError(se.getMessage());
+            ase.initCause(se);
+            throw ase;
+        }</div><br><br>Clone at location |project://hsqldb-2.3.1/hsqldb/src/org/hsqldb/test/TestOdbcTypes.java|(26144,195,<692,34>,<697,9>) looks like:<br><br><div style="background-color:#d6d6d6">{
+            junit.framework.AssertionFailedError ase
+                = new junit.framework.AssertionFailedError(se.getMessage());
+            ase.initCause(se);
+            throw ase;
+        }</div><br><br>Clone at location |project://hsqldb-2.3.1/hsqldb/src/org/hsqldb/test/TestOdbcTypes.java|(37494,195,<992,34>,<997,9>) looks like:<br><br><div style="background-color:#d6d6d6">{
+            junit.framework.AssertionFailedError ase
+                = new junit.framework.AssertionFailedError(se.getMessage());
+            ase.initCause(se);
+            throw ase;
+        }</div><br><br>Clone at location |project://hsqldb-2.3.1/hsqldb/src/org/hsqldb/test/TestOdbcTypes.java|(7198,195,<184,34>,<189,9>) looks like:<br><br><div style="background-color:#d6d6d6">{
+            junit.framework.AssertionFailedError ase
+                = new junit.framework.AssertionFailedError(se.getMessage());
+            ase.initCause(se);
+            throw ase;
+        }</div><br><br>Clone at location |project://hsqldb-2.3.1/hsqldb/src/org/hsqldb/test/TestOdbcTypes.java|(25143,195,<664,34>,<669,9>) looks like:<br><br><div style="background-color:#d6d6d6">{
+            junit.framework.AssertionFailedError ase
+                = new junit.framework.AssertionFailedError(se.getMessage());
+            ase.initCause(se);
+            throw ase;
+        }</div><br><br>Clone at location |project://hsqldb-2.3.1/hsqldb/src/org/hsqldb/test/TestOdbcTypes.java|(36042,195,<952,34>,<957,9>) looks like:<br><br><div style="background-color:#d6d6d6">{
+            junit.framework.AssertionFailedError ase
+                = new junit.framework.AssertionFailedError(se.getMessage());
+            ase.initCause(se);
+            throw ase;
+        }</div><br><br>Clone at location |project://hsqldb-2.3.1/hsqldb/src/org/hsqldb/test/TestOdbcService.java|(12241,195,<324,34>,<329,9>) looks like:<br><br><div style="background-color:#d6d6d6">{
+            junit.framework.AssertionFailedError ase
+                = new junit.framework.AssertionFailedError(se.getMessage());
+            ase.initCause(se);
+            throw ase;
+        }</div><br><br>Clone at location |project://hsqldb-2.3.1/hsqldb/src/org/hsqldb/test/TestOdbcService.java|(5514,195,<148,34>,<153,9>) looks like:<br><br><div style="background-color:#d6d6d6">{
+            junit.framework.AssertionFailedError ase
+                = new junit.framework.AssertionFailedError(se.getMessage());
+            ase.initCause(se);
+            throw ase;
+        }</div><br><br>Clone at location |project://hsqldb-2.3.1/hsqldb/src/org/hsqldb/test/TestOdbcTypes.java|(31579,195,<831,34>,<836,9>) looks like:<br><br><div style="background-color:#d6d6d6">{
+            junit.framework.AssertionFailedError ase
+                = new junit.framework.AssertionFailedError(se.getMessage());
+            ase.initCause(se);
+            throw ase;
+        }</div><br><br>Clone at location |project://hsqldb-2.3.1/hsqldb/src/org/hsqldb/test/TestOdbcTypes.java|(34490,195,<911,34>,<916,9>) looks like:<br><br><div style="background-color:#d6d6d6">{
+            junit.framework.AssertionFailedError ase
+                = new junit.framework.AssertionFailedError(se.getMessage());
+            ase.initCause(se);
+            throw ase;
+        }</div><br><br>Clone at location |project://hsqldb-2.3.1/hsqldb/src/org/hsqldb/test/TestOdbcTypes.java|(48092,195,<1279,34>,<1284,9>) looks like:<br><br><div style="background-color:#d6d6d6">{
+            junit.framework.AssertionFailedError ase
+                = new junit.framework.AssertionFailedError(se.getMessage());
+            ase.initCause(se);
+            throw ase;
+        }</div><br><br>Clone at location |project://hsqldb-2.3.1/hsqldb/src/org/hsqldb/test/TestOdbcTypes.java|(16058,195,<423,34>,<428,9>) looks like:<br><br><div style="background-color:#d6d6d6">{
+            junit.framework.AssertionFailedError ase
+                = new junit.framework.AssertionFailedError(se.getMessage());
+            ase.initCause(se);
+            throw ase;
+        }</div><br><br>Clone at location |project://hsqldb-2.3.1/hsqldb/src/org/hsqldb/test/TestOdbcTypes.java|(18320,195,<483,34>,<488,9>) looks like:<br><br><div style="background-color:#d6d6d6">{
+            junit.framework.AssertionFailedError ase
+                = new junit.framework.AssertionFailedError(se.getMessage());
+            ase.initCause(se);
+            throw ase;
+        }</div><br><br>Clone at location |project://hsqldb-2.3.1/hsqldb/src/org/hsqldb/test/TestOdbcTypes.java|(20576,195,<543,34>,<548,9>) looks like:<br><br><div style="background-color:#d6d6d6">{
+            junit.framework.AssertionFailedError ase
+                = new junit.framework.AssertionFailedError(se.getMessage());
+            ase.initCause(se);
+            throw ase;
+        }</div><br><br>Clone at location |project://hsqldb-2.3.1/hsqldb/src/org/hsqldb/test/TestOdbcTypes.java|(24067,195,<635,34>,<640,9>) looks like:<br><br><div style="background-color:#d6d6d6">{
+            junit.framework.AssertionFailedError ase
+                = new junit.framework.AssertionFailedError(se.getMessage());
+            ase.initCause(se);
+            throw ase;
+        }</div><br><br>Clone at location |project://hsqldb-2.3.1/hsqldb/src/org/hsqldb/test/TestOdbcTypes.java|(11797,195,<307,34>,<312,9>) looks like:<br><br><div style="background-color:#d6d6d6">{
+            junit.framework.AssertionFailedError ase
+                = new junit.framework.AssertionFailedError(se.getMessage());
+            ase.initCause(se);
+            throw ase;
+        }</div><br><br>Clone at location |project://hsqldb-2.3.1/hsqldb/src/org/hsqldb/test/TestOdbcTypes.java|(33019,195,<871,34>,<876,9>) looks like:<br><br><div style="background-color:#d6d6d6">{
+            junit.framework.AssertionFailedError ase
+                = new junit.framework.AssertionFailedError(se.getMessage());
+            ase.initCause(se);
+            throw ase;
+        }</div><br><br>Clone at location |project://hsqldb-2.3.1/hsqldb/src/org/hsqldb/test/TestOdbcTypes.java|(9406,195,<243,34>,<248,9>) looks like:<br><br><div style="background-color:#d6d6d6">{
+            junit.framework.AssertionFailedError ase
+                = new junit.framework.AssertionFailedError(se.getMessage());
+            ase.initCause(se);
+            throw ase;
+        }</div><br><br>Clone at location |project://hsqldb-2.3.1/hsqldb/src/org/hsqldb/test/TestOdbcTypes.java|(59603,195,<1590,34>,<1595,9>) looks like:<br><br><div style="background-color:#d6d6d6">{
+            junit.framework.AssertionFailedError ase
+                = new junit.framework.AssertionFailedError(se.getMessage());
+            ase.initCause(se);
+            throw ase;
+        }</div><br><br>Clone at location |project://hsqldb-2.3.1/hsqldb/src/org/hsqldb/test/TestOdbcTypes.java|(14990,195,<394,34>,<399,9>) looks like:<br><br><div style="background-color:#d6d6d6">{
+            junit.framework.AssertionFailedError ase
+                = new junit.framework.AssertionFailedError(se.getMessage());
+            ase.initCause(se);
+            throw ase;
+        }</div><br><br>Clone at location |project://hsqldb-2.3.1/hsqldb/src/org/hsqldb/test/TestOdbcTypes.java|(8346,195,<214,34>,<219,9>) looks like:<br><br><div style="background-color:#d6d6d6">{
+            junit.framework.AssertionFailedError ase
+                = new junit.framework.AssertionFailedError(se.getMessage());
+            ase.initCause(se);
+            throw ase;
+        }</div><br><br>Clone at location |project://hsqldb-2.3.1/hsqldb/src/org/hsqldb/test/TestOdbcTypes.java|(30245,195,<798,34>,<803,9>) looks like:<br><br><div style="background-color:#d6d6d6">{
+            junit.framework.AssertionFailedError ase
+                = new junit.framework.AssertionFailedError(se.getMessage());
+            ase.initCause(se);
+            throw ase;
+        }</div><br><br>Clone at location |project://hsqldb-2.3.1/hsqldb/src/org/hsqldb/test/TestOdbcTypes.java|(6053,195,<154,34>,<159,9>) looks like:<br><br><div style="background-color:#d6d6d6">{
+            junit.framework.AssertionFailedError ase
+                = new junit.framework.AssertionFailedError(se.getMessage());
+            ase.initCause(se);
+            throw ase;
+        }</div><br><br>Clone at location |project://hsqldb-2.3.1/hsqldb/src/org/hsqldb/test/TestOdbcTypes.java|(52924,195,<1410,34>,<1415,9>) looks like:<br><br><div style="background-color:#d6d6d6">{
+            junit.framework.AssertionFailedError ase
+                = new junit.framework.AssertionFailedError(se.getMessage());
+            ase.initCause(se);
+            throw ase;
+        }</div><br><br>Clone at location |project://hsqldb-2.3.1/hsqldb/src/org/hsqldb/test/TestOdbcTypes.java|(19488,195,<514,34>,<519,9>) looks like:<br><br><div style="background-color:#d6d6d6">{
+            junit.framework.AssertionFailedError ase
+                = new junit.framework.AssertionFailedError(se.getMessage());
+            ase.initCause(se);
+            throw ase;
+        }</div><br><br>Clone at location |project://hsqldb-2.3.1/hsqldb/src/org/hsqldb/test/TestOdbcTypes.java|(57588,195,<1538,34>,<1543,9>) looks like:<br><br><div style="background-color:#d6d6d6">{
+            junit.framework.AssertionFailedError ase
+                = new junit.framework.AssertionFailedError(se.getMessage());
+            ase.initCause(se);
+            throw ase;
+        }</div><br><br>
+    </pre>
+</body>
+
+</html>

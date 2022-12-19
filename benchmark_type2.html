@@ -1,0 +1,267 @@
+<html>
+
+<head>
+    <title>
+        Software Maintainability Report of |project://Series2/Benchmark/CloneBenchmark|
+    </title>
+    <style type="text/css">
+        
+
+        .test-result-table {
+            border: 1px solid black;
+            width: 800px;
+        }
+        
+        .test-result-table-header-cell {
+            border-bottom: 1px solid black;
+            background-color: silver;
+        }
+        
+        .test-result-step-command-cell {
+            border-bottom: 1px solid gray;
+        }
+        
+        .test-result-step-description-cell {
+            border-bottom: 1px solid gray;
+        }
+        
+        .test-result-step-result-cell-ok {
+            border-bottom: 1px solid gray;
+            background-color: green;
+        }
+        
+        .test-result-step-result-cell-failure {
+            border-bottom: 1px solid gray;
+            background-color: red;
+        }
+        
+        .test-result-step-result-cell-notperformed {
+            border-bottom: 1px solid gray;
+            background-color: white;
+        }
+        
+        .test-result-describe-cell {
+            background-color: tan;
+            font-style: italic;
+        }
+        
+        .test-cast-status-box-ok {
+            border: 1px solid black;
+            float: left;
+            margin-right: 10px;
+            width: 45px;
+            height: 25px;
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="test-results-header">
+        Software Clone Report of |project://Series2/Benchmark/CloneBenchmark|
+    </h1>
+    <p>Test performed at $T19:59:42.665+00:00$ on the $2022-12-19$.</p>
+    <p>Overall execution time: duration(0,0,0,0,0,8,284).</p>
+    <table class="test-result-table" cellspacing="0">
+        <thead>
+            <tr>
+                <td class="test-result-table-header-cell">
+                    <b>Metric</b>
+                </td>
+                <td class="test-result-table-header-cell">
+                    <b>Value</b>
+                </td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="test-result-step-row test-result-step-row-altone">
+                <td class="test-result-step-command-cell">Relate Number Duplicates (%)</td>
+                <td class="test-result-step-command-cell">41.6789396200%</td>
+            </tr>
+            <tr class="test-result-step-row test-result-step-row-altone">
+                <td class="test-result-step-command-cell">Number of Clones</td>
+                <td class="test-result-step-command-cell">25</td>
+            </tr>
+            <tr class="test-result-step-row test-result-step-row-altone">
+                <td class="test-result-step-command-cell">Number of Clone Classes</td>
+                <td class="test-result-step-command-cell">6</td>
+            </tr>
+            <tr class="test-result-step-row test-result-step-row-altone">
+                <td class="test-result-step-command-cell">Biggest Clone (LOC)</td>
+                <td class="test-result-step-command-cell">17</td>
+            </tr>
+            <tr class="test-result-step-row test-result-step-row-altone">
+                <td class="test-result-step-command-cell">Biggest Clone Class</td>
+                <td class="test-result-step-command-cell">8</td>
+            </tr>
+        </tbody>
+    </table>
+    <p>In the following, we report the clones from the largest clone class</p>
+    <br>
+    <pre>
+        Clone at location |project://Series2/Benchmark/CloneBenchmark/src/main/java/org/example/NoClass.java|(3754,454,<137,40>,<156,5>) looks like:<br><br><div style="background-color:#d6d6d6">{
+        int smaller;
+        int b;
+        boolean run = true;
+
+
+        for (int i = 0; i < a.length && run; i++) {
+            run = false;
+
+            for (int y = 0; y < a.length-1; y++) {
+                if(a[y] > a[y + 1]) {
+                    b = a[y];
+                    smaller = a[y + 1];
+                    a[y] = smaller;
+                    a[y + 1] = b;
+                    run = true;
+                }
+            }
+        }
+    }</div><br><br>Clone at location |project://Series2/Benchmark/CloneBenchmark/src/main/java/org/example/NoClass.java|(594,586,<24,41>,<44,5>) looks like:<br><br><div style="background-color:#d6d6d6">{
+        int smaller;
+        int bigger;
+        boolean run = true;
+
+        // this doesn't matter for type 1
+        for (int i = 0; i < array.length && run; i++) {
+            run = false; // so does this
+
+            for (int y = 0; y < array.length-1; y++) {
+                // and this
+                if(array[y] > array[y + 1]) {
+                    bigger = array[y];
+                    smaller = array[y + 1];
+                    array[y] = smaller;
+                    array[y + 1] = bigger;
+                    run = true;
+                }
+            }
+        }
+    }</div><br><br>Clone at location |project://Series2/Benchmark/CloneBenchmark/src/main/java/org/example/NoClass.java|(1438,501,<55,44>,<74,5>) looks like:<br><br><div style="background-color:#d6d6d6">{
+        int smaller;
+        int bigger;
+        boolean run = true;
+
+
+        for (int i = 0; i < array.length && run; i++) {
+            run = false;
+
+            for (int y = 0; y < array.length-1; y++) {
+                if(array[y] > array[y + 1]) {
+                    bigger = array[y];
+                    smaller = array[y + 1];
+                    array[y] = smaller;
+                    array[y + 1] = bigger;
+                    run = true;
+                }
+            }
+        }
+    }</div><br><br>Clone at location |project://Series2/Benchmark/CloneBenchmark/src/main/java/org/example/BoxClass.java|(1282,481,<53,44>,<72,5>) looks like:<br><br><div style="background-color:#d6d6d6">{
+        int smaller;
+        int bigger;
+        boolean run = true;
+
+
+        for (int i = 0; i < array.length && run; i++) {
+            run = false;
+
+            for (int y = 0; y < array.length-1; y++) {
+                if(array[y] > array[y + 1]) {
+                bigger = array[y];
+                smaller = array[y + 1];
+                array[y] = smaller;
+                array[y + 1] = bigger;
+                run = true;
+                }
+            }
+        }
+    }</div><br><br>Clone at location |project://Series2/Benchmark/CloneBenchmark/src/main/java/org/example/UnderlinedClass.java|(497,507,<20,41>,<45,5>) looks like:<br><br><div style="background-color:#d6d6d6">{
+        int smaller;
+
+        int bigger;
+
+        boolean run = true;
+
+
+        for (int i = 0; i < array.length && run; i++) {
+            run = false;
+
+            for (int y = 0; y < array.length-1; y++) {
+                if(array[y] > array[y + 1]) {
+
+
+                    bigger = array[y];
+                    smaller = array[y + 1];
+                    array[y] = smaller;
+
+                    array[y + 1] = bigger;
+
+                    run = true;
+                }
+            }
+        }
+    }</div><br><br>Clone at location |project://Series2/Benchmark/CloneBenchmark/src/main/java/org/example/UnderlinedClass.java|(1828,526,<80,44>,<99,5>) looks like:<br><br><div style="background-color:#d6d6d6">{
+        int smaller; /*hi */
+        int bigger;
+        boolean run = true;
+
+
+        for (int j = 0; j < array.length && run; j++) {
+            run = false;
+
+            for (int x = 0; x < array.length-1; x++) {
+                if(array[x] > array[x + 1]) {
+                    bigger = array[x];
+                    smaller = array[x + 1]; // it's always 1
+                    array[x] = smaller;
+                    array[x + 1] = bigger;
+                    run = true;
+                }
+            }
+        }
+    }</div><br><br>Clone at location |project://Series2/Benchmark/CloneBenchmark/src/main/java/org/example/BoxClass.java|(2872,573,<107,44>,<128,5>) looks like:<br><br><div style="background-color:#d6d6d6">{
+        int smaller;
+        int bigger;
+        boolean round = true;
+
+
+        for (int i = 0; i < array.length && round; i++) {
+            round = false; // idk, I'm a comment
+
+            for (int y = 0; y < array.length-1; y++) {
+                if(array[y] > array[y + 1]) {
+                    // the good old swap
+
+                    bigger = array[y];
+                    smaller = array[y + 1];
+                    array[y] = smaller;
+                    array[y + 1] = bigger;
+                    round = true;
+                }
+            }
+        }
+    }</div><br><br>Clone at location |project://Series2/Benchmark/CloneBenchmark/src/main/java/org/example/BoxClass.java|(519,501,<23,41>,<42,5>) looks like:<br><br><div style="background-color:#d6d6d6">{
+        int smaller;
+        int bigger;
+        boolean run = true;
+
+
+        for (int i = 0; i < array.length && run; i++) {
+            run = false;
+
+            for (int y = 0; y < array.length-1; y++) {
+                if(array[y] > array[y + 1]) {
+                    bigger = array[y];
+                    smaller = array[y + 1];
+                    array[y] = smaller;
+                    array[y + 1] = bigger;
+                    run = true;
+                }
+            }
+        }
+    }</div><br><br>
+    </pre>
+</body>
+
+</html>
