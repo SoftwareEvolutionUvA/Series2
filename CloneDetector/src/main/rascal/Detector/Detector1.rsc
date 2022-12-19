@@ -156,25 +156,43 @@ void writeClassesToFile(map[loc, CloneClass] classes, map[str, value] metaData, 
     // start classes
     ret += "\"cloneClasses\":[\n";
     bool firstClass = true;
+    int classCount = 0;
     for (key <- classes) {
+        classCount += 1;
         if (!firstClass) {
             ret += ",\n"; // I hate JSON
         }
         if (firstClass) firstClass = false;
-        ret += "[\n";
+        ret += "{\n";
+        ret += "\"id\": <1000 * classCount>,\n";
+        ret += "\"clones\": [\n";
+
         bool firstElem = true;
+        int cloneCount = 1;
         for (clone <- classes[key]) {
             if(!firstElem) {
                 ret += ",\n"; // I hate JSON
             }
             if (firstElem) firstElem = false;
             // create clone object
+            // name
+            str rawName = "<clone>";
+            list[str] splitted = split("|", rawName);
+            str locat = splitted[2];
+            list[str] pathSplit = split("/", splitted[1]);
+            str className = elementAt(pathSplit, size(pathSplit)-1);
+
+
             ret += "{\n";
+            ret += "\"id\": <1000 * classCount + cloneCount>,\n";
+            ret += "\"parent\": <1000 * classCount>,\n";
+            ret += "\"name\": \"<className><locat>\",\n";
             ret += "\"location\": \"<clone>\",\n";
-            ret += "\"length\": <locClones[clone]>\n}";
+            ret += "\"size\": <locClones[clone]>\n}";
             
         }
-        ret += "]";
+        ret += "\n]";
+        ret += "}";
     }
     ret += "\n]\n"; // end classes
     ret += "}";

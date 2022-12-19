@@ -16,7 +16,7 @@ void main() {
     //loc outputPath = |project://Series2/hsqldb-2.3.1.json|;
     set[Declaration] asts = createAstsFromMavenProject(projectPath, true);
     
-    runDetector2(asts, projectPath, outputPath);
+    runDetector1(asts, projectPath, outputPath);
     //runDetector2();
 }
 
