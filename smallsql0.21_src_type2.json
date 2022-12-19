@@ -1,0 +1,4507 @@
+{
+"metaData": {
+"relativeDuplicateLines": 0.1308294470,
+"biggestCloneLOC": 23,
+"projectLoc": 24016,
+"numberCloneClasses": 171,
+"numberClones": 544,
+"biggestCloneClassMembers": 15},
+"cloneClasses":[
+{
+"id": 1,
+"name": "root"
+},
+{
+"id": 2,
+"name": "cloneClass2"
+},
+{
+"id": 173,
+"parent": 2,
+"name": "Index.java(14526,111,<425,47>,<431,4>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/Index.java|(14526,111,<425,47>,<431,4>)",
+"size": 7
+},
+{
+"id": 174,
+"parent": 2,
+"name": "Index.java(13090,117,<366,47>,<372,4>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/Index.java|(13090,117,<366,47>,<372,4>)",
+"size": 7
+},
+{
+"id": 3,
+"name": "cloneClass3"
+},
+{
+"id": 175,
+"parent": 3,
+"name": "ExpressionName.java(2134,200,<67,38>,<72,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/ExpressionName.java|(2134,200,<67,38>,<72,5>)",
+"size": 6
+},
+{
+"id": 176,
+"parent": 3,
+"name": "ExpressionArithmetic.java(5169,197,<166,35>,<171,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/ExpressionArithmetic.java|(5169,197,<166,35>,<171,2>)",
+"size": 6
+},
+{
+"id": 4,
+"name": "cloneClass4"
+},
+{
+"id": 177,
+"parent": 4,
+"name": "ExpressionArithmetic.java(32008,38,<862,47>,<865,7>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/ExpressionArithmetic.java|(32008,38,<862,47>,<865,7>)",
+"size": 4
+},
+{
+"id": 178,
+"parent": 4,
+"name": "StoreImpl.java(8896,46,<233,33>,<236,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/StoreImpl.java|(8896,46,<233,33>,<236,5>)",
+"size": 4
+},
+{
+"id": 5,
+"name": "cloneClass5"
+},
+{
+"id": 179,
+"parent": 5,
+"name": "SQLParser.java(14887,76,<438,56>,<441,9>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/SQLParser.java|(14887,76,<438,56>,<441,9>)",
+"size": 4
+},
+{
+"id": 180,
+"parent": 5,
+"name": "SQLParser.java(14777,52,<434,56>,<437,3>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/SQLParser.java|(14777,52,<434,56>,<437,3>)",
+"size": 4
+},
+{
+"id": 6,
+"name": "cloneClass6"
+},
+{
+"id": 181,
+"parent": 6,
+"name": "NoFromResult.java(1812,36,<63,22>,<66,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/NoFromResult.java|(1812,36,<63,22>,<66,2>)",
+"size": 4
+},
+{
+"id": 182,
+"parent": 6,
+"name": "NoFromResult.java(2013,36,<79,21>,<82,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/NoFromResult.java|(2013,36,<79,21>,<82,2>)",
+"size": 4
+},
+{
+"id": 7,
+"name": "cloneClass7"
+},
+{
+"id": 183,
+"parent": 7,
+"name": "StorePage.java(1876,41,<57,46>,<60,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/StorePage.java|(1876,41,<57,46>,<60,2>)",
+"size": 4
+},
+{
+"id": 184,
+"parent": 7,
+"name": "IndexDescriptions.java(2800,51,<97,26>,<100,4>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/IndexDescriptions.java|(2800,51,<97,26>,<100,4>)",
+"size": 4
+},
+{
+"id": 8,
+"name": "cloneClass8"
+},
+{
+"id": 185,
+"parent": 8,
+"name": "StorePage.java(1713,109,<49,74>,<54,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/StorePage.java|(1713,109,<49,74>,<54,2>)",
+"size": 6
+},
+{
+"id": 186,
+"parent": 8,
+"name": "CreateFile.java(1707,119,<48,81>,<53,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/CreateFile.java|(1707,119,<48,81>,<53,5>)",
+"size": 6
+},
+{
+"id": 187,
+"parent": 8,
+"name": "CommandDrop.java(1505,115,<40,68>,<45,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/CommandDrop.java|(1505,115,<40,68>,<45,5>)",
+"size": 6
+},
+{
+"id": 9,
+"name": "cloneClass9"
+},
+{
+"id": 188,
+"parent": 9,
+"name": "SmallSQLException.java(3421,58,<110,44>,<113,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/SmallSQLException.java|(3421,58,<110,44>,<113,2>)",
+"size": 4
+},
+{
+"id": 189,
+"parent": 9,
+"name": "SmallSQLException.java(3531,58,<115,44>,<118,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/SmallSQLException.java|(3531,58,<115,44>,<118,2>)",
+"size": 4
+},
+{
+"id": 10,
+"name": "cloneClass10"
+},
+{
+"id": 190,
+"parent": 10,
+"name": "Money.java(2032,97,<67,58>,<71,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/Money.java|(2032,97,<67,58>,<71,5>)",
+"size": 5
+},
+{
+"id": 191,
+"parent": 10,
+"name": "Money.java(1873,97,<61,59>,<65,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/Money.java|(1873,97,<61,59>,<65,5>)",
+"size": 5
+},
+{
+"id": 11,
+"name": "cloneClass11"
+},
+{
+"id": 192,
+"parent": 11,
+"name": "Distinct.java(1978,41,<70,40>,<73,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/Distinct.java|(1978,41,<70,40>,<73,2>)",
+"size": 4
+},
+{
+"id": 193,
+"parent": 11,
+"name": "Scrollable.java(3074,43,<117,32>,<120,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/Scrollable.java|(3074,43,<117,32>,<120,2>)",
+"size": 4
+},
+{
+"id": 194,
+"parent": 11,
+"name": "Join.java(2281,56,<71,36>,<74,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/Join.java|(2281,56,<71,36>,<74,5>)",
+"size": 4
+},
+{
+"id": 195,
+"parent": 11,
+"name": "SortedResult.java(5100,43,<175,32>,<178,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/SortedResult.java|(5100,43,<175,32>,<178,2>)",
+"size": 4
+},
+{
+"id": 196,
+"parent": 11,
+"name": "SortedResult.java(3306,41,<115,34>,<118,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/SortedResult.java|(3306,41,<115,34>,<118,2>)",
+"size": 4
+},
+{
+"id": 12,
+"name": "cloneClass12"
+},
+{
+"id": 197,
+"parent": 12,
+"name": "CommandSelect.java(13796,87,<436,21>,<439,3>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/CommandSelect.java|(13796,87,<436,21>,<439,3>)",
+"size": 4
+},
+{
+"id": 198,
+"parent": 12,
+"name": "Command.java(4158,111,<138,27>,<141,9>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/Command.java|(4158,111,<138,27>,<141,9>)",
+"size": 4
+},
+{
+"id": 199,
+"parent": 12,
+"name": "CommandSelect.java(15357,87,<478,21>,<481,3>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/CommandSelect.java|(15357,87,<478,21>,<481,3>)",
+"size": 4
+},
+{
+"id": 200,
+"parent": 12,
+"name": "CommandSelect.java(15881,87,<494,21>,<497,3>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/CommandSelect.java|(15881,87,<494,21>,<497,3>)",
+"size": 4
+},
+{
+"id": 13,
+"name": "cloneClass13"
+},
+{
+"id": 201,
+"parent": 13,
+"name": "DateTime.java(22874,38,<770,18>,<773,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/DateTime.java|(22874,38,<770,18>,<773,5>)",
+"size": 4
+},
+{
+"id": 202,
+"parent": 13,
+"name": "DateTime.java(22812,38,<766,15>,<769,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/DateTime.java|(22812,38,<766,15>,<769,5>)",
+"size": 4
+},
+{
+"id": 14,
+"name": "cloneClass14"
+},
+{
+"id": 203,
+"parent": 14,
+"name": "CommandSelect.java(11204,64,<330,52>,<333,9>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/CommandSelect.java|(11204,64,<330,52>,<333,9>)",
+"size": 4
+},
+{
+"id": 204,
+"parent": 14,
+"name": "CommandSelect.java(11442,84,<343,28>,<346,13>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/CommandSelect.java|(11442,84,<343,28>,<346,13>)",
+"size": 4
+},
+{
+"id": 15,
+"name": "cloneClass15"
+},
+{
+"id": 205,
+"parent": 15,
+"name": "ExpressionFunctionLog.java(1518,82,<40,45>,<43,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/ExpressionFunctionLog.java|(1518,82,<40,45>,<43,5>)",
+"size": 4
+},
+{
+"id": 206,
+"parent": 15,
+"name": "ExpressionFunctionASin.java(1521,83,<40,45>,<43,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/ExpressionFunctionASin.java|(1521,83,<40,45>,<43,5>)",
+"size": 4
+},
+{
+"id": 207,
+"parent": 15,
+"name": "ExpressionFunctionTan.java(1518,82,<40,45>,<43,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/ExpressionFunctionTan.java|(1518,82,<40,45>,<43,5>)",
+"size": 4
+},
+{
+"id": 208,
+"parent": 15,
+"name": "ExpressionFunctionSin.java(1518,82,<40,45>,<43,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/ExpressionFunctionSin.java|(1518,82,<40,45>,<43,5>)",
+"size": 4
+},
+{
+"id": 209,
+"parent": 15,
+"name": "ExpressionFunctionCos.java(1518,82,<40,45>,<43,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/ExpressionFunctionCos.java|(1518,82,<40,45>,<43,5>)",
+"size": 4
+},
+{
+"id": 210,
+"parent": 15,
+"name": "ExpressionFunctionDegrees.java(1529,88,<40,45>,<43,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/ExpressionFunctionDegrees.java|(1529,88,<40,45>,<43,5>)",
+"size": 4
+},
+{
+"id": 211,
+"parent": 15,
+"name": "ExpressionFunctionExp.java(1518,82,<40,45>,<43,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/ExpressionFunctionExp.java|(1518,82,<40,45>,<43,5>)",
+"size": 4
+},
+{
+"id": 212,
+"parent": 15,
+"name": "ExpressionFunctionCeiling.java(1530,83,<40,45>,<43,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/ExpressionFunctionCeiling.java|(1530,83,<40,45>,<43,5>)",
+"size": 4
+},
+{
+"id": 213,
+"parent": 15,
+"name": "ExpressionFunctionACos.java(1521,83,<40,45>,<43,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/ExpressionFunctionACos.java|(1521,83,<40,45>,<43,5>)",
+"size": 4
+},
+{
+"id": 214,
+"parent": 15,
+"name": "ExpressionFunctionRadians.java(1529,88,<40,45>,<43,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/ExpressionFunctionRadians.java|(1529,88,<40,45>,<43,5>)",
+"size": 4
+},
+{
+"id": 215,
+"parent": 15,
+"name": "ExpressionFunctionSqrt.java(1521,83,<40,45>,<43,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/ExpressionFunctionSqrt.java|(1521,83,<40,45>,<43,5>)",
+"size": 4
+},
+{
+"id": 216,
+"parent": 15,
+"name": "ExpressionFunctionATan.java(1521,83,<40,45>,<43,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/ExpressionFunctionATan.java|(1521,83,<40,45>,<43,5>)",
+"size": 4
+},
+{
+"id": 16,
+"name": "cloneClass16"
+},
+{
+"id": 217,
+"parent": 16,
+"name": "Where.java(3790,41,<154,22>,<157,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/Where.java|(3790,41,<154,22>,<157,2>)",
+"size": 4
+},
+{
+"id": 218,
+"parent": 16,
+"name": "Distinct.java(2940,39,<123,20>,<126,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/Distinct.java|(2940,39,<123,20>,<126,2>)",
+"size": 4
+},
+{
+"id": 219,
+"parent": 16,
+"name": "UnionAll.java(5876,41,<238,22>,<241,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/UnionAll.java|(5876,41,<238,22>,<241,2>)",
+"size": 4
+},
+{
+"id": 220,
+"parent": 16,
+"name": "SortedResult.java(7508,39,<288,14>,<291,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/SortedResult.java|(7508,39,<288,14>,<291,2>)",
+"size": 4
+},
+{
+"id": 221,
+"parent": 16,
+"name": "Distinct.java(2873,41,<117,22>,<120,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/Distinct.java|(2873,41,<117,22>,<120,2>)",
+"size": 4
+},
+{
+"id": 222,
+"parent": 16,
+"name": "Distinct.java(1887,45,<64,43>,<67,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/Distinct.java|(1887,45,<64,43>,<67,2>)",
+"size": 4
+},
+{
+"id": 223,
+"parent": 16,
+"name": "Distinct.java(2546,43,<96,41>,<99,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/Distinct.java|(2546,43,<96,41>,<99,2>)",
+"size": 4
+},
+{
+"id": 224,
+"parent": 16,
+"name": "Where.java(3857,39,<160,20>,<163,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/Where.java|(3857,39,<160,20>,<163,2>)",
+"size": 4
+},
+{
+"id": 225,
+"parent": 16,
+"name": "Where.java(2500,45,<92,43>,<95,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/Where.java|(2500,45,<92,43>,<95,2>)",
+"size": 4
+},
+{
+"id": 226,
+"parent": 16,
+"name": "UnionAll.java(5943,39,<244,20>,<247,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/UnionAll.java|(5943,39,<244,20>,<247,2>)",
+"size": 4
+},
+{
+"id": 227,
+"parent": 16,
+"name": "SortedResult.java(7442,45,<281,16>,<285,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/SortedResult.java|(7442,45,<281,16>,<285,2>)",
+"size": 4
+},
+{
+"id": 17,
+"name": "cloneClass17"
+},
+{
+"id": 228,
+"parent": 17,
+"name": "SSCallableStatement.java(4082,243,<108,49>,<116,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/SSCallableStatement.java|(4082,243,<108,49>,<116,5>)",
+"size": 9
+},
+{
+"id": 229,
+"parent": 17,
+"name": "SSResultSet.java(4495,255,<131,63>,<139,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/SSResultSet.java|(4495,255,<131,63>,<139,5>)",
+"size": 9
+},
+{
+"id": 230,
+"parent": 17,
+"name": "SSCallableStatement.java(4677,245,<126,53>,<134,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/SSCallableStatement.java|(4677,245,<126,53>,<134,5>)",
+"size": 9
+},
+{
+"id": 231,
+"parent": 17,
+"name": "SSResultSet.java(4817,256,<140,65>,<148,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/SSResultSet.java|(4817,256,<140,65>,<148,5>)",
+"size": 9
+},
+{
+"id": 232,
+"parent": 17,
+"name": "SSCallableStatement.java(4979,244,<135,55>,<143,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/SSCallableStatement.java|(4979,244,<135,55>,<143,5>)",
+"size": 9
+},
+{
+"id": 233,
+"parent": 17,
+"name": "SSResultSet.java(3860,253,<113,59>,<121,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/SSResultSet.java|(3860,253,<113,59>,<121,5>)",
+"size": 9
+},
+{
+"id": 234,
+"parent": 17,
+"name": "SSResultSet.java(4176,254,<122,61>,<130,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/SSResultSet.java|(4176,254,<122,61>,<130,5>)",
+"size": 9
+},
+{
+"id": 235,
+"parent": 17,
+"name": "SSResultSet.java(3307,257,<98,67>,<106,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/SSResultSet.java|(3307,257,<98,67>,<106,5>)",
+"size": 9
+},
+{
+"id": 236,
+"parent": 17,
+"name": "SSCallableStatement.java(4378,244,<117,51>,<125,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/SSCallableStatement.java|(4378,244,<117,51>,<125,5>)",
+"size": 9
+},
+{
+"id": 237,
+"parent": 17,
+"name": "SSCallableStatement.java(3590,247,<93,57>,<101,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/SSCallableStatement.java|(3590,247,<93,57>,<101,5>)",
+"size": 9
+},
+{
+"id": 18,
+"name": "cloneClass18"
+},
+{
+"id": 238,
+"parent": 18,
+"name": "ExpressionFunctionTimestampAdd.java(3633,75,<122,46>,<125,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/ExpressionFunctionTimestampAdd.java|(3633,75,<122,46>,<125,2>)",
+"size": 4
+},
+{
+"id": 239,
+"parent": 18,
+"name": "ExpressionFunctionReturnFloat.java(2226,72,<71,42>,<74,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/ExpressionFunctionReturnFloat.java|(2226,72,<71,42>,<74,5>)",
+"size": 4
+},
+{
+"id": 240,
+"parent": 18,
+"name": "ExpressionFunctionTimestampDiff.java(4721,74,<148,46>,<151,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/ExpressionFunctionTimestampDiff.java|(4721,74,<148,46>,<151,2>)",
+"size": 4
+},
+{
+"id": 241,
+"parent": 18,
+"name": "ExpressionFunctionReturnInt.java(2046,74,<75,52>,<78,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/ExpressionFunctionReturnInt.java|(2046,74,<75,52>,<78,2>)",
+"size": 4
+},
+{
+"id": 19,
+"name": "cloneClass19"
+},
+{
+"id": 242,
+"parent": 19,
+"name": "BasicTestCase.java(2390,179,<74,46>,<80,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/BasicTestCase.java|(2390,179,<74,46>,<80,5>)",
+"size": 7
+},
+{
+"id": 243,
+"parent": 19,
+"name": "BenchTest.java(30335,197,<725,47>,<731,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/BenchTest.java|(30335,197,<725,47>,<731,5>)",
+"size": 7
+},
+{
+"id": 244,
+"parent": 19,
+"name": "BenchTest.java(30581,196,<733,45>,<739,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/BenchTest.java|(30581,196,<733,45>,<739,5>)",
+"size": 7
+},
+{
+"id": 20,
+"name": "cloneClass20"
+},
+{
+"id": 245,
+"parent": 20,
+"name": "ExpressionFunctionTimestampAdd.java(2721,164,<86,36>,<90,4>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/ExpressionFunctionTimestampAdd.java|(2721,164,<86,36>,<90,4>)",
+"size": 5
+},
+{
+"id": 246,
+"parent": 20,
+"name": "ExpressionFunctionTimestampAdd.java(3128,163,<96,34>,<100,4>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/ExpressionFunctionTimestampAdd.java|(3128,163,<96,34>,<100,4>)",
+"size": 5
+},
+{
+"id": 21,
+"name": "cloneClass21"
+},
+{
+"id": 247,
+"parent": 21,
+"name": "TestAlterTable.java(1355,165,<39,26>,<45,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/TestAlterTable.java|(1355,165,<39,26>,<45,5>)",
+"size": 7
+},
+{
+"id": 248,
+"parent": 21,
+"name": "TestAlterTable2.java(319,165,<20,26>,<26,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/TestAlterTable2.java|(319,165,<20,26>,<26,5>)",
+"size": 7
+},
+{
+"id": 22,
+"name": "cloneClass22"
+},
+{
+"id": 249,
+"parent": 22,
+"name": "SSCallableStatement.java(3293,238,<84,55>,<92,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/SSCallableStatement.java|(3293,238,<84,55>,<92,5>)",
+"size": 9
+},
+{
+"id": 250,
+"parent": 22,
+"name": "SSCallableStatement.java(6980,238,<193,55>,<201,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/SSCallableStatement.java|(6980,238,<193,55>,<201,5>)",
+"size": 9
+},
+{
+"id": 251,
+"parent": 22,
+"name": "SSResultSet.java(10148,251,<289,65>,<297,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/SSResultSet.java|(10148,251,<289,65>,<297,5>)",
+"size": 9
+},
+{
+"id": 23,
+"name": "cloneClass23"
+},
+{
+"id": 252,
+"parent": 23,
+"name": "BasicTestCase.java(3576,237,<102,48>,<109,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/BasicTestCase.java|(3576,237,<102,48>,<109,2>)",
+"size": 8
+},
+{
+"id": 253,
+"parent": 23,
+"name": "Utils.java(6369,282,<205,43>,<212,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/Utils.java|(6369,282,<205,43>,<212,5>)",
+"size": 8
+},
+{
+"id": 24,
+"name": "cloneClass24"
+},
+{
+"id": 254,
+"parent": 24,
+"name": "SSCallableStatement.java(5299,305,<144,74>,<153,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/SSCallableStatement.java|(5299,305,<144,74>,<153,5>)",
+"size": 10
+},
+{
+"id": 255,
+"parent": 24,
+"name": "SSResultSet.java(5159,315,<149,84>,<158,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/SSResultSet.java|(5159,315,<149,84>,<158,5>)",
+"size": 10
+},
+{
+"id": 25,
+"name": "cloneClass25"
+},
+{
+"id": 256,
+"parent": 25,
+"name": "TestLanguage.java(7547,378,<251,33>,<259,13>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/TestLanguage.java|(7547,378,<251,33>,<259,13>)",
+"size": 8
+},
+{
+"id": 257,
+"parent": 25,
+"name": "TestLanguage.java(7071,288,<237,24>,<245,4>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/TestLanguage.java|(7071,288,<237,24>,<245,4>)",
+"size": 8
+},
+{
+"id": 26,
+"name": "cloneClass26"
+},
+{
+"id": 258,
+"parent": 26,
+"name": "TestAlterTable2.java(2515,532,<71,47>,<80,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/TestAlterTable2.java|(2515,532,<71,47>,<80,5>)",
+"size": 10
+},
+{
+"id": 259,
+"parent": 26,
+"name": "TestAlterTable2.java(547,561,<29,53>,<38,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/TestAlterTable2.java|(547,561,<29,53>,<38,5>)",
+"size": 10
+},
+{
+"id": 260,
+"parent": 26,
+"name": "TestAlterTable2.java(1174,525,<41,52>,<50,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/TestAlterTable2.java|(1174,525,<41,52>,<50,5>)",
+"size": 10
+},
+{
+"id": 27,
+"name": "cloneClass27"
+},
+{
+"id": 261,
+"parent": 27,
+"name": "Where.java(3062,210,<118,39>,<125,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/Where.java|(3062,210,<118,39>,<125,2>)",
+"size": 8
+},
+{
+"id": 262,
+"parent": 27,
+"name": "Where.java(2803,214,<108,43>,<115,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/Where.java|(2803,214,<108,43>,<115,2>)",
+"size": 8
+},
+{
+"id": 28,
+"name": "cloneClass28"
+},
+{
+"id": 263,
+"parent": 28,
+"name": "BasicTestCase.java(4886,344,<138,30>,<150,3>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/BasicTestCase.java|(4886,344,<138,30>,<150,3>)",
+"size": 12
+},
+{
+"id": 264,
+"parent": 28,
+"name": "BasicTestCase.java(4384,470,<125,36>,<137,9>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/BasicTestCase.java|(4384,470,<125,36>,<137,9>)",
+"size": 12
+},
+{
+"id": 29,
+"name": "cloneClass29"
+},
+{
+"id": 265,
+"parent": 29,
+"name": "TestAlterTable.java(4300,103,<111,16>,<114,9>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/TestAlterTable.java|(4300,103,<111,16>,<114,9>)",
+"size": 4
+},
+{
+"id": 266,
+"parent": 29,
+"name": "TestAlterTable.java(3397,103,<88,16>,<91,9>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/TestAlterTable.java|(3397,103,<88,16>,<91,9>)",
+"size": 4
+},
+{
+"id": 30,
+"name": "cloneClass30"
+},
+{
+"id": 267,
+"parent": 30,
+"name": "ForeignKey.java(1718,93,<48,85>,<53,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/ForeignKey.java|(1718,93,<48,85>,<53,2>)",
+"size": 6
+},
+{
+"id": 268,
+"parent": 30,
+"name": "Join.java(1837,128,<52,75>,<57,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/Join.java|(1837,128,<52,75>,<57,5>)",
+"size": 6
+},
+{
+"id": 269,
+"parent": 30,
+"name": "StoreImpl.java(3447,124,<85,81>,<90,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/StoreImpl.java|(3447,124,<85,81>,<90,5>)",
+"size": 6
+},
+{
+"id": 31,
+"name": "cloneClass31"
+},
+{
+"id": 270,
+"parent": 31,
+"name": "SSStatement.java(6988,324,<269,35>,<276,13>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/SSStatement.java|(6988,324,<269,35>,<276,13>)",
+"size": 8
+},
+{
+"id": 271,
+"parent": 31,
+"name": "SSPreparedStatement.java(8336,237,<247,29>,<254,4>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/SSPreparedStatement.java|(8336,237,<247,29>,<254,4>)",
+"size": 8
+},
+{
+"id": 32,
+"name": "cloneClass32"
+},
+{
+"id": 272,
+"parent": 32,
+"name": "SSStatement.java(2406,73,<85,71>,<88,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/SSStatement.java|(2406,73,<85,71>,<88,5>)",
+"size": 4
+},
+{
+"id": 273,
+"parent": 32,
+"name": "SSStatement.java(2551,73,<91,66>,<94,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/SSStatement.java|(2551,73,<91,66>,<94,5>)",
+"size": 4
+},
+{
+"id": 33,
+"name": "cloneClass33"
+},
+{
+"id": 274,
+"parent": 33,
+"name": "ExpressionFunctionReturnInt.java(2163,72,<81,37>,<84,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/ExpressionFunctionReturnInt.java|(2163,72,<81,37>,<84,2>)",
+"size": 4
+},
+{
+"id": 275,
+"parent": 33,
+"name": "ExpressionFunctionTimestampDiff.java(4953,70,<160,37>,<163,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/ExpressionFunctionTimestampDiff.java|(4953,70,<160,37>,<163,2>)",
+"size": 4
+},
+{
+"id": 276,
+"parent": 33,
+"name": "ExpressionFunctionReturnInt.java(2284,70,<87,43>,<90,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/ExpressionFunctionReturnInt.java|(2284,70,<87,43>,<90,2>)",
+"size": 4
+},
+{
+"id": 277,
+"parent": 33,
+"name": "ExpressionFunctionTimestampDiff.java(4838,72,<154,37>,<157,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/ExpressionFunctionTimestampDiff.java|(4838,72,<154,37>,<157,2>)",
+"size": 4
+},
+{
+"id": 34,
+"name": "cloneClass34"
+},
+{
+"id": 278,
+"parent": 34,
+"name": "ExpressionArithmetic.java(14638,109,<426,4>,<430,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/ExpressionArithmetic.java|(14638,109,<426,4>,<430,5>)",
+"size": 5
+},
+{
+"id": 279,
+"parent": 34,
+"name": "ExpressionArithmetic.java(15207,118,<441,18>,<445,14>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/ExpressionArithmetic.java|(15207,118,<441,18>,<445,14>)",
+"size": 5
+},
+{
+"id": 280,
+"parent": 34,
+"name": "ExpressionArithmetic.java(15091,112,<437,86>,<441,14>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/ExpressionArithmetic.java|(15091,112,<437,86>,<441,14>)",
+"size": 5
+},
+{
+"id": 281,
+"parent": 34,
+"name": "ExpressionArithmetic.java(14473,136,<420,13>,<424,14>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/ExpressionArithmetic.java|(14473,136,<420,13>,<424,14>)",
+"size": 5
+},
+{
+"id": 282,
+"parent": 34,
+"name": "ExpressionArithmetic.java(14860,139,<432,87>,<436,14>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/ExpressionArithmetic.java|(14860,139,<432,87>,<436,14>)",
+"size": 5
+},
+{
+"id": 35,
+"name": "cloneClass35"
+},
+{
+"id": 283,
+"parent": 35,
+"name": "TestScrollable.java(7454,112,<173,11>,<176,9>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/TestScrollable.java|(7454,112,<173,11>,<176,9>)",
+"size": 4
+},
+{
+"id": 284,
+"parent": 35,
+"name": "TestExceptionMethods.java(9227,99,<263,11>,<266,9>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/TestExceptionMethods.java|(9227,99,<263,11>,<266,9>)",
+"size": 4
+},
+{
+"id": 285,
+"parent": 35,
+"name": "TestExceptionMethods.java(9422,100,<269,11>,<272,9>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/TestExceptionMethods.java|(9422,100,<269,11>,<272,9>)",
+"size": 4
+},
+{
+"id": 286,
+"parent": 35,
+"name": "TestExceptionMethods.java(7404,172,<209,15>,<212,13>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/TestExceptionMethods.java|(7404,172,<209,15>,<212,13>)",
+"size": 4
+},
+{
+"id": 287,
+"parent": 35,
+"name": "TestExceptionMethods.java(9037,94,<257,11>,<260,9>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/TestExceptionMethods.java|(9037,94,<257,11>,<260,9>)",
+"size": 4
+},
+{
+"id": 288,
+"parent": 35,
+"name": "TestExceptionMethods.java(8493,152,<240,15>,<243,13>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/TestExceptionMethods.java|(8493,152,<240,15>,<243,13>)",
+"size": 4
+},
+{
+"id": 289,
+"parent": 35,
+"name": "TestExceptionMethods.java(5458,159,<156,11>,<159,9>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/TestExceptionMethods.java|(5458,159,<156,11>,<159,9>)",
+"size": 4
+},
+{
+"id": 290,
+"parent": 35,
+"name": "TestScrollable.java(2709,112,<67,11>,<70,9>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/TestScrollable.java|(2709,112,<67,11>,<70,9>)",
+"size": 4
+},
+{
+"id": 291,
+"parent": 35,
+"name": "TestScrollable.java(5735,112,<135,11>,<138,9>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/TestScrollable.java|(5735,112,<135,11>,<138,9>)",
+"size": 4
+},
+{
+"id": 292,
+"parent": 35,
+"name": "TestScrollable.java(4126,112,<99,11>,<102,9>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/TestScrollable.java|(4126,112,<99,11>,<102,9>)",
+"size": 4
+},
+{
+"id": 36,
+"name": "cloneClass36"
+},
+{
+"id": 293,
+"parent": 36,
+"name": "SortedResult.java(6649,143,<238,20>,<244,9>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/SortedResult.java|(6649,143,<238,20>,<244,9>)",
+"size": 7
+},
+{
+"id": 294,
+"parent": 36,
+"name": "SortedResult.java(6796,147,<244,13>,<250,9>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/SortedResult.java|(6796,147,<244,13>,<250,9>)",
+"size": 7
+},
+{
+"id": 37,
+"name": "cloneClass37"
+},
+{
+"id": 295,
+"parent": 37,
+"name": "Join.java(2596,40,<88,17>,<91,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/Join.java|(2596,40,<88,17>,<91,2>)",
+"size": 4
+},
+{
+"id": 296,
+"parent": 37,
+"name": "SSResultSet.java(23267,67,<688,20>,<691,6>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/SSResultSet.java|(23267,67,<688,20>,<691,6>)",
+"size": 4
+},
+{
+"id": 38,
+"name": "cloneClass38"
+},
+{
+"id": 297,
+"parent": 38,
+"name": "ExpressionFunctionReturnP1StringAndBinary.java(2297,79,<74,40>,<77,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/ExpressionFunctionReturnP1StringAndBinary.java|(2297,79,<74,40>,<77,2>)",
+"size": 4
+},
+{
+"id": 298,
+"parent": 38,
+"name": "ExpressionFunctionReturnP1StringAndBinary.java(2042,79,<62,41>,<65,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/ExpressionFunctionReturnP1StringAndBinary.java|(2042,79,<62,41>,<65,2>)",
+"size": 4
+},
+{
+"id": 299,
+"parent": 38,
+"name": "ExpressionFunctionReturnP1StringAndBinary.java(1794,79,<50,37>,<53,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/ExpressionFunctionReturnP1StringAndBinary.java|(1794,79,<50,37>,<53,2>)",
+"size": 4
+},
+{
+"id": 300,
+"parent": 38,
+"name": "ExpressionFunctionReturnString.java(1733,79,<54,37>,<57,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/ExpressionFunctionReturnString.java|(1733,79,<54,37>,<57,2>)",
+"size": 4
+},
+{
+"id": 301,
+"parent": 38,
+"name": "ExpressionFunctionReturnString.java(2236,79,<78,40>,<81,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/ExpressionFunctionReturnString.java|(2236,79,<78,40>,<81,2>)",
+"size": 4
+},
+{
+"id": 302,
+"parent": 38,
+"name": "ExpressionFunctionReturnString.java(1981,79,<66,41>,<69,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/ExpressionFunctionReturnString.java|(1981,79,<66,41>,<69,2>)",
+"size": 4
+},
+{
+"id": 303,
+"parent": 38,
+"name": "ExpressionFunctionReturnP1StringAndBinary.java(1918,77,<56,39>,<59,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/ExpressionFunctionReturnP1StringAndBinary.java|(1918,77,<56,39>,<59,2>)",
+"size": 4
+},
+{
+"id": 304,
+"parent": 38,
+"name": "ExpressionFunctionReturnP1StringAndBinary.java(2170,81,<68,43>,<71,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/ExpressionFunctionReturnP1StringAndBinary.java|(2170,81,<68,43>,<71,2>)",
+"size": 4
+},
+{
+"id": 305,
+"parent": 38,
+"name": "ExpressionFunctionReturnString.java(1857,77,<60,39>,<63,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/ExpressionFunctionReturnString.java|(1857,77,<60,39>,<63,2>)",
+"size": 4
+},
+{
+"id": 306,
+"parent": 38,
+"name": "ExpressionFunctionReturnString.java(2109,81,<72,43>,<75,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/ExpressionFunctionReturnString.java|(2109,81,<72,43>,<75,2>)",
+"size": 4
+},
+{
+"id": 39,
+"name": "cloneClass39"
+},
+{
+"id": 307,
+"parent": 39,
+"name": "ExpressionFunctionRound.java(1862,85,<55,7>,<60,3>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/ExpressionFunctionRound.java|(1862,85,<55,7>,<60,3>)",
+"size": 6
+},
+{
+"id": 308,
+"parent": 39,
+"name": "ExpressionFunctionTruncate.java(1782,85,<50,16>,<55,3>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/ExpressionFunctionTruncate.java|(1782,85,<50,16>,<55,3>)",
+"size": 6
+},
+{
+"id": 309,
+"parent": 39,
+"name": "ExpressionFunctionRound.java(1773,85,<50,16>,<55,3>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/ExpressionFunctionRound.java|(1773,85,<50,16>,<55,3>)",
+"size": 6
+},
+{
+"id": 310,
+"parent": 39,
+"name": "ExpressionFunctionTruncate.java(1871,85,<55,7>,<60,3>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/ExpressionFunctionTruncate.java|(1871,85,<55,7>,<60,3>)",
+"size": 6
+},
+{
+"id": 40,
+"name": "cloneClass40"
+},
+{
+"id": 311,
+"parent": 40,
+"name": "ExpressionFunctionIIF.java(1561,87,<48,35>,<52,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/ExpressionFunctionIIF.java|(1561,87,<48,35>,<52,2>)",
+"size": 5
+},
+{
+"id": 312,
+"parent": 40,
+"name": "ExpressionFunctionIIF.java(2629,93,<104,37>,<108,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/ExpressionFunctionIIF.java|(2629,93,<104,37>,<108,2>)",
+"size": 5
+},
+{
+"id": 313,
+"parent": 40,
+"name": "ExpressionFunctionIIF.java(2081,91,<76,35>,<80,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/ExpressionFunctionIIF.java|(2081,91,<76,35>,<80,2>)",
+"size": 5
+},
+{
+"id": 314,
+"parent": 40,
+"name": "ExpressionFunctionIIF.java(2491,95,<97,46>,<101,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/ExpressionFunctionIIF.java|(2491,95,<97,46>,<101,2>)",
+"size": 5
+},
+{
+"id": 315,
+"parent": 40,
+"name": "ExpressionFunctionIIF.java(1951,89,<69,33>,<73,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/ExpressionFunctionIIF.java|(1951,89,<69,33>,<73,2>)",
+"size": 5
+},
+{
+"id": 316,
+"parent": 40,
+"name": "ExpressionFunctionIIF.java(1825,87,<62,31>,<66,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/ExpressionFunctionIIF.java|(1825,87,<62,31>,<66,2>)",
+"size": 5
+},
+{
+"id": 317,
+"parent": 40,
+"name": "ExpressionFunctionIIF.java(2348,91,<90,34>,<94,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/ExpressionFunctionIIF.java|(2348,91,<90,34>,<94,2>)",
+"size": 5
+},
+{
+"id": 318,
+"parent": 40,
+"name": "ExpressionFunctionIIF.java(1693,95,<55,39>,<59,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/ExpressionFunctionIIF.java|(1693,95,<55,39>,<59,2>)",
+"size": 5
+},
+{
+"id": 319,
+"parent": 40,
+"name": "ExpressionFunctionIIF.java(2766,93,<111,37>,<115,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/ExpressionFunctionIIF.java|(2766,93,<111,37>,<115,2>)",
+"size": 5
+},
+{
+"id": 320,
+"parent": 40,
+"name": "ExpressionFunctionIIF.java(2215,93,<83,37>,<87,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/ExpressionFunctionIIF.java|(2215,93,<83,37>,<87,2>)",
+"size": 5
+},
+{
+"id": 41,
+"name": "cloneClass41"
+},
+{
+"id": 321,
+"parent": 41,
+"name": "TestThreads.java(5283,112,<161,54>,<164,13>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/TestThreads.java|(5283,112,<161,54>,<164,13>)",
+"size": 4
+},
+{
+"id": 322,
+"parent": 41,
+"name": "TestThreads.java(1613,100,<60,50>,<63,9>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/TestThreads.java|(1613,100,<60,50>,<63,9>)",
+"size": 4
+},
+{
+"id": 323,
+"parent": 41,
+"name": "TestThreads.java(3300,112,<107,54>,<110,13>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/TestThreads.java|(3300,112,<107,54>,<110,13>)",
+"size": 4
+},
+{
+"id": 42,
+"name": "cloneClass42"
+},
+{
+"id": 324,
+"parent": 42,
+"name": "Table.java(7488,199,<221,56>,<227,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/Table.java|(7488,199,<221,56>,<227,2>)",
+"size": 7
+},
+{
+"id": 325,
+"parent": 42,
+"name": "IndexDescription.java(6874,179,<213,67>,<219,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/IndexDescription.java|(6874,179,<213,67>,<219,2>)",
+"size": 7
+},
+{
+"id": 326,
+"parent": 42,
+"name": "View.java(4377,198,<138,56>,<144,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/View.java|(4377,198,<138,56>,<144,2>)",
+"size": 7
+},
+{
+"id": 43,
+"name": "cloneClass43"
+},
+{
+"id": 327,
+"parent": 43,
+"name": "ExpressionArithmetic.java(28216,83,<721,50>,<724,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/ExpressionArithmetic.java|(28216,83,<721,50>,<724,5>)",
+"size": 4
+},
+{
+"id": 328,
+"parent": 43,
+"name": "ExpressionFunctionUCase.java(1679,80,<52,41>,<55,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/ExpressionFunctionUCase.java|(1679,80,<52,41>,<55,2>)",
+"size": 4
+},
+{
+"id": 329,
+"parent": 43,
+"name": "ExpressionFunctionReturnP1Number.java(2544,68,<85,37>,<88,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/ExpressionFunctionReturnP1Number.java|(2544,68,<85,37>,<88,2>)",
+"size": 4
+},
+{
+"id": 330,
+"parent": 43,
+"name": "ExpressionFunctionLCase.java(1679,80,<52,41>,<55,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/ExpressionFunctionLCase.java|(1679,80,<52,41>,<55,2>)",
+"size": 4
+},
+{
+"id": 44,
+"name": "cloneClass44"
+},
+{
+"id": 331,
+"parent": 44,
+"name": "SSDatabaseMetaData.java(14836,96,<708,10>,<713,6>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/SSDatabaseMetaData.java|(14836,96,<708,10>,<713,6>)",
+"size": 6
+},
+{
+"id": 332,
+"parent": 44,
+"name": "SSDatabaseMetaData.java(14743,89,<703,59>,<708,6>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/SSDatabaseMetaData.java|(14743,89,<703,59>,<708,6>)",
+"size": 6
+},
+{
+"id": 45,
+"name": "cloneClass45"
+},
+{
+"id": 333,
+"parent": 45,
+"name": "ExpressionFunctionPower.java(1625,102,<44,45>,<47,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/ExpressionFunctionPower.java|(1625,102,<44,45>,<47,5>)",
+"size": 4
+},
+{
+"id": 334,
+"parent": 45,
+"name": "ExpressionFunctionATan2.java(1625,104,<44,45>,<47,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/ExpressionFunctionATan2.java|(1625,104,<44,45>,<47,5>)",
+"size": 4
+},
+{
+"id": 46,
+"name": "cloneClass46"
+},
+{
+"id": 335,
+"parent": 46,
+"name": "SSResultSet.java(26214,442,<778,75>,<790,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/SSResultSet.java|(26214,442,<778,75>,<790,5>)",
+"size": 13
+},
+{
+"id": 336,
+"parent": 46,
+"name": "SSResultSet.java(25526,442,<758,75>,<770,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/SSResultSet.java|(25526,442,<758,75>,<770,5>)",
+"size": 13
+},
+{
+"id": 337,
+"parent": 46,
+"name": "SSResultSet.java(26912,452,<798,85>,<810,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/SSResultSet.java|(26912,452,<798,85>,<810,5>)",
+"size": 13
+},
+{
+"id": 47,
+"name": "cloneClass47"
+},
+{
+"id": 338,
+"parent": 47,
+"name": "SQLTokenizer.java(4931,163,<112,47>,<115,30>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/SQLTokenizer.java|(4931,163,<112,47>,<115,30>)",
+"size": 4
+},
+{
+"id": 339,
+"parent": 47,
+"name": "SQLTokenizer.java(7125,170,<173,50>,<176,33>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/SQLTokenizer.java|(7125,170,<173,50>,<176,33>)",
+"size": 4
+},
+{
+"id": 48,
+"name": "cloneClass48"
+},
+{
+"id": 340,
+"parent": 48,
+"name": "SSResultSet.java(14351,124,<442,41>,<448,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/SSResultSet.java|(14351,124,<442,41>,<448,2>)",
+"size": 7
+},
+{
+"id": 341,
+"parent": 48,
+"name": "SSResultSet.java(12141,133,<351,48>,<357,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/SSResultSet.java|(12141,133,<351,48>,<357,5>)",
+"size": 7
+},
+{
+"id": 342,
+"parent": 48,
+"name": "SSResultSet.java(11807,168,<337,53>,<343,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/SSResultSet.java|(11807,168,<337,53>,<343,5>)",
+"size": 7
+},
+{
+"id": 49,
+"name": "cloneClass49"
+},
+{
+"id": 343,
+"parent": 49,
+"name": "SQLParser.java(74200,109,<1925,61>,<1928,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/SQLParser.java|(74200,109,<1925,61>,<1928,5>)",
+"size": 4
+},
+{
+"id": 344,
+"parent": 49,
+"name": "SQLParser.java(74777,111,<1940,61>,<1943,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/SQLParser.java|(74777,111,<1940,61>,<1943,5>)",
+"size": 4
+},
+{
+"id": 50,
+"name": "cloneClass50"
+},
+{
+"id": 345,
+"parent": 50,
+"name": "SSResultSet.java(13893,165,<422,57>,<429,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/SSResultSet.java|(13893,165,<422,57>,<429,5>)",
+"size": 8
+},
+{
+"id": 346,
+"parent": 50,
+"name": "SSResultSet.java(14130,166,<432,58>,<439,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/SSResultSet.java|(14130,166,<432,58>,<439,5>)",
+"size": 8
+},
+{
+"id": 51,
+"name": "cloneClass51"
+},
+{
+"id": 347,
+"parent": 51,
+"name": "SSResultSet.java(6568,290,<190,71>,<199,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/SSResultSet.java|(6568,290,<190,71>,<199,5>)",
+"size": 10
+},
+{
+"id": 348,
+"parent": 51,
+"name": "SSCallableStatement.java(6278,275,<173,51>,<182,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/SSCallableStatement.java|(6278,275,<173,51>,<182,5>)",
+"size": 10
+},
+{
+"id": 349,
+"parent": 51,
+"name": "SSResultSet.java(5850,285,<168,61>,<177,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/SSResultSet.java|(5850,285,<168,61>,<177,5>)",
+"size": 10
+},
+{
+"id": 350,
+"parent": 51,
+"name": "SSResultSet.java(6210,285,<180,61>,<189,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/SSResultSet.java|(6210,285,<180,61>,<189,5>)",
+"size": 10
+},
+{
+"id": 351,
+"parent": 51,
+"name": "SSCallableStatement.java(5950,275,<163,51>,<172,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/SSCallableStatement.java|(5950,275,<163,51>,<172,5>)",
+"size": 10
+},
+{
+"id": 352,
+"parent": 51,
+"name": "SSCallableStatement.java(6616,307,<183,61>,<192,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/SSCallableStatement.java|(6616,307,<183,61>,<192,5>)",
+"size": 10
+},
+{
+"id": 52,
+"name": "cloneClass52"
+},
+{
+"id": 353,
+"parent": 52,
+"name": "MemoryStream.java(4367,134,<157,29>,<162,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/MemoryStream.java|(4367,134,<157,29>,<162,2>)",
+"size": 6
+},
+{
+"id": 354,
+"parent": 52,
+"name": "StoreImpl.java(17957,160,<523,32>,<528,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/StoreImpl.java|(17957,160,<523,32>,<528,5>)",
+"size": 6
+},
+{
+"id": 53,
+"name": "cloneClass53"
+},
+{
+"id": 355,
+"parent": 53,
+"name": "TestTokenizer.java(4190,60,<143,6>,<146,3>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/TestTokenizer.java|(4190,60,<143,6>,<146,3>)",
+"size": 4
+},
+{
+"id": 356,
+"parent": 53,
+"name": "TestTokenizer.java(4500,60,<154,6>,<157,3>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/TestTokenizer.java|(4500,60,<154,6>,<157,3>)",
+"size": 4
+},
+{
+"id": 54,
+"name": "cloneClass54"
+},
+{
+"id": 357,
+"parent": 54,
+"name": "LongTreeList.java(10836,82,<378,25>,<381,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/LongTreeList.java|(10836,82,<378,25>,<381,5>)",
+"size": 4
+},
+{
+"id": 358,
+"parent": 54,
+"name": "LongTreeList.java(9518,82,<333,25>,<336,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/LongTreeList.java|(9518,82,<333,25>,<336,5>)",
+"size": 4
+},
+{
+"id": 55,
+"name": "cloneClass55"
+},
+{
+"id": 359,
+"parent": 55,
+"name": "TestDBMetaData.java(7507,184,<164,24>,<169,9>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/TestDBMetaData.java|(7507,184,<164,24>,<169,9>)",
+"size": 6
+},
+{
+"id": 360,
+"parent": 55,
+"name": "TestOrderBy.java(5032,166,<160,18>,<165,3>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/TestOrderBy.java|(5032,166,<160,18>,<165,3>)",
+"size": 6
+},
+{
+"id": 361,
+"parent": 55,
+"name": "TestOrderBy.java(4345,166,<132,18>,<137,3>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/TestOrderBy.java|(4345,166,<132,18>,<137,3>)",
+"size": 6
+},
+{
+"id": 56,
+"name": "cloneClass56"
+},
+{
+"id": 362,
+"parent": 56,
+"name": "TestStatement.java(1551,235,<48,43>,<55,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/TestStatement.java|(1551,235,<48,43>,<55,5>)",
+"size": 8
+},
+{
+"id": 363,
+"parent": 56,
+"name": "TestExceptions.java(3521,233,<76,40>,<83,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/TestExceptions.java|(3521,233,<76,40>,<83,5>)",
+"size": 8
+},
+{
+"id": 57,
+"name": "cloneClass57"
+},
+{
+"id": 364,
+"parent": 57,
+"name": "TestTransactions.java(15688,731,<427,48>,<446,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/TestTransactions.java|(15688,731,<427,48>,<446,2>)",
+"size": 18
+},
+{
+"id": 365,
+"parent": 57,
+"name": "TestTransactions.java(14906,727,<405,50>,<424,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/TestTransactions.java|(14906,727,<405,50>,<424,2>)",
+"size": 18
+},
+{
+"id": 58,
+"name": "cloneClass58"
+},
+{
+"id": 366,
+"parent": 58,
+"name": "IndexNode.java(8298,77,<272,87>,<275,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/IndexNode.java|(8298,77,<272,87>,<275,2>)",
+"size": 4
+},
+{
+"id": 367,
+"parent": 58,
+"name": "IndexNode.java(8130,73,<266,84>,<269,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/IndexNode.java|(8130,73,<266,84>,<269,2>)",
+"size": 4
+},
+{
+"id": 59,
+"name": "cloneClass59"
+},
+{
+"id": 368,
+"parent": 59,
+"name": "TestStatement.java(5984,166,<160,52>,<165,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/TestStatement.java|(5984,166,<160,52>,<165,5>)",
+"size": 5
+},
+{
+"id": 369,
+"parent": 59,
+"name": "TestDBMetaData.java(15209,158,<303,52>,<307,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/TestDBMetaData.java|(15209,158,<303,52>,<307,5>)",
+"size": 5
+},
+{
+"id": 60,
+"name": "cloneClass60"
+},
+{
+"id": 370,
+"parent": 60,
+"name": "CommandInsert.java(6524,196,<166,48>,<170,25>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/CommandInsert.java|(6524,196,<166,48>,<170,25>)",
+"size": 5
+},
+{
+"id": 371,
+"parent": 60,
+"name": "CommandInsert.java(6040,196,<156,74>,<160,25>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/CommandInsert.java|(6040,196,<156,74>,<160,25>)",
+"size": 5
+},
+{
+"id": 61,
+"name": "cloneClass61"
+},
+{
+"id": 372,
+"parent": 61,
+"name": "TestTransactions.java(7597,124,<223,10>,<227,3>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/TestTransactions.java|(7597,124,<223,10>,<227,3>)",
+"size": 5
+},
+{
+"id": 373,
+"parent": 61,
+"name": "TestTransactions.java(14720,124,<397,10>,<401,3>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/TestTransactions.java|(14720,124,<397,10>,<401,3>)",
+"size": 5
+},
+{
+"id": 62,
+"name": "cloneClass62"
+},
+{
+"id": 374,
+"parent": 62,
+"name": "NoFromResult.java(1877,41,<68,25>,<71,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/NoFromResult.java|(1877,41,<68,25>,<71,2>)",
+"size": 4
+},
+{
+"id": 375,
+"parent": 62,
+"name": "NoFromResult.java(1947,41,<74,21>,<77,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/NoFromResult.java|(1947,41,<74,21>,<77,2>)",
+"size": 4
+},
+{
+"id": 63,
+"name": "cloneClass63"
+},
+{
+"id": 376,
+"parent": 63,
+"name": "GroupResult.java(4267,160,<111,36>,<116,3>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/GroupResult.java|(4267,160,<111,36>,<116,3>)",
+"size": 6
+},
+{
+"id": 377,
+"parent": 63,
+"name": "GroupResult.java(3480,160,<89,7>,<94,3>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/GroupResult.java|(3480,160,<89,7>,<94,3>)",
+"size": 6
+},
+{
+"id": 64,
+"name": "cloneClass64"
+},
+{
+"id": 378,
+"parent": 64,
+"name": "ExpressionFunctionCase.java(4317,164,<185,25>,<191,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/ExpressionFunctionCase.java|(4317,164,<185,25>,<191,2>)",
+"size": 7
+},
+{
+"id": 379,
+"parent": 64,
+"name": "ExpressionFunctionCase.java(4509,160,<194,21>,<200,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/ExpressionFunctionCase.java|(4509,160,<194,21>,<200,2>)",
+"size": 7
+},
+{
+"id": 65,
+"name": "cloneClass65"
+},
+{
+"id": 380,
+"parent": 65,
+"name": "ExpressionFunctionCase.java(2714,51,<97,24>,<100,6>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/ExpressionFunctionCase.java|(2714,51,<97,24>,<100,6>)",
+"size": 4
+},
+{
+"id": 381,
+"parent": 65,
+"name": "LongTreeList.java(12169,47,<415,31>,<418,3>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/LongTreeList.java|(12169,47,<415,31>,<418,3>)",
+"size": 4
+},
+{
+"id": 382,
+"parent": 65,
+"name": "LongTreeList.java(11992,47,<409,25>,<412,3>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/LongTreeList.java|(11992,47,<409,25>,<412,3>)",
+"size": 4
+},
+{
+"id": 66,
+"name": "cloneClass66"
+},
+{
+"id": 383,
+"parent": 66,
+"name": "TestDataTypes.java(3075,279,<68,26>,<77,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/TestDataTypes.java|(3075,279,<68,26>,<77,5>)",
+"size": 9
+},
+{
+"id": 384,
+"parent": 66,
+"name": "TestFunctions.java(22546,279,<374,26>,<383,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/TestFunctions.java|(22546,279,<374,26>,<383,5>)",
+"size": 9
+},
+{
+"id": 385,
+"parent": 66,
+"name": "TestMoneyRounding.java(1809,279,<53,26>,<62,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/TestMoneyRounding.java|(1809,279,<53,26>,<62,5>)",
+"size": 9
+},
+{
+"id": 386,
+"parent": 66,
+"name": "TestOperatoren.java(5171,279,<95,26>,<104,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/TestOperatoren.java|(5171,279,<95,26>,<104,5>)",
+"size": 9
+},
+{
+"id": 67,
+"name": "cloneClass67"
+},
+{
+"id": 387,
+"parent": 67,
+"name": "MutableNumeric.java(8077,51,<280,16>,<283,3>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/MutableNumeric.java|(8077,51,<280,16>,<283,3>)",
+"size": 4
+},
+{
+"id": 388,
+"parent": 67,
+"name": "MutableNumeric.java(8927,55,<317,18>,<320,3>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/MutableNumeric.java|(8927,55,<317,18>,<320,3>)",
+"size": 4
+},
+{
+"id": 68,
+"name": "cloneClass68"
+},
+{
+"id": 389,
+"parent": 68,
+"name": "TestGroupBy.java(7893,125,<251,44>,<254,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/TestGroupBy.java|(7893,125,<251,44>,<254,2>)",
+"size": 4
+},
+{
+"id": 390,
+"parent": 68,
+"name": "TestGroupBy.java(8072,122,<257,46>,<260,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/TestGroupBy.java|(8072,122,<257,46>,<260,2>)",
+"size": 4
+},
+{
+"id": 69,
+"name": "cloneClass69"
+},
+{
+"id": 391,
+"parent": 69,
+"name": "TestGroupBy.java(6832,90,<211,42>,<214,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/TestGroupBy.java|(6832,90,<211,42>,<214,2>)",
+"size": 4
+},
+{
+"id": 392,
+"parent": 69,
+"name": "TestGroupBy.java(7579,104,<239,44>,<242,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/TestGroupBy.java|(7579,104,<239,44>,<242,2>)",
+"size": 4
+},
+{
+"id": 393,
+"parent": 69,
+"name": "TestGroupBy.java(7267,107,<227,46>,<230,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/TestGroupBy.java|(7267,107,<227,46>,<230,2>)",
+"size": 4
+},
+{
+"id": 394,
+"parent": 69,
+"name": "TestGroupBy.java(6205,103,<191,43>,<194,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/TestGroupBy.java|(6205,103,<191,43>,<194,2>)",
+"size": 4
+},
+{
+"id": 395,
+"parent": 69,
+"name": "TestGroupBy.java(9905,91,<315,41>,<318,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/TestGroupBy.java|(9905,91,<315,41>,<318,2>)",
+"size": 4
+},
+{
+"id": 396,
+"parent": 69,
+"name": "TestGroupBy.java(6067,90,<186,42>,<189,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/TestGroupBy.java|(6067,90,<186,42>,<189,2>)",
+"size": 4
+},
+{
+"id": 397,
+"parent": 69,
+"name": "TestGroupBy.java(9206,90,<290,39>,<293,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/TestGroupBy.java|(9206,90,<290,39>,<293,2>)",
+"size": 4
+},
+{
+"id": 398,
+"parent": 69,
+"name": "TestGroupBy.java(10175,90,<326,39>,<329,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/TestGroupBy.java|(10175,90,<326,39>,<329,2>)",
+"size": 4
+},
+{
+"id": 399,
+"parent": 69,
+"name": "TestGroupBy.java(7736,105,<245,45>,<248,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/TestGroupBy.java|(7736,105,<245,45>,<248,2>)",
+"size": 4
+},
+{
+"id": 400,
+"parent": 69,
+"name": "TestGroupBy.java(9633,92,<305,42>,<308,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/TestGroupBy.java|(9633,92,<305,42>,<308,2>)",
+"size": 4
+},
+{
+"id": 401,
+"parent": 69,
+"name": "TestGroupBy.java(6508,105,<201,45>,<204,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/TestGroupBy.java|(6508,105,<201,45>,<204,2>)",
+"size": 4
+},
+{
+"id": 402,
+"parent": 69,
+"name": "TestGroupBy.java(7425,102,<233,43>,<236,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/TestGroupBy.java|(7425,102,<233,43>,<236,2>)",
+"size": 4
+},
+{
+"id": 403,
+"parent": 69,
+"name": "TestGroupBy.java(6356,102,<196,43>,<199,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/TestGroupBy.java|(6356,102,<196,43>,<199,2>)",
+"size": 4
+},
+{
+"id": 404,
+"parent": 69,
+"name": "TestGroupBy.java(6972,103,<216,45>,<219,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/TestGroupBy.java|(6972,103,<216,45>,<219,2>)",
+"size": 4
+},
+{
+"id": 70,
+"name": "cloneClass70"
+},
+{
+"id": 405,
+"parent": 70,
+"name": "TestGroupBy.java(9346,88,<295,45>,<298,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/TestGroupBy.java|(9346,88,<295,45>,<298,2>)",
+"size": 4
+},
+{
+"id": 406,
+"parent": 70,
+"name": "TestGroupBy.java(7125,88,<221,45>,<224,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/TestGroupBy.java|(7125,88,<221,45>,<224,2>)",
+"size": 4
+},
+{
+"id": 71,
+"name": "cloneClass71"
+},
+{
+"id": 407,
+"parent": 71,
+"name": "Scrollable.java(4237,46,<160,17>,<163,4>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/Scrollable.java|(4237,46,<160,17>,<163,4>)",
+"size": 4
+},
+{
+"id": 408,
+"parent": 71,
+"name": "Scrollable.java(4818,43,<185,17>,<188,3>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/Scrollable.java|(4818,43,<185,17>,<188,3>)",
+"size": 4
+},
+{
+"id": 72,
+"name": "cloneClass72"
+},
+{
+"id": 409,
+"parent": 72,
+"name": "MutableNumeric.java(9554,121,<336,36>,<340,3>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/MutableNumeric.java|(9554,121,<336,36>,<340,3>)",
+"size": 5
+},
+{
+"id": 410,
+"parent": 72,
+"name": "LongLongList.java(2252,123,<81,39>,<85,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/LongLongList.java|(2252,123,<81,39>,<85,2>)",
+"size": 5
+},
+{
+"id": 73,
+"name": "cloneClass73"
+},
+{
+"id": 411,
+"parent": 73,
+"name": "ExpressionFunctionConvert.java(4361,292,<150,28>,<160,4>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/ExpressionFunctionConvert.java|(4361,292,<150,28>,<160,4>)",
+"size": 10
+},
+{
+"id": 412,
+"parent": 73,
+"name": "ExpressionFunctionConvert.java(4040,291,<139,31>,<149,4>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/ExpressionFunctionConvert.java|(4040,291,<139,31>,<149,4>)",
+"size": 10
+},
+{
+"id": 74,
+"name": "cloneClass74"
+},
+{
+"id": 413,
+"parent": 74,
+"name": "Command.java(4276,63,<141,16>,<143,9>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/Command.java|(4276,63,<141,16>,<143,9>)",
+"size": 3
+},
+{
+"id": 414,
+"parent": 74,
+"name": "CommandSelect.java(13890,48,<439,10>,<441,3>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/CommandSelect.java|(13890,48,<439,10>,<441,3>)",
+"size": 3
+},
+{
+"id": 415,
+"parent": 74,
+"name": "CommandSelect.java(15451,48,<481,10>,<483,3>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/CommandSelect.java|(15451,48,<481,10>,<483,3>)",
+"size": 3
+},
+{
+"id": 416,
+"parent": 74,
+"name": "CommandSelect.java(15975,48,<497,10>,<499,3>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/CommandSelect.java|(15975,48,<497,10>,<499,3>)",
+"size": 3
+},
+{
+"id": 75,
+"name": "cloneClass75"
+},
+{
+"id": 417,
+"parent": 75,
+"name": "Expressions.java(1961,86,<71,32>,<76,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/Expressions.java|(1961,86,<71,32>,<76,2>)",
+"size": 6
+},
+{
+"id": 418,
+"parent": 75,
+"name": "ForeignKeys.java(1828,92,<63,38>,<68,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/ForeignKeys.java|(1828,92,<63,38>,<68,2>)",
+"size": 6
+},
+{
+"id": 419,
+"parent": 75,
+"name": "LongList.java(1839,89,<67,27>,<72,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/LongList.java|(1839,89,<67,27>,<72,2>)",
+"size": 6
+},
+{
+"id": 420,
+"parent": 75,
+"name": "Strings.java(1791,87,<63,29>,<68,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/Strings.java|(1791,87,<63,29>,<68,2>)",
+"size": 6
+},
+{
+"id": 76,
+"name": "cloneClass76"
+},
+{
+"id": 421,
+"parent": 76,
+"name": "Scrollable.java(5339,45,<220,16>,<223,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/Scrollable.java|(5339,45,<220,16>,<223,2>)",
+"size": 4
+},
+{
+"id": 422,
+"parent": 76,
+"name": "Scrollable.java(5404,43,<226,14>,<229,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/Scrollable.java|(5404,43,<226,14>,<229,2>)",
+"size": 4
+},
+{
+"id": 77,
+"name": "cloneClass77"
+},
+{
+"id": 423,
+"parent": 77,
+"name": "MutableNumeric.java(2946,66,<96,45>,<99,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/MutableNumeric.java|(2946,66,<96,45>,<99,5>)",
+"size": 4
+},
+{
+"id": 424,
+"parent": 77,
+"name": "MutableNumeric.java(3586,66,<119,46>,<122,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/MutableNumeric.java|(3586,66,<119,46>,<122,5>)",
+"size": 4
+},
+{
+"id": 78,
+"name": "cloneClass78"
+},
+{
+"id": 425,
+"parent": 78,
+"name": "SSSavepoint.java(1591,86,<48,55>,<52,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/SSSavepoint.java|(1591,86,<48,55>,<52,2>)",
+"size": 5
+},
+{
+"id": 426,
+"parent": 78,
+"name": "ExpressionName.java(4445,92,<151,64>,<155,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/ExpressionName.java|(4445,92,<151,64>,<155,2>)",
+"size": 5
+},
+{
+"id": 427,
+"parent": 78,
+"name": "MutableNumeric.java(4310,99,<143,54>,<147,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/MutableNumeric.java|(4310,99,<143,54>,<147,5>)",
+"size": 5
+},
+{
+"id": 79,
+"name": "cloneClass79"
+},
+{
+"id": 428,
+"parent": 79,
+"name": "Scrollable.java(2525,79,<92,45>,<95,4>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/Scrollable.java|(2525,79,<92,45>,<95,4>)",
+"size": 4
+},
+{
+"id": 429,
+"parent": 79,
+"name": "Scrollable.java(2733,76,<103,31>,<106,3>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/Scrollable.java|(2733,76,<103,31>,<106,3>)",
+"size": 4
+},
+{
+"id": 430,
+"parent": 79,
+"name": "Scrollable.java(4287,79,<163,8>,<166,4>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/Scrollable.java|(4287,79,<163,8>,<166,4>)",
+"size": 4
+},
+{
+"id": 80,
+"name": "cloneClass80"
+},
+{
+"id": 431,
+"parent": 80,
+"name": "TestGroupBy.java(8245,125,<263,43>,<266,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/TestGroupBy.java|(8245,125,<263,43>,<266,2>)",
+"size": 4
+},
+{
+"id": 432,
+"parent": 80,
+"name": "TestGroupBy.java(8595,157,<274,48>,<277,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/TestGroupBy.java|(8595,157,<274,48>,<277,2>)",
+"size": 4
+},
+{
+"id": 433,
+"parent": 80,
+"name": "TestGroupBy.java(8421,121,<269,43>,<272,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/TestGroupBy.java|(8421,121,<269,43>,<272,2>)",
+"size": 4
+},
+{
+"id": 81,
+"name": "cloneClass81"
+},
+{
+"id": 434,
+"parent": 81,
+"name": "MutableNumeric.java(14542,880,<512,31>,<533,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/MutableNumeric.java|(14542,880,<512,31>,<533,5>)",
+"size": 19
+},
+{
+"id": 435,
+"parent": 81,
+"name": "MutableNumeric.java(13631,876,<489,29>,<510,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/MutableNumeric.java|(13631,876,<489,29>,<510,5>)",
+"size": 19
+},
+{
+"id": 82,
+"name": "cloneClass82"
+},
+{
+"id": 436,
+"parent": 82,
+"name": "TestOrderBy.java(19300,752,<729,57>,<757,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/TestOrderBy.java|(19300,752,<729,57>,<757,2>)",
+"size": 23
+},
+{
+"id": 437,
+"parent": 82,
+"name": "TestOrderBy.java(18492,744,<698,53>,<726,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/TestOrderBy.java|(18492,744,<698,53>,<726,2>)",
+"size": 23
+},
+{
+"id": 83,
+"name": "cloneClass83"
+},
+{
+"id": 438,
+"parent": 83,
+"name": "TestOrderBy.java(15960,85,<597,30>,<601,3>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/TestOrderBy.java|(15960,85,<597,30>,<601,3>)",
+"size": 5
+},
+{
+"id": 439,
+"parent": 83,
+"name": "TestOrderBy.java(15843,85,<592,31>,<596,3>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/TestOrderBy.java|(15843,85,<592,31>,<596,3>)",
+"size": 5
+},
+{
+"id": 84,
+"name": "cloneClass84"
+},
+{
+"id": 440,
+"parent": 84,
+"name": "TestOrderBy.java(11327,605,<414,51>,<437,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/TestOrderBy.java|(11327,605,<414,51>,<437,2>)",
+"size": 20
+},
+{
+"id": 441,
+"parent": 84,
+"name": "TestOrderBy.java(9228,601,<329,47>,<352,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/TestOrderBy.java|(9228,601,<329,47>,<352,2>)",
+"size": 20
+},
+{
+"id": 442,
+"parent": 84,
+"name": "TestOrderBy.java(13329,591,<493,48>,<516,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/TestOrderBy.java|(13329,591,<493,48>,<516,2>)",
+"size": 20
+},
+{
+"id": 443,
+"parent": 84,
+"name": "TestOrderBy.java(13970,591,<519,43>,<542,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/TestOrderBy.java|(13970,591,<519,43>,<542,2>)",
+"size": 20
+},
+{
+"id": 444,
+"parent": 84,
+"name": "TestOrderBy.java(12678,596,<467,50>,<490,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/TestOrderBy.java|(12678,596,<467,50>,<490,2>)",
+"size": 20
+},
+{
+"id": 85,
+"name": "cloneClass85"
+},
+{
+"id": 445,
+"parent": 85,
+"name": "SSPreparedStatement.java(3745,114,<108,72>,<111,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/SSPreparedStatement.java|(3745,114,<108,72>,<111,5>)",
+"size": 4
+},
+{
+"id": 446,
+"parent": 85,
+"name": "SSPreparedStatement.java(4150,116,<120,76>,<123,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/SSPreparedStatement.java|(4150,116,<120,76>,<123,5>)",
+"size": 4
+},
+{
+"id": 447,
+"parent": 85,
+"name": "SSPreparedStatement.java(3342,119,<96,74>,<99,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/SSPreparedStatement.java|(3342,119,<96,74>,<99,5>)",
+"size": 4
+},
+{
+"id": 448,
+"parent": 85,
+"name": "SSPreparedStatement.java(3136,118,<90,72>,<93,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/SSPreparedStatement.java|(3136,118,<90,72>,<93,5>)",
+"size": 4
+},
+{
+"id": 449,
+"parent": 85,
+"name": "SSPreparedStatement.java(3545,114,<102,70>,<105,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/SSPreparedStatement.java|(3545,114,<102,70>,<105,5>)",
+"size": 4
+},
+{
+"id": 450,
+"parent": 85,
+"name": "SSPreparedStatement.java(3947,113,<114,74>,<117,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/SSPreparedStatement.java|(3947,113,<114,74>,<117,5>)",
+"size": 4
+},
+{
+"id": 86,
+"name": "cloneClass86"
+},
+{
+"id": 451,
+"parent": 86,
+"name": "SSPreparedStatement.java(5827,215,<168,100>,<172,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/SSPreparedStatement.java|(5827,215,<168,100>,<172,5>)",
+"size": 4
+},
+{
+"id": 452,
+"parent": 86,
+"name": "SSPreparedStatement.java(10602,206,<308,86>,<312,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/SSPreparedStatement.java|(10602,206,<308,86>,<312,5>)",
+"size": 4
+},
+{
+"id": 453,
+"parent": 86,
+"name": "SSPreparedStatement.java(9603,206,<280,59>,<284,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/SSPreparedStatement.java|(9603,206,<280,59>,<284,5>)",
+"size": 4
+},
+{
+"id": 454,
+"parent": 86,
+"name": "SSPreparedStatement.java(11781,205,<328,70>,<332,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/SSPreparedStatement.java|(11781,205,<328,70>,<332,5>)",
+"size": 4
+},
+{
+"id": 455,
+"parent": 86,
+"name": "SSPreparedStatement.java(12060,218,<333,72>,<337,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/SSPreparedStatement.java|(12060,218,<333,72>,<337,5>)",
+"size": 4
+},
+{
+"id": 456,
+"parent": 86,
+"name": "SSPreparedStatement.java(9872,207,<285,61>,<289,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/SSPreparedStatement.java|(9872,207,<285,61>,<289,5>)",
+"size": 4
+},
+{
+"id": 457,
+"parent": 86,
+"name": "SSPreparedStatement.java(10896,206,<313,86>,<317,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/SSPreparedStatement.java|(10896,206,<313,86>,<317,5>)",
+"size": 4
+},
+{
+"id": 458,
+"parent": 86,
+"name": "SSPreparedStatement.java(9070,205,<270,57>,<274,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/SSPreparedStatement.java|(9070,205,<270,57>,<274,5>)",
+"size": 4
+},
+{
+"id": 459,
+"parent": 86,
+"name": "SSPreparedStatement.java(11200,211,<318,96>,<322,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/SSPreparedStatement.java|(11200,211,<318,96>,<322,5>)",
+"size": 4
+},
+{
+"id": 460,
+"parent": 86,
+"name": "SSPreparedStatement.java(8782,217,<263,102>,<267,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/SSPreparedStatement.java|(8782,217,<263,102>,<267,5>)",
+"size": 4
+},
+{
+"id": 461,
+"parent": 86,
+"name": "SSPreparedStatement.java(9336,206,<275,59>,<279,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/SSPreparedStatement.java|(9336,206,<275,59>,<279,5>)",
+"size": 4
+},
+{
+"id": 462,
+"parent": 86,
+"name": "SSPreparedStatement.java(11503,206,<323,90>,<327,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/SSPreparedStatement.java|(11503,206,<323,90>,<327,5>)",
+"size": 4
+},
+{
+"id": 87,
+"name": "cloneClass87"
+},
+{
+"id": 463,
+"parent": 87,
+"name": "SSPreparedStatement.java(2198,63,<60,56>,<63,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/SSPreparedStatement.java|(2198,63,<60,56>,<63,5>)",
+"size": 4
+},
+{
+"id": 464,
+"parent": 87,
+"name": "SSStatement.java(5107,71,<192,61>,<195,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/SSStatement.java|(5107,71,<192,61>,<195,5>)",
+"size": 4
+},
+{
+"id": 465,
+"parent": 87,
+"name": "SSPreparedStatement.java(2320,57,<65,51>,<68,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/SSPreparedStatement.java|(2320,57,<65,51>,<68,5>)",
+"size": 4
+},
+{
+"id": 466,
+"parent": 87,
+"name": "SSStatement.java(5241,73,<198,57>,<201,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/SSStatement.java|(5241,73,<198,57>,<201,5>)",
+"size": 4
+},
+{
+"id": 467,
+"parent": 87,
+"name": "SSConnection.java(9754,118,<322,39>,<325,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/SSConnection.java|(9754,118,<322,39>,<325,2>)",
+"size": 4
+},
+{
+"id": 88,
+"name": "cloneClass88"
+},
+{
+"id": 468,
+"parent": 88,
+"name": "SSConnection.java(5941,96,<177,41>,<180,17>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/SSConnection.java|(5941,96,<177,41>,<180,17>)",
+"size": 4
+},
+{
+"id": 469,
+"parent": 88,
+"name": "Database.java(5200,60,<148,9>,<151,6>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/Database.java|(5200,60,<148,9>,<151,6>)",
+"size": 4
+},
+{
+"id": 470,
+"parent": 88,
+"name": "BenchTest.java(9068,77,<225,42>,<228,13>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/BenchTest.java|(9068,77,<225,42>,<228,13>)",
+"size": 4
+},
+{
+"id": 471,
+"parent": 88,
+"name": "BenchTest.java(6926,88,<172,42>,<175,13>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/BenchTest.java|(6926,88,<172,42>,<175,13>)",
+"size": 4
+},
+{
+"id": 89,
+"name": "cloneClass89"
+},
+{
+"id": 472,
+"parent": 89,
+"name": "SSPreparedStatement.java(4559,105,<132,76>,<135,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/SSPreparedStatement.java|(4559,105,<132,76>,<135,5>)",
+"size": 4
+},
+{
+"id": 473,
+"parent": 89,
+"name": "SSPreparedStatement.java(4364,105,<126,84>,<129,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/SSPreparedStatement.java|(4364,105,<126,84>,<129,5>)",
+"size": 4
+},
+{
+"id": 474,
+"parent": 89,
+"name": "SSPreparedStatement.java(4753,104,<138,75>,<141,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/SSPreparedStatement.java|(4753,104,<138,75>,<141,5>)",
+"size": 4
+},
+{
+"id": 90,
+"name": "cloneClass90"
+},
+{
+"id": 475,
+"parent": 90,
+"name": "TestExceptionMethods.java(4117,132,<117,15>,<120,13>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/TestExceptionMethods.java|(4117,132,<117,15>,<120,13>)",
+"size": 4
+},
+{
+"id": 476,
+"parent": 90,
+"name": "TestExceptionMethods.java(3877,132,<110,15>,<113,13>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/TestExceptionMethods.java|(3877,132,<110,15>,<113,13>)",
+"size": 4
+},
+{
+"id": 91,
+"name": "cloneClass91"
+},
+{
+"id": 477,
+"parent": 91,
+"name": "Strings.java(2078,132,<78,30>,<82,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/Strings.java|(2078,132,<78,30>,<82,5>)",
+"size": 5
+},
+{
+"id": 478,
+"parent": 91,
+"name": "Expressions.java(3046,115,<124,29>,<128,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/Expressions.java|(3046,115,<124,29>,<128,2>)",
+"size": 5
+},
+{
+"id": 92,
+"name": "cloneClass92"
+},
+{
+"id": 479,
+"parent": 92,
+"name": "Column.java(2117,106,<62,75>,<65,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/Column.java|(2117,106,<62,75>,<65,5>)",
+"size": 4
+},
+{
+"id": 480,
+"parent": 92,
+"name": "Distinct.java(1605,71,<47,51>,<50,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/Distinct.java|(1605,71,<47,51>,<50,2>)",
+"size": 4
+},
+{
+"id": 481,
+"parent": 92,
+"name": "Where.java(1557,59,<44,45>,<47,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/Where.java|(1557,59,<44,45>,<47,2>)",
+"size": 4
+},
+{
+"id": 482,
+"parent": 92,
+"name": "IndexNode.java(3054,54,<86,48>,<89,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/IndexNode.java|(3054,54,<86,48>,<89,2>)",
+"size": 4
+},
+{
+"id": 483,
+"parent": 92,
+"name": "TableView.java(2579,53,<70,40>,<73,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/TableView.java|(2579,53,<70,40>,<73,2>)",
+"size": 4
+},
+{
+"id": 484,
+"parent": 92,
+"name": "SortedResult.java(2481,63,<73,55>,<76,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/SortedResult.java|(2481,63,<73,55>,<76,2>)",
+"size": 4
+},
+{
+"id": 485,
+"parent": 92,
+"name": "Command.java(1865,71,<62,51>,<65,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/Command.java|(1865,71,<62,51>,<65,2>)",
+"size": 4
+},
+{
+"id": 93,
+"name": "cloneClass93"
+},
+{
+"id": 486,
+"parent": 93,
+"name": "SSConnection.java(6259,164,<189,68>,<193,13>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/SSConnection.java|(6259,164,<189,68>,<193,13>)",
+"size": 5
+},
+{
+"id": 487,
+"parent": 93,
+"name": "SSConnection.java(6680,161,<203,38>,<207,13>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/SSConnection.java|(6680,161,<203,38>,<207,13>)",
+"size": 5
+},
+{
+"id": 94,
+"name": "cloneClass94"
+},
+{
+"id": 488,
+"parent": 94,
+"name": "SSConnection.java(11781,152,<373,101>,<377,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/SSConnection.java|(11781,152,<373,101>,<377,5>)",
+"size": 5
+},
+{
+"id": 489,
+"parent": 94,
+"name": "SSConnection.java(12046,148,<380,99>,<384,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/SSConnection.java|(12046,148,<380,99>,<384,5>)",
+"size": 5
+},
+{
+"id": 490,
+"parent": 94,
+"name": "SSConnection.java(12308,146,<387,100>,<391,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/SSConnection.java|(12308,146,<387,100>,<391,5>)",
+"size": 5
+},
+{
+"id": 95,
+"name": "cloneClass95"
+},
+{
+"id": 491,
+"parent": 95,
+"name": "TestAlterTable.java(4064,122,<105,16>,<108,13>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/TestAlterTable.java|(4064,122,<105,16>,<108,13>)",
+"size": 4
+},
+{
+"id": 492,
+"parent": 95,
+"name": "TestStatement.java(4712,85,<131,11>,<134,9>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/TestStatement.java|(4712,85,<131,11>,<134,9>)",
+"size": 4
+},
+{
+"id": 493,
+"parent": 95,
+"name": "TestExceptionMethods.java(10042,84,<289,11>,<292,9>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/TestExceptionMethods.java|(10042,84,<289,11>,<292,9>)",
+"size": 4
+},
+{
+"id": 494,
+"parent": 95,
+"name": "TestExceptionMethods.java(2210,130,<61,15>,<64,13>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/TestExceptionMethods.java|(2210,130,<61,15>,<64,13>)",
+"size": 4
+},
+{
+"id": 495,
+"parent": 95,
+"name": "TestExceptionMethods.java(10407,90,<301,11>,<304,9>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/TestExceptionMethods.java|(10407,90,<301,11>,<304,9>)",
+"size": 4
+},
+{
+"id": 496,
+"parent": 95,
+"name": "TestExceptionMethods.java(3158,129,<89,15>,<92,13>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/TestExceptionMethods.java|(3158,129,<89,15>,<92,13>)",
+"size": 4
+},
+{
+"id": 497,
+"parent": 95,
+"name": "TestStatement.java(6979,88,<189,11>,<192,9>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/TestStatement.java|(6979,88,<189,11>,<192,9>)",
+"size": 4
+},
+{
+"id": 498,
+"parent": 95,
+"name": "TestStatement.java(9786,88,<249,11>,<252,9>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/TestStatement.java|(9786,88,<249,11>,<252,9>)",
+"size": 4
+},
+{
+"id": 499,
+"parent": 95,
+"name": "TestExceptionMethods.java(2448,128,<68,15>,<71,13>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/TestExceptionMethods.java|(2448,128,<68,15>,<71,13>)",
+"size": 4
+},
+{
+"id": 500,
+"parent": 95,
+"name": "TestExceptionMethods.java(3395,134,<96,15>,<99,13>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/TestExceptionMethods.java|(3395,134,<96,15>,<99,13>)",
+"size": 4
+},
+{
+"id": 501,
+"parent": 95,
+"name": "TestExceptionMethods.java(10222,89,<295,11>,<298,9>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/TestExceptionMethods.java|(10222,89,<295,11>,<298,9>)",
+"size": 4
+},
+{
+"id": 502,
+"parent": 95,
+"name": "TestExceptionMethods.java(3637,132,<103,15>,<106,13>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/TestExceptionMethods.java|(3637,132,<103,15>,<106,13>)",
+"size": 4
+},
+{
+"id": 503,
+"parent": 95,
+"name": "TestExceptionMethods.java(2684,131,<75,15>,<78,13>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/TestExceptionMethods.java|(2684,131,<75,15>,<78,13>)",
+"size": 4
+},
+{
+"id": 504,
+"parent": 95,
+"name": "TestExceptionMethods.java(1966,136,<54,15>,<57,13>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/TestExceptionMethods.java|(1966,136,<54,15>,<57,13>)",
+"size": 4
+},
+{
+"id": 505,
+"parent": 95,
+"name": "TestExceptionMethods.java(2923,127,<82,15>,<85,13>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/TestExceptionMethods.java|(2923,127,<82,15>,<85,13>)",
+"size": 4
+},
+{
+"id": 96,
+"name": "cloneClass96"
+},
+{
+"id": 506,
+"parent": 96,
+"name": "TestExceptionMethods.java(5771,541,<165,60>,<179,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/TestExceptionMethods.java|(5771,541,<165,60>,<179,5>)",
+"size": 15
+},
+{
+"id": 507,
+"parent": 96,
+"name": "TestExceptionMethods.java(6379,550,<182,61>,<196,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/TestExceptionMethods.java|(6379,550,<182,61>,<196,5>)",
+"size": 15
+},
+{
+"id": 97,
+"name": "cloneClass97"
+},
+{
+"id": 508,
+"parent": 97,
+"name": "SSPreparedStatement.java(5149,120,<150,72>,<153,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/SSPreparedStatement.java|(5149,120,<150,72>,<153,5>)",
+"size": 4
+},
+{
+"id": 509,
+"parent": 97,
+"name": "SSPreparedStatement.java(4943,120,<144,72>,<147,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/SSPreparedStatement.java|(4943,120,<144,72>,<147,5>)",
+"size": 4
+},
+{
+"id": 510,
+"parent": 97,
+"name": "SSPreparedStatement.java(5365,125,<156,82>,<159,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/SSPreparedStatement.java|(5365,125,<156,82>,<159,5>)",
+"size": 4
+},
+{
+"id": 98,
+"name": "cloneClass98"
+},
+{
+"id": 511,
+"parent": 98,
+"name": "SSPreparedStatement.java(6919,87,<200,76>,<203,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/SSPreparedStatement.java|(6919,87,<200,76>,<203,5>)",
+"size": 4
+},
+{
+"id": 512,
+"parent": 98,
+"name": "SSPreparedStatement.java(6742,87,<194,95>,<197,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/SSPreparedStatement.java|(6742,87,<194,95>,<197,5>)",
+"size": 4
+},
+{
+"id": 513,
+"parent": 98,
+"name": "SSPreparedStatement.java(6519,114,<187,106>,<191,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/SSPreparedStatement.java|(6519,114,<187,106>,<191,5>)",
+"size": 4
+},
+{
+"id": 99,
+"name": "cloneClass99"
+},
+{
+"id": 514,
+"parent": 99,
+"name": "Index.java(15254,136,<456,64>,<461,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/Index.java|(15254,136,<456,64>,<461,2>)",
+"size": 6
+},
+{
+"id": 515,
+"parent": 99,
+"name": "Index.java(15062,123,<449,61>,<454,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/Index.java|(15062,123,<449,61>,<454,2>)",
+"size": 6
+},
+{
+"id": 100,
+"name": "cloneClass100"
+},
+{
+"id": 516,
+"parent": 100,
+"name": "IndexScrollStatus.java(4128,400,<120,33>,<131,41>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/IndexScrollStatus.java|(4128,400,<120,33>,<131,41>)",
+"size": 11
+},
+{
+"id": 517,
+"parent": 100,
+"name": "IndexScrollStatus.java(3090,357,<89,33>,<99,6>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/IndexScrollStatus.java|(3090,357,<89,33>,<99,6>)",
+"size": 11
+},
+{
+"id": 101,
+"name": "cloneClass101"
+},
+{
+"id": 518,
+"parent": 101,
+"name": "BenchTest.java(8214,541,<207,34>,<219,13>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/BenchTest.java|(8214,541,<207,34>,<219,13>)",
+"size": 12
+},
+{
+"id": 519,
+"parent": 101,
+"name": "BenchTest.java(13149,539,<321,34>,<333,13>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/BenchTest.java|(13149,539,<321,34>,<333,13>)",
+"size": 12
+},
+{
+"id": 102,
+"name": "cloneClass102"
+},
+{
+"id": 520,
+"parent": 102,
+"name": "BenchTest.java(18149,160,<435,37>,<438,17>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/BenchTest.java|(18149,160,<435,37>,<438,17>)",
+"size": 4
+},
+{
+"id": 521,
+"parent": 102,
+"name": "BenchTest.java(20911,160,<488,37>,<491,17>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/BenchTest.java|(20911,160,<488,37>,<491,17>)",
+"size": 4
+},
+{
+"id": 103,
+"name": "cloneClass103"
+},
+{
+"id": 522,
+"parent": 103,
+"name": "ExpressionValue.java(6691,107,<211,21>,<216,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/ExpressionValue.java|(6691,107,<211,21>,<216,5>)",
+"size": 6
+},
+{
+"id": 523,
+"parent": 103,
+"name": "ExpressionValue.java(4490,107,<154,21>,<159,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/ExpressionValue.java|(4490,107,<154,21>,<159,5>)",
+"size": 6
+},
+{
+"id": 104,
+"name": "cloneClass104"
+},
+{
+"id": 524,
+"parent": 104,
+"name": "Utils.java(4996,213,<160,40>,<167,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/Utils.java|(4996,213,<160,40>,<167,5>)",
+"size": 8
+},
+{
+"id": 525,
+"parent": 104,
+"name": "Utils.java(4738,214,<151,42>,<158,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/Utils.java|(4738,214,<151,42>,<158,5>)",
+"size": 8
+},
+{
+"id": 105,
+"name": "cloneClass105"
+},
+{
+"id": 526,
+"parent": 105,
+"name": "BenchTest.java(12369,151,<299,16>,<302,9>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/BenchTest.java|(12369,151,<299,16>,<302,9>)",
+"size": 4
+},
+{
+"id": 527,
+"parent": 105,
+"name": "BenchTest.java(23983,151,<555,16>,<558,9>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/BenchTest.java|(23983,151,<555,16>,<558,9>)",
+"size": 4
+},
+{
+"id": 528,
+"parent": 105,
+"name": "BenchTest.java(9648,151,<239,16>,<242,9>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/BenchTest.java|(9648,151,<239,16>,<242,9>)",
+"size": 4
+},
+{
+"id": 529,
+"parent": 105,
+"name": "BenchTest.java(5284,151,<127,16>,<130,9>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/BenchTest.java|(5284,151,<127,16>,<130,9>)",
+"size": 4
+},
+{
+"id": 530,
+"parent": 105,
+"name": "BenchTest.java(25726,151,<602,16>,<605,9>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/BenchTest.java|(25726,151,<602,16>,<605,9>)",
+"size": 4
+},
+{
+"id": 531,
+"parent": 105,
+"name": "BenchTest.java(28800,151,<678,16>,<681,9>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/BenchTest.java|(28800,151,<678,16>,<681,9>)",
+"size": 4
+},
+{
+"id": 532,
+"parent": 105,
+"name": "BenchTest.java(7518,151,<186,16>,<189,9>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/BenchTest.java|(7518,151,<186,16>,<189,9>)",
+"size": 4
+},
+{
+"id": 533,
+"parent": 105,
+"name": "BenchTest.java(18560,151,<445,16>,<448,9>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/BenchTest.java|(18560,151,<445,16>,<448,9>)",
+"size": 4
+},
+{
+"id": 534,
+"parent": 105,
+"name": "BenchTest.java(27124,151,<637,16>,<640,9>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/BenchTest.java|(27124,151,<637,16>,<640,9>)",
+"size": 4
+},
+{
+"id": 535,
+"parent": 105,
+"name": "BenchTest.java(14959,151,<360,16>,<363,9>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/BenchTest.java|(14959,151,<360,16>,<363,9>)",
+"size": 4
+},
+{
+"id": 536,
+"parent": 105,
+"name": "BenchTest.java(6125,151,<152,16>,<155,9>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/BenchTest.java|(6125,151,<152,16>,<155,9>)",
+"size": 4
+},
+{
+"id": 537,
+"parent": 105,
+"name": "BenchTest.java(16351,151,<396,16>,<399,9>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/BenchTest.java|(16351,151,<396,16>,<399,9>)",
+"size": 4
+},
+{
+"id": 538,
+"parent": 105,
+"name": "BenchTest.java(21404,151,<500,16>,<503,9>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/BenchTest.java|(21404,151,<500,16>,<503,9>)",
+"size": 4
+},
+{
+"id": 106,
+"name": "cloneClass106"
+},
+{
+"id": 539,
+"parent": 106,
+"name": "TestFunctions.java(23713,210,<406,47>,<412,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/TestFunctions.java|(23713,210,<406,47>,<412,5>)",
+"size": 7
+},
+{
+"id": 540,
+"parent": 106,
+"name": "TestOperatoren.java(11380,212,<253,47>,<259,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/TestOperatoren.java|(11380,212,<253,47>,<259,5>)",
+"size": 7
+},
+{
+"id": 541,
+"parent": 106,
+"name": "TestJoins.java(10225,202,<195,47>,<201,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/TestJoins.java|(10225,202,<195,47>,<201,5>)",
+"size": 7
+},
+{
+"id": 542,
+"parent": 106,
+"name": "TestDataTypes.java(13046,219,<327,47>,<333,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/TestDataTypes.java|(13046,219,<327,47>,<333,5>)",
+"size": 7
+},
+{
+"id": 543,
+"parent": 106,
+"name": "TestExceptions.java(4815,212,<114,47>,<120,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/TestExceptions.java|(4815,212,<114,47>,<120,5>)",
+"size": 7
+},
+{
+"id": 107,
+"name": "cloneClass107"
+},
+{
+"id": 544,
+"parent": 107,
+"name": "ForeignKeys.java(1967,125,<71,39>,<75,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/ForeignKeys.java|(1967,125,<71,39>,<75,2>)",
+"size": 5
+},
+{
+"id": 545,
+"parent": 107,
+"name": "Expressions.java(3205,125,<130,39>,<134,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/Expressions.java|(3205,125,<130,39>,<134,2>)",
+"size": 5
+},
+{
+"id": 546,
+"parent": 107,
+"name": "Strings.java(1925,117,<71,39>,<75,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/Strings.java|(1925,117,<71,39>,<75,2>)",
+"size": 5
+},
+{
+"id": 547,
+"parent": 107,
+"name": "Columns.java(4100,117,<156,39>,<160,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/Columns.java|(4100,117,<156,39>,<160,2>)",
+"size": 5
+},
+{
+"id": 548,
+"parent": 107,
+"name": "IndexDescriptions.java(2389,137,<82,39>,<86,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/IndexDescriptions.java|(2389,137,<82,39>,<86,2>)",
+"size": 5
+},
+{
+"id": 108,
+"name": "cloneClass108"
+},
+{
+"id": 549,
+"parent": 108,
+"name": "ExpressionFunctionMinute.java(1588,134,<48,37>,<52,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/ExpressionFunctionMinute.java|(1588,134,<48,37>,<52,2>)",
+"size": 5
+},
+{
+"id": 550,
+"parent": 108,
+"name": "ExpressionFunctionDayOfMonth.java(1600,131,<48,37>,<52,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/ExpressionFunctionDayOfMonth.java|(1600,131,<48,37>,<52,2>)",
+"size": 5
+},
+{
+"id": 551,
+"parent": 108,
+"name": "ExpressionFunctionHour.java(1582,132,<48,37>,<52,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/ExpressionFunctionHour.java|(1582,132,<48,37>,<52,2>)",
+"size": 5
+},
+{
+"id": 552,
+"parent": 108,
+"name": "ExpressionFunctionYear.java(1583,132,<48,37>,<52,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/ExpressionFunctionYear.java|(1583,132,<48,37>,<52,2>)",
+"size": 5
+},
+{
+"id": 109,
+"name": "cloneClass109"
+},
+{
+"id": 553,
+"parent": 109,
+"name": "ExpressionFunctionMonth.java(1585,135,<48,37>,<52,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/ExpressionFunctionMonth.java|(1585,135,<48,37>,<52,2>)",
+"size": 5
+},
+{
+"id": 554,
+"parent": 109,
+"name": "ExpressionFunctionDayOfYear.java(1597,139,<48,37>,<52,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/ExpressionFunctionDayOfYear.java|(1597,139,<48,37>,<52,2>)",
+"size": 5
+},
+{
+"id": 110,
+"name": "cloneClass110"
+},
+{
+"id": 555,
+"parent": 110,
+"name": "SSStatement.java(10235,88,<384,87>,<387,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/SSStatement.java|(10235,88,<384,87>,<387,5>)",
+"size": 4
+},
+{
+"id": 556,
+"parent": 110,
+"name": "SSStatement.java(10590,82,<396,86>,<399,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/SSStatement.java|(10590,82,<396,86>,<399,5>)",
+"size": 4
+},
+{
+"id": 557,
+"parent": 110,
+"name": "SSStatement.java(9870,90,<372,87>,<375,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/SSStatement.java|(9870,90,<372,87>,<375,5>)",
+"size": 4
+},
+{
+"id": 558,
+"parent": 110,
+"name": "SSStatement.java(10414,84,<390,85>,<393,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/SSStatement.java|(10414,84,<390,85>,<393,5>)",
+"size": 4
+},
+{
+"id": 559,
+"parent": 110,
+"name": "SSStatement.java(10054,88,<378,88>,<381,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/SSStatement.java|(10054,88,<378,88>,<381,5>)",
+"size": 4
+},
+{
+"id": 560,
+"parent": 110,
+"name": "SSStatement.java(9683,94,<366,89>,<369,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/SSStatement.java|(9683,94,<366,89>,<369,5>)",
+"size": 4
+},
+{
+"id": 111,
+"name": "cloneClass111"
+},
+{
+"id": 561,
+"parent": 111,
+"name": "SQLParser.java(72973,71,<1888,37>,<1891,18>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/SQLParser.java|(72973,71,<1888,37>,<1891,18>)",
+"size": 4
+},
+{
+"id": 562,
+"parent": 111,
+"name": "SSStatement.java(5948,62,<228,55>,<231,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/SSStatement.java|(5948,62,<228,55>,<231,5>)",
+"size": 4
+},
+{
+"id": 563,
+"parent": 111,
+"name": "SSStatement.java(6213,59,<240,59>,<243,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/SSStatement.java|(6213,59,<240,59>,<243,5>)",
+"size": 4
+},
+{
+"id": 564,
+"parent": 111,
+"name": "SSStatement.java(5688,67,<216,60>,<219,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/SSStatement.java|(5688,67,<216,60>,<219,5>)",
+"size": 4
+},
+{
+"id": 565,
+"parent": 111,
+"name": "SQLParser.java(38346,53,<1083,26>,<1086,6>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/SQLParser.java|(38346,53,<1083,26>,<1086,6>)",
+"size": 4
+},
+{
+"id": 566,
+"parent": 111,
+"name": "SQLParser.java(41175,84,<1151,47>,<1154,13>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/SQLParser.java|(41175,84,<1151,47>,<1154,13>)",
+"size": 4
+},
+{
+"id": 567,
+"parent": 111,
+"name": "SSStatement.java(6082,66,<234,66>,<237,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/SSStatement.java|(6082,66,<234,66>,<237,5>)",
+"size": 4
+},
+{
+"id": 568,
+"parent": 111,
+"name": "SSStatement.java(4288,65,<158,58>,<161,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/SSStatement.java|(4288,65,<158,58>,<161,5>)",
+"size": 4
+},
+{
+"id": 569,
+"parent": 111,
+"name": "SQLParser.java(72732,89,<1882,40>,<1885,21>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/SQLParser.java|(72732,89,<1882,40>,<1885,21>)",
+"size": 4
+},
+{
+"id": 570,
+"parent": 111,
+"name": "SQLParser.java(38145,47,<1074,21>,<1077,4>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/SQLParser.java|(38145,47,<1074,21>,<1077,4>)",
+"size": 4
+},
+{
+"id": 112,
+"name": "cloneClass112"
+},
+{
+"id": 571,
+"parent": 112,
+"name": "SSStatement.java(8805,100,<328,77>,<331,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/SSStatement.java|(8805,100,<328,77>,<331,5>)",
+"size": 4
+},
+{
+"id": 572,
+"parent": 112,
+"name": "SSStatement.java(8616,106,<322,76>,<325,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/SSStatement.java|(8616,106,<322,76>,<325,5>)",
+"size": 4
+},
+{
+"id": 113,
+"name": "cloneClass113"
+},
+{
+"id": 573,
+"parent": 113,
+"name": "Language.java(12108,343,<292,33>,<306,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/Language/Language.java|(12108,343,<292,33>,<306,2>)",
+"size": 13
+},
+{
+"id": 574,
+"parent": 113,
+"name": "Language.java(12780,353,<318,35>,<332,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/Language/Language.java|(12780,353,<318,35>,<332,2>)",
+"size": 13
+},
+{
+"id": 114,
+"name": "cloneClass114"
+},
+{
+"id": 575,
+"parent": 114,
+"name": "TestAlterTable2.java(1965,140,<58,12>,<61,9>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/TestAlterTable2.java|(1965,140,<58,12>,<61,9>)",
+"size": 4
+},
+{
+"id": 576,
+"parent": 114,
+"name": "TestAlterTable.java(3089,170,<81,16>,<84,13>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/TestAlterTable.java|(3089,170,<81,16>,<84,13>)",
+"size": 4
+},
+{
+"id": 115,
+"name": "cloneClass115"
+},
+{
+"id": 577,
+"parent": 115,
+"name": "DateTime.java(4435,95,<149,44>,<152,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/DateTime.java|(4435,95,<149,44>,<152,2>)",
+"size": 4
+},
+{
+"id": 578,
+"parent": 115,
+"name": "DateTime.java(4587,100,<155,49>,<158,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/DateTime.java|(4587,100,<155,49>,<158,2>)",
+"size": 4
+},
+{
+"id": 579,
+"parent": 115,
+"name": "DateTime.java(4288,95,<143,44>,<146,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/DateTime.java|(4288,95,<143,44>,<146,2>)",
+"size": 4
+},
+{
+"id": 116,
+"name": "cloneClass116"
+},
+{
+"id": 580,
+"parent": 116,
+"name": "SSStatement.java(4429,68,<164,70>,<167,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/SSStatement.java|(4429,68,<164,70>,<167,5>)",
+"size": 4
+},
+{
+"id": 581,
+"parent": 116,
+"name": "SSStatement.java(5825,62,<222,64>,<225,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/SSStatement.java|(5825,62,<222,64>,<225,5>)",
+"size": 4
+},
+{
+"id": 582,
+"parent": 116,
+"name": "SSStatement.java(5550,72,<210,74>,<213,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/SSStatement.java|(5550,72,<210,74>,<213,5>)",
+"size": 4
+},
+{
+"id": 117,
+"name": "cloneClass117"
+},
+{
+"id": 583,
+"parent": 117,
+"name": "BasicTestCase.java(6409,261,<191,47>,<196,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/BasicTestCase.java|(6409,261,<191,47>,<196,5>)",
+"size": 6
+},
+{
+"id": 584,
+"parent": 117,
+"name": "Utils.java(11192,261,<317,46>,<322,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/Utils.java|(11192,261,<317,46>,<322,5>)",
+"size": 6
+},
+{
+"id": 118,
+"name": "cloneClass118"
+},
+{
+"id": 585,
+"parent": 118,
+"name": "SSStatement.java(10984,112,<408,45>,<412,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/SSStatement.java|(10984,112,<408,45>,<412,5>)",
+"size": 5
+},
+{
+"id": 586,
+"parent": 118,
+"name": "SSResultSet.java(21782,119,<633,55>,<637,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/SSResultSet.java|(21782,119,<633,55>,<637,5>)",
+"size": 5
+},
+{
+"id": 119,
+"name": "cloneClass119"
+},
+{
+"id": 587,
+"parent": 119,
+"name": "Language.java(13352,140,<340,39>,<344,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/Language/Language.java|(13352,140,<340,39>,<344,2>)",
+"size": 5
+},
+{
+"id": 588,
+"parent": 119,
+"name": "Language.java(13175,134,<334,38>,<338,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/Language/Language.java|(13175,134,<334,38>,<338,2>)",
+"size": 5
+},
+{
+"id": 120,
+"name": "cloneClass120"
+},
+{
+"id": 589,
+"parent": 120,
+"name": "CommandSelect.java(4464,131,<123,28>,<127,9>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/CommandSelect.java|(4464,131,<123,28>,<127,9>)",
+"size": 5
+},
+{
+"id": 590,
+"parent": 120,
+"name": "CommandSelect.java(4618,99,<128,21>,<132,3>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/CommandSelect.java|(4618,99,<128,21>,<132,3>)",
+"size": 5
+},
+{
+"id": 121,
+"name": "cloneClass121"
+},
+{
+"id": 591,
+"parent": 121,
+"name": "DateTime.java(20783,109,<675,15>,<679,9>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/DateTime.java|(20783,109,<675,15>,<679,9>)",
+"size": 4
+},
+{
+"id": 592,
+"parent": 121,
+"name": "DateTime.java(22263,83,<740,10>,<744,4>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/DateTime.java|(22263,83,<740,10>,<744,4>)",
+"size": 4
+},
+{
+"id": 122,
+"name": "cloneClass122"
+},
+{
+"id": 593,
+"parent": 122,
+"name": "Table.java(6139,65,<180,26>,<183,9>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/Table.java|(6139,65,<180,26>,<183,9>)",
+"size": 4
+},
+{
+"id": 594,
+"parent": 122,
+"name": "IndexDescription.java(6721,69,<206,26>,<209,9>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/IndexDescription.java|(6721,69,<206,26>,<209,9>)",
+"size": 4
+},
+{
+"id": 123,
+"name": "cloneClass123"
+},
+{
+"id": 595,
+"parent": 123,
+"name": "TestScrollable.java(1514,988,<43,49>,<61,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/TestScrollable.java|(1514,988,<43,49>,<61,2>)",
+"size": 17
+},
+{
+"id": 596,
+"parent": 123,
+"name": "TestScrollable.java(2969,997,<76,49>,<94,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/TestScrollable.java|(2969,997,<76,49>,<94,2>)",
+"size": 17
+},
+{
+"id": 597,
+"parent": 123,
+"name": "TestScrollable.java(4387,1001,<108,50>,<126,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/TestScrollable.java|(4387,1001,<108,50>,<126,2>)",
+"size": 17
+},
+{
+"id": 124,
+"name": "cloneClass124"
+},
+{
+"id": 598,
+"parent": 124,
+"name": "FileIndex.java(2868,61,<85,56>,<88,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/FileIndex.java|(2868,61,<85,56>,<88,5>)",
+"size": 4
+},
+{
+"id": 599,
+"parent": 124,
+"name": "CommandSet.java(1436,50,<40,38>,<43,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/CommandSet.java|(1436,50,<40,38>,<43,5>)",
+"size": 4
+},
+{
+"id": 600,
+"parent": 124,
+"name": "CommandInsert.java(1850,56,<49,42>,<52,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/CommandInsert.java|(1850,56,<49,42>,<52,5>)",
+"size": 4
+},
+{
+"id": 601,
+"parent": 124,
+"name": "TestDataTypes.java(2974,71,<63,36>,<66,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/TestDataTypes.java|(2974,71,<63,36>,<66,5>)",
+"size": 4
+},
+{
+"id": 125,
+"name": "cloneClass125"
+},
+{
+"id": 602,
+"parent": 125,
+"name": "DataSources.java(1539,118,<48,30>,<52,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/DataSources.java|(1539,118,<48,30>,<52,2>)",
+"size": 5
+},
+{
+"id": 603,
+"parent": 125,
+"name": "Columns.java(1759,125,<58,26>,<62,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/Columns.java|(1759,125,<58,26>,<62,2>)",
+"size": 5
+},
+{
+"id": 604,
+"parent": 125,
+"name": "ForeignKeys.java(1657,125,<56,30>,<60,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/ForeignKeys.java|(1657,125,<56,30>,<60,2>)",
+"size": 5
+},
+{
+"id": 605,
+"parent": 125,
+"name": "LongList.java(1686,118,<60,24>,<64,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/LongList.java|(1686,118,<60,24>,<64,2>)",
+"size": 5
+},
+{
+"id": 606,
+"parent": 125,
+"name": "Strings.java(1629,125,<56,26>,<60,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/Strings.java|(1629,125,<56,26>,<60,2>)",
+"size": 5
+},
+{
+"id": 607,
+"parent": 125,
+"name": "Expressions.java(1803,118,<64,30>,<68,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/Expressions.java|(1803,118,<64,30>,<68,2>)",
+"size": 5
+},
+{
+"id": 608,
+"parent": 125,
+"name": "IndexDescriptions.java(1864,160,<62,36>,<67,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/IndexDescriptions.java|(1864,160,<62,36>,<67,2>)",
+"size": 5
+},
+{
+"id": 126,
+"name": "cloneClass126"
+},
+{
+"id": 609,
+"parent": 126,
+"name": "Table.java(13637,315,<388,55>,<394,21>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/Table.java|(13637,315,<388,55>,<394,21>)",
+"size": 7
+},
+{
+"id": 610,
+"parent": 126,
+"name": "Table.java(12418,210,<358,26>,<364,7>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/Table.java|(12418,210,<358,26>,<364,7>)",
+"size": 7
+},
+{
+"id": 611,
+"parent": 126,
+"name": "Table.java(12930,210,<370,41>,<376,7>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/Table.java|(12930,210,<370,41>,<376,7>)",
+"size": 7
+},
+{
+"id": 127,
+"name": "cloneClass127"
+},
+{
+"id": 612,
+"parent": 127,
+"name": "TestJoins.java(10508,180,<204,75>,<210,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/TestJoins.java|(10508,180,<204,75>,<210,5>)",
+"size": 7
+},
+{
+"id": 613,
+"parent": 127,
+"name": "TestOperatoren.java(11816,180,<267,75>,<273,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/TestOperatoren.java|(11816,180,<267,75>,<273,5>)",
+"size": 7
+},
+{
+"id": 128,
+"name": "cloneClass128"
+},
+{
+"id": 614,
+"parent": 128,
+"name": "ViewResult.java(2392,55,<80,21>,<83,3>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/ViewResult.java|(2392,55,<80,21>,<83,3>)",
+"size": 4
+},
+{
+"id": 615,
+"parent": 128,
+"name": "JoinScrollIndex.java(2692,98,<86,33>,<89,13>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/JoinScrollIndex.java|(2692,98,<86,33>,<89,13>)",
+"size": 4
+},
+{
+"id": 616,
+"parent": 128,
+"name": "SortedResult.java(3842,92,<132,28>,<135,9>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/SortedResult.java|(3842,92,<132,28>,<135,9>)",
+"size": 4
+},
+{
+"id": 129,
+"name": "cloneClass129"
+},
+{
+"id": 617,
+"parent": 129,
+"name": "SQLTokenizer.java(11407,124,<265,52>,<269,13>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/SQLTokenizer.java|(11407,124,<265,52>,<269,13>)",
+"size": 5
+},
+{
+"id": 618,
+"parent": 129,
+"name": "SQLTokenizer.java(11881,126,<279,17>,<283,13>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/SQLTokenizer.java|(11881,126,<279,17>,<283,13>)",
+"size": 5
+},
+{
+"id": 130,
+"name": "cloneClass130"
+},
+{
+"id": 619,
+"parent": 130,
+"name": "SQLParser.java(12017,103,<352,8>,<355,6>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/SQLParser.java|(12017,103,<352,8>,<355,6>)",
+"size": 4
+},
+{
+"id": 620,
+"parent": 130,
+"name": "SQLParser.java(74452,118,<1932,11>,<1935,9>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/SQLParser.java|(74452,118,<1932,11>,<1935,9>)",
+"size": 4
+},
+{
+"id": 131,
+"name": "cloneClass131"
+},
+{
+"id": 621,
+"parent": 131,
+"name": "SSResultSet.java(13112,164,<391,43>,<398,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/SSResultSet.java|(13112,164,<391,43>,<398,2>)",
+"size": 8
+},
+{
+"id": 622,
+"parent": 131,
+"name": "SSResultSet.java(12896,159,<381,47>,<388,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/SSResultSet.java|(12896,159,<381,47>,<388,2>)",
+"size": 8
+},
+{
+"id": 623,
+"parent": 131,
+"name": "SSResultSet.java(13330,167,<401,46>,<408,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/SSResultSet.java|(13330,167,<401,46>,<408,5>)",
+"size": 8
+},
+{
+"id": 132,
+"name": "cloneClass132"
+},
+{
+"id": 624,
+"parent": 132,
+"name": "SSResultSet.java(11185,310,<319,73>,<328,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/SSResultSet.java|(11185,310,<319,73>,<328,5>)",
+"size": 10
+},
+{
+"id": 625,
+"parent": 132,
+"name": "SSCallableStatement.java(7283,300,<202,63>,<211,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/SSCallableStatement.java|(7283,300,<202,63>,<211,5>)",
+"size": 10
+},
+{
+"id": 133,
+"name": "cloneClass133"
+},
+{
+"id": 626,
+"parent": 133,
+"name": "SSResultSet.java(5540,247,<159,64>,<167,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/SSResultSet.java|(5540,247,<159,64>,<167,5>)",
+"size": 9
+},
+{
+"id": 627,
+"parent": 133,
+"name": "SSCallableStatement.java(5660,237,<154,54>,<162,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/SSCallableStatement.java|(5660,237,<154,54>,<162,5>)",
+"size": 9
+},
+{
+"id": 134,
+"name": "cloneClass134"
+},
+{
+"id": 628,
+"parent": 134,
+"name": "TestTransactions.java(3670,924,<110,58>,<135,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/TestTransactions.java|(3670,924,<110,58>,<135,2>)",
+"size": 21
+},
+{
+"id": 629,
+"parent": 134,
+"name": "TestTransactions.java(5716,929,<169,60>,<194,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/TestTransactions.java|(5716,929,<169,60>,<194,2>)",
+"size": 21
+},
+{
+"id": 135,
+"name": "cloneClass135"
+},
+{
+"id": 630,
+"parent": 135,
+"name": "TestTransactions.java(3374,153,<98,10>,<103,3>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/TestTransactions.java|(3374,153,<98,10>,<103,3>)",
+"size": 6
+},
+{
+"id": 631,
+"parent": 135,
+"name": "TestTransactions.java(5420,153,<157,10>,<162,3>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/TestTransactions.java|(5420,153,<157,10>,<162,3>)",
+"size": 6
+},
+{
+"id": 632,
+"parent": 135,
+"name": "TestTransactions.java(13685,153,<365,10>,<370,3>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/TestTransactions.java|(13685,153,<365,10>,<370,3>)",
+"size": 6
+},
+{
+"id": 633,
+"parent": 135,
+"name": "TestTransactions.java(9935,153,<281,10>,<286,3>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/TestTransactions.java|(9935,153,<281,10>,<286,3>)",
+"size": 6
+},
+{
+"id": 136,
+"name": "cloneClass136"
+},
+{
+"id": 634,
+"parent": 136,
+"name": "IndexNode.java(7217,136,<241,99>,<244,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/IndexNode.java|(7217,136,<241,99>,<244,2>)",
+"size": 4
+},
+{
+"id": 635,
+"parent": 136,
+"name": "IndexNode.java(7459,133,<247,98>,<250,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/IndexNode.java|(7459,133,<247,98>,<250,2>)",
+"size": 4
+},
+{
+"id": 137,
+"name": "cloneClass137"
+},
+{
+"id": 636,
+"parent": 137,
+"name": "ExpressionFunctionCase.java(1817,54,<56,60>,<59,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/ExpressionFunctionCase.java|(1817,54,<56,60>,<59,2>)",
+"size": 4
+},
+{
+"id": 637,
+"parent": 137,
+"name": "Database.java(7128,87,<208,29>,<211,13>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/Database.java|(7128,87,<208,29>,<211,13>)",
+"size": 4
+},
+{
+"id": 638,
+"parent": 137,
+"name": "CommandUpdate.java(1832,90,<58,52>,<62,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/CommandUpdate.java|(1832,90,<58,52>,<62,2>)",
+"size": 4
+},
+{
+"id": 639,
+"parent": 137,
+"name": "Identity.java(1843,61,<54,22>,<57,3>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/Identity.java|(1843,61,<54,22>,<57,3>)",
+"size": 4
+},
+{
+"id": 640,
+"parent": 137,
+"name": "Join.java(7496,107,<235,115>,<238,17>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/Join.java|(7496,107,<235,115>,<238,17>)",
+"size": 4
+},
+{
+"id": 641,
+"parent": 137,
+"name": "Join.java(7279,95,<231,111>,<234,13>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/Join.java|(7279,95,<231,111>,<234,13>)",
+"size": 4
+},
+{
+"id": 138,
+"name": "cloneClass138"
+},
+{
+"id": 642,
+"parent": 138,
+"name": "ExpressionFunctionFloor.java(1615,113,<46,39>,<50,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/ExpressionFunctionFloor.java|(1615,113,<46,39>,<50,5>)",
+"size": 5
+},
+{
+"id": 643,
+"parent": 138,
+"name": "ExpressionFunctionAbs.java(3631,113,<104,39>,<108,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/ExpressionFunctionAbs.java|(3631,113,<104,39>,<108,5>)",
+"size": 5
+},
+{
+"id": 644,
+"parent": 138,
+"name": "ExpressionFunctionReturnFloat.java(2344,113,<76,42>,<80,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/ExpressionFunctionReturnFloat.java|(2344,113,<76,42>,<80,5>)",
+"size": 5
+},
+{
+"id": 139,
+"name": "cloneClass139"
+},
+{
+"id": 645,
+"parent": 139,
+"name": "MutableNumeric.java(2563,70,<81,27>,<84,9>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/MutableNumeric.java|(2563,70,<81,27>,<84,9>)",
+"size": 4
+},
+{
+"id": 646,
+"parent": 139,
+"name": "MutableNumeric.java(3081,70,<102,27>,<105,9>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/MutableNumeric.java|(3081,70,<102,27>,<105,9>)",
+"size": 4
+},
+{
+"id": 140,
+"name": "cloneClass140"
+},
+{
+"id": 647,
+"parent": 140,
+"name": "Command.java(4487,122,<148,52>,<152,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/Command.java|(4487,122,<148,52>,<152,5>)",
+"size": 5
+},
+{
+"id": 648,
+"parent": 140,
+"name": "SSStatement.java(9437,151,<359,65>,<363,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/SSStatement.java|(9437,151,<359,65>,<363,5>)",
+"size": 5
+},
+{
+"id": 141,
+"name": "cloneClass141"
+},
+{
+"id": 649,
+"parent": 141,
+"name": "JoinScroll.java(2595,158,<83,14>,<88,13>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/JoinScroll.java|(2595,158,<83,14>,<88,13>)",
+"size": 6
+},
+{
+"id": 650,
+"parent": 141,
+"name": "JoinScroll.java(5939,177,<164,58>,<169,17>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/JoinScroll.java|(5939,177,<164,58>,<169,17>)",
+"size": 6
+},
+{
+"id": 142,
+"name": "cloneClass142"
+},
+{
+"id": 651,
+"parent": 142,
+"name": "TableResult.java(8882,46,<320,24>,<323,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/TableResult.java|(8882,46,<320,24>,<323,5>)",
+"size": 4
+},
+{
+"id": 652,
+"parent": 142,
+"name": "TableResult.java(8969,41,<327,22>,<330,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/TableResult.java|(8969,41,<327,22>,<330,2>)",
+"size": 4
+},
+{
+"id": 143,
+"name": "cloneClass143"
+},
+{
+"id": 653,
+"parent": 143,
+"name": "CommandLine.java(2631,109,<75,39>,<78,13>)",
+"location": "|project://smallsql0.21_src/src/smallsql/tools/CommandLine.java|(2631,109,<75,39>,<78,13>)",
+"size": 4
+},
+{
+"id": 654,
+"parent": 143,
+"name": "CommandLine.java(2430,102,<69,35>,<72,9>)",
+"location": "|project://smallsql0.21_src/src/smallsql/tools/CommandLine.java|(2430,102,<69,35>,<72,9>)",
+"size": 4
+},
+{
+"id": 144,
+"name": "cloneClass144"
+},
+{
+"id": 655,
+"parent": 144,
+"name": "TableResult.java(7833,34,<268,26>,<271,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/TableResult.java|(7833,34,<268,26>,<271,2>)",
+"size": 4
+},
+{
+"id": 656,
+"parent": 144,
+"name": "TableResult.java(7508,40,<250,65>,<253,4>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/TableResult.java|(7508,40,<250,65>,<253,4>)",
+"size": 4
+},
+{
+"id": 145,
+"name": "cloneClass145"
+},
+{
+"id": 657,
+"parent": 145,
+"name": "TableView.java(3926,191,<105,21>,<113,3>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/TableView.java|(3926,191,<105,21>,<113,3>)",
+"size": 9
+},
+{
+"id": 658,
+"parent": 145,
+"name": "IndexDescription.java(6154,281,<186,27>,<194,9>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/IndexDescription.java|(6154,281,<186,27>,<194,9>)",
+"size": 9
+},
+{
+"id": 146,
+"name": "cloneClass146"
+},
+{
+"id": 659,
+"parent": 146,
+"name": "TestGroupBy.java(9772,87,<310,42>,<313,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/TestGroupBy.java|(9772,87,<310,42>,<313,2>)",
+"size": 4
+},
+{
+"id": 660,
+"parent": 146,
+"name": "TestGroupBy.java(10042,86,<320,41>,<323,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/TestGroupBy.java|(10042,86,<320,41>,<323,2>)",
+"size": 4
+},
+{
+"id": 147,
+"name": "cloneClass147"
+},
+{
+"id": 661,
+"parent": 147,
+"name": "Utils.java(4112,153,<125,32>,<131,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/Utils.java|(4112,153,<125,32>,<131,2>)",
+"size": 7
+},
+{
+"id": 662,
+"parent": 147,
+"name": "Utils.java(4308,142,<133,38>,<139,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/Utils.java|(4308,142,<133,38>,<139,2>)",
+"size": 7
+},
+{
+"id": 148,
+"name": "cloneClass148"
+},
+{
+"id": 663,
+"parent": 148,
+"name": "IndexScrollStatus.java(3627,50,<105,29>,<108,6>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/IndexScrollStatus.java|(3627,50,<105,29>,<108,6>)",
+"size": 4
+},
+{
+"id": 664,
+"parent": 148,
+"name": "IndexScrollStatus.java(4620,50,<135,29>,<138,6>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/IndexScrollStatus.java|(4620,50,<135,29>,<138,6>)",
+"size": 4
+},
+{
+"id": 149,
+"name": "cloneClass149"
+},
+{
+"id": 665,
+"parent": 149,
+"name": "TestJoins.java(4981,81,<91,34>,<94,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/TestJoins.java|(4981,81,<91,34>,<94,5>)",
+"size": 4
+},
+{
+"id": 666,
+"parent": 149,
+"name": "TestOperatoren.java(5060,81,<90,39>,<93,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/TestOperatoren.java|(5060,81,<90,39>,<93,5>)",
+"size": 4
+},
+{
+"id": 667,
+"parent": 149,
+"name": "TestFunctions.java(22429,81,<368,38>,<371,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/TestFunctions.java|(22429,81,<368,38>,<371,5>)",
+"size": 4
+},
+{
+"id": 668,
+"parent": 149,
+"name": "TestExceptions.java(3395,76,<70,39>,<73,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/TestExceptions.java|(3395,76,<70,39>,<73,5>)",
+"size": 4
+},
+{
+"id": 150,
+"name": "cloneClass150"
+},
+{
+"id": 669,
+"parent": 150,
+"name": "ExpressionFunctionReturnP1StringAndBinary.java(2434,84,<80,52>,<83,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/ExpressionFunctionReturnP1StringAndBinary.java|(2434,84,<80,52>,<83,2>)",
+"size": 4
+},
+{
+"id": 670,
+"parent": 150,
+"name": "ExpressionFunctionReturnString.java(2373,84,<84,52>,<87,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/ExpressionFunctionReturnString.java|(2373,84,<84,52>,<87,2>)",
+"size": 4
+},
+{
+"id": 151,
+"name": "cloneClass151"
+},
+{
+"id": 671,
+"parent": 151,
+"name": "ExpressionFunctionReturnP1StringAndBinary.java(1664,87,<44,45>,<47,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/ExpressionFunctionReturnP1StringAndBinary.java|(1664,87,<44,45>,<47,2>)",
+"size": 4
+},
+{
+"id": 672,
+"parent": 151,
+"name": "ExpressionFunctionReturnString.java(1603,87,<48,45>,<51,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/ExpressionFunctionReturnString.java|(1603,87,<48,45>,<51,2>)",
+"size": 4
+},
+{
+"id": 152,
+"name": "cloneClass152"
+},
+{
+"id": 673,
+"parent": 152,
+"name": "SortedResult.java(6319,175,<224,13>,<231,9>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/SortedResult.java|(6319,175,<224,13>,<231,9>)",
+"size": 8
+},
+{
+"id": 674,
+"parent": 152,
+"name": "SortedResult.java(6142,173,<217,22>,<224,9>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/SortedResult.java|(6142,173,<217,22>,<224,9>)",
+"size": 8
+},
+{
+"id": 153,
+"name": "cloneClass153"
+},
+{
+"id": 675,
+"parent": 153,
+"name": "SQLTokenizer.java(35328,355,<870,10>,<877,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/SQLTokenizer.java|(35328,355,<870,10>,<877,5>)",
+"size": 8
+},
+{
+"id": 676,
+"parent": 153,
+"name": "SQLTokenizer.java(25551,210,<635,10>,<642,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/SQLTokenizer.java|(25551,210,<635,10>,<642,5>)",
+"size": 8
+},
+{
+"id": 154,
+"name": "cloneClass154"
+},
+{
+"id": 677,
+"parent": 154,
+"name": "ExpressionFunctionUCase.java(1810,78,<58,43>,<61,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/ExpressionFunctionUCase.java|(1810,78,<58,43>,<61,2>)",
+"size": 4
+},
+{
+"id": 678,
+"parent": 154,
+"name": "ExpressionFunctionLCase.java(1810,78,<58,43>,<61,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/ExpressionFunctionLCase.java|(1810,78,<58,43>,<61,2>)",
+"size": 4
+},
+{
+"id": 155,
+"name": "cloneClass155"
+},
+{
+"id": 679,
+"parent": 155,
+"name": "SQLTokenizer.java(15697,182,<394,7>,<399,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/SQLTokenizer.java|(15697,182,<394,7>,<399,2>)",
+"size": 5
+},
+{
+"id": 680,
+"parent": 155,
+"name": "SQLTokenizer.java(14312,237,<363,10>,<368,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/SQLTokenizer.java|(14312,237,<363,10>,<368,5>)",
+"size": 5
+},
+{
+"id": 156,
+"name": "cloneClass156"
+},
+{
+"id": 681,
+"parent": 156,
+"name": "SQLParser.java(59646,148,<1559,35>,<1563,17>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/SQLParser.java|(59646,148,<1559,35>,<1563,17>)",
+"size": 5
+},
+{
+"id": 682,
+"parent": 156,
+"name": "SQLParser.java(67066,168,<1742,24>,<1746,21>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/SQLParser.java|(67066,168,<1742,24>,<1746,21>)",
+"size": 5
+},
+{
+"id": 157,
+"name": "cloneClass157"
+},
+{
+"id": 683,
+"parent": 157,
+"name": "IndexNode.java(11641,71,<394,35>,<397,3>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/IndexNode.java|(11641,71,<394,35>,<397,3>)",
+"size": 4
+},
+{
+"id": 684,
+"parent": 157,
+"name": "IndexNode.java(11750,71,<398,32>,<401,3>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/IndexNode.java|(11750,71,<398,32>,<401,3>)",
+"size": 4
+},
+{
+"id": 158,
+"name": "cloneClass158"
+},
+{
+"id": 685,
+"parent": 158,
+"name": "ExpressionFunction.java(3754,221,<117,59>,<123,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/ExpressionFunction.java|(3754,221,<117,59>,<123,5>)",
+"size": 7
+},
+{
+"id": 686,
+"parent": 158,
+"name": "ExpressionFunction.java(3309,207,<105,54>,<111,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/ExpressionFunction.java|(3309,207,<105,54>,<111,5>)",
+"size": 7
+},
+{
+"id": 159,
+"name": "cloneClass159"
+},
+{
+"id": 687,
+"parent": 159,
+"name": "TestGroupBy.java(3733,111,<125,46>,<128,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/TestGroupBy.java|(3733,111,<125,46>,<128,2>)",
+"size": 4
+},
+{
+"id": 688,
+"parent": 159,
+"name": "TestGroupBy.java(5905,115,<181,49>,<184,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/TestGroupBy.java|(5905,115,<181,49>,<184,2>)",
+"size": 4
+},
+{
+"id": 160,
+"name": "cloneClass160"
+},
+{
+"id": 689,
+"parent": 160,
+"name": "TestGroupBy.java(9060,102,<285,45>,<288,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/TestGroupBy.java|(9060,102,<285,45>,<288,2>)",
+"size": 4
+},
+{
+"id": 690,
+"parent": 160,
+"name": "TestGroupBy.java(9484,102,<300,45>,<303,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/TestGroupBy.java|(9484,102,<300,45>,<303,2>)",
+"size": 4
+},
+{
+"id": 161,
+"name": "cloneClass161"
+},
+{
+"id": 691,
+"parent": 161,
+"name": "TestGroupBy.java(4295,430,<141,48>,<152,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/TestGroupBy.java|(4295,430,<141,48>,<152,2>)",
+"size": 12
+},
+{
+"id": 692,
+"parent": 161,
+"name": "TestGroupBy.java(5399,452,<168,43>,<179,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/TestGroupBy.java|(5399,452,<168,43>,<179,2>)",
+"size": 12
+},
+{
+"id": 162,
+"name": "cloneClass162"
+},
+{
+"id": 693,
+"parent": 162,
+"name": "MutableNumeric.java(10059,157,<362,22>,<371,3>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/MutableNumeric.java|(10059,157,<362,22>,<371,3>)",
+"size": 10
+},
+{
+"id": 694,
+"parent": 162,
+"name": "MutableNumeric.java(10220,167,<371,7>,<380,3>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/MutableNumeric.java|(10220,167,<371,7>,<380,3>)",
+"size": 10
+},
+{
+"id": 163,
+"name": "cloneClass163"
+},
+{
+"id": 695,
+"parent": 163,
+"name": "Index.java(14155,123,<410,20>,<416,4>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/Index.java|(14155,123,<410,20>,<416,4>)",
+"size": 7
+},
+{
+"id": 696,
+"parent": 163,
+"name": "Index.java(12710,128,<351,13>,<357,4>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/Index.java|(12710,128,<351,13>,<357,4>)",
+"size": 7
+},
+{
+"id": 164,
+"name": "cloneClass164"
+},
+{
+"id": 697,
+"parent": 164,
+"name": "TestOrderBy.java(17695,140,<666,47>,<671,3>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/TestOrderBy.java|(17695,140,<666,47>,<671,3>)",
+"size": 6
+},
+{
+"id": 698,
+"parent": 164,
+"name": "TestOrderBy.java(21642,139,<811,18>,<816,3>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/TestOrderBy.java|(21642,139,<811,18>,<816,3>)",
+"size": 6
+},
+{
+"id": 699,
+"parent": 164,
+"name": "TestOrderBy.java(5712,139,<187,18>,<192,3>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/TestOrderBy.java|(5712,139,<187,18>,<192,3>)",
+"size": 6
+},
+{
+"id": 165,
+"name": "cloneClass165"
+},
+{
+"id": 700,
+"parent": 165,
+"name": "SSPreparedStatement.java(5602,111,<162,98>,<165,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/SSPreparedStatement.java|(5602,111,<162,98>,<165,5>)",
+"size": 4
+},
+{
+"id": 701,
+"parent": 165,
+"name": "SSPreparedStatement.java(6155,113,<175,99>,<178,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/SSPreparedStatement.java|(6155,113,<175,99>,<178,5>)",
+"size": 4
+},
+{
+"id": 166,
+"name": "cloneClass166"
+},
+{
+"id": 702,
+"parent": 166,
+"name": "TestOrderBy.java(7772,118,<271,18>,<275,3>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/TestOrderBy.java|(7772,118,<271,18>,<275,3>)",
+"size": 5
+},
+{
+"id": 703,
+"parent": 166,
+"name": "TestOrderBy.java(8358,116,<294,18>,<298,3>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/TestOrderBy.java|(8358,116,<294,18>,<298,3>)",
+"size": 5
+},
+{
+"id": 167,
+"name": "cloneClass167"
+},
+{
+"id": 704,
+"parent": 167,
+"name": "Index.java(14333,140,<418,21>,<424,4>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/Index.java|(14333,140,<418,21>,<424,4>)",
+"size": 7
+},
+{
+"id": 705,
+"parent": 167,
+"name": "Index.java(12893,144,<359,21>,<365,4>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/Index.java|(12893,144,<359,21>,<365,4>)",
+"size": 7
+},
+{
+"id": 168,
+"name": "cloneClass168"
+},
+{
+"id": 706,
+"parent": 168,
+"name": "TestLanguage.java(3143,119,<104,7>,<109,4>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/TestLanguage.java|(3143,119,<104,7>,<109,4>)",
+"size": 5
+},
+{
+"id": 707,
+"parent": 168,
+"name": "TestLanguage.java(2646,117,<84,6>,<89,3>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/TestLanguage.java|(2646,117,<84,6>,<89,3>)",
+"size": 5
+},
+{
+"id": 169,
+"name": "cloneClass169"
+},
+{
+"id": 708,
+"parent": 169,
+"name": "BasicTestCase.java(1979,100,<61,6>,<65,3>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/BasicTestCase.java|(1979,100,<61,6>,<65,3>)",
+"size": 5
+},
+{
+"id": 709,
+"parent": 169,
+"name": "BenchTest.java(12066,201,<292,15>,<297,13>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/BenchTest.java|(12066,201,<292,15>,<297,13>)",
+"size": 5
+},
+{
+"id": 170,
+"name": "cloneClass170"
+},
+{
+"id": 710,
+"parent": 170,
+"name": "BasicTestCase.java(7521,169,<217,30>,<220,3>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/BasicTestCase.java|(7521,169,<217,30>,<220,3>)",
+"size": 4
+},
+{
+"id": 711,
+"parent": 170,
+"name": "BasicTestCase.java(7717,154,<221,25>,<224,3>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/BasicTestCase.java|(7717,154,<221,25>,<224,3>)",
+"size": 4
+},
+{
+"id": 712,
+"parent": 170,
+"name": "BasicTestCase.java(7335,154,<213,25>,<216,3>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/BasicTestCase.java|(7335,154,<213,25>,<216,3>)",
+"size": 4
+},
+{
+"id": 171,
+"name": "cloneClass171"
+},
+{
+"id": 713,
+"parent": 171,
+"name": "SSConnection.java(5183,100,<154,30>,<157,5>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/SSConnection.java|(5183,100,<154,30>,<157,5>)",
+"size": 4
+},
+{
+"id": 714,
+"parent": 171,
+"name": "SSConnection.java(5023,128,<150,39>,<153,14>)",
+"location": "|project://smallsql0.21_src/src/smallsql/database/SSConnection.java|(5023,128,<150,39>,<153,14>)",
+"size": 4
+},
+{
+"id": 172,
+"name": "cloneClass172"
+},
+{
+"id": 715,
+"parent": 172,
+"name": "TestOrderBy.java(6650,619,<226,59>,<251,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/TestOrderBy.java|(6650,619,<226,59>,<251,2>)",
+"size": 22
+},
+{
+"id": 716,
+"parent": 172,
+"name": "TestOrderBy.java(5971,612,<198,56>,<223,2>)",
+"location": "|project://smallsql0.21_src/src/smallsql/junit/TestOrderBy.java|(5971,612,<198,56>,<223,2>)",
+"size": 22
+}
+]
+}

@@ -1,0 +1,151 @@
+<html>
+
+<head>
+    <title>
+        Software Maintainability Report of |project://smallsql0.21_src|
+    </title>
+    <style type="text/css">
+        
+
+        .test-result-table {
+            border: 1px solid black;
+            width: 800px;
+        }
+        
+        .test-result-table-header-cell {
+            border-bottom: 1px solid black;
+            background-color: silver;
+        }
+        
+        .test-result-step-command-cell {
+            border-bottom: 1px solid gray;
+        }
+        
+        .test-result-step-description-cell {
+            border-bottom: 1px solid gray;
+        }
+        
+        .test-result-step-result-cell-ok {
+            border-bottom: 1px solid gray;
+            background-color: green;
+        }
+        
+        .test-result-step-result-cell-failure {
+            border-bottom: 1px solid gray;
+            background-color: red;
+        }
+        
+        .test-result-step-result-cell-notperformed {
+            border-bottom: 1px solid gray;
+            background-color: white;
+        }
+        
+        .test-result-describe-cell {
+            background-color: tan;
+            font-style: italic;
+        }
+        
+        .test-cast-status-box-ok {
+            border: 1px solid black;
+            float: left;
+            margin-right: 10px;
+            width: 45px;
+            height: 25px;
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="test-results-header">
+        Software Clone Report of |project://smallsql0.21_src|
+    </h1>
+    <p>Test performed at $T21:37:18.448+00:00$ on the $2022-12-19$.</p>
+    <p>Overall execution time: duration(0,0,0,0,0,54,921).</p>
+    <table class="test-result-table" cellspacing="0">
+        <thead>
+            <tr>
+                <td class="test-result-table-header-cell">
+                    <b>Metric</b>
+                </td>
+                <td class="test-result-table-header-cell">
+                    <b>Value</b>
+                </td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="test-result-step-row test-result-step-row-altone">
+                <td class="test-result-step-command-cell">Relate Number Duplicates (%)</td>
+                <td class="test-result-step-command-cell">13.0829447000%</td>
+            </tr>
+            <tr class="test-result-step-row test-result-step-row-altone">
+                <td class="test-result-step-command-cell">Number of Clones</td>
+                <td class="test-result-step-command-cell">544</td>
+            </tr>
+            <tr class="test-result-step-row test-result-step-row-altone">
+                <td class="test-result-step-command-cell">Number of Clone Classes</td>
+                <td class="test-result-step-command-cell">171</td>
+            </tr>
+            <tr class="test-result-step-row test-result-step-row-altone">
+                <td class="test-result-step-command-cell">Biggest Clone (LOC)</td>
+                <td class="test-result-step-command-cell">23</td>
+            </tr>
+            <tr class="test-result-step-row test-result-step-row-altone">
+                <td class="test-result-step-command-cell">Biggest Clone Class</td>
+                <td class="test-result-step-command-cell">15</td>
+            </tr>
+        </tbody>
+    </table>
+    <p>In the following, we report the clones from the largest clone class</p>
+    <br>
+    <pre>
+        Clone at location |project://smallsql0.21_src/src/smallsql/junit/TestAlterTable.java|(4064,122,<105,16>,<108,13>) looks like:<br><br><div style="background-color:#d6d6d6">{
+                rs.next();
+                fail("Alter Table should not work on a table with a lock.");
+            }</div><br><br>Clone at location |project://smallsql0.21_src/src/smallsql/junit/TestStatement.java|(4712,85,<131,11>,<134,9>) looks like:<br><br><div style="background-color:#d6d6d6">{
+            rs.next();
+            fail("ResultSet should be closed");
+        }</div><br><br>Clone at location |project://smallsql0.21_src/src/smallsql/junit/TestExceptionMethods.java|(10042,84,<289,11>,<292,9>) looks like:<br><br><div style="background-color:#d6d6d6">{
+            pr.execute();
+            fail("Exception should throw");
+        }</div><br><br>Clone at location |project://smallsql0.21_src/src/smallsql/junit/TestExceptionMethods.java|(2210,130,<61,15>,<64,13>) looks like:<br><br><div style="background-color:#d6d6d6">{
+                rs.isFirst();
+                fail("SQLException 'ResultSet is forward only' should be throw");
+            }</div><br><br>Clone at location |project://smallsql0.21_src/src/smallsql/junit/TestExceptionMethods.java|(10407,90,<301,11>,<304,9>) looks like:<br><br><div style="background-color:#d6d6d6">{
+            pr.executeUpdate();
+            fail("Exception should throw");
+        }</div><br><br>Clone at location |project://smallsql0.21_src/src/smallsql/junit/TestExceptionMethods.java|(3158,129,<89,15>,<92,13>) looks like:<br><br><div style="background-color:#d6d6d6">{
+                rs.isLast();
+                fail("SQLException 'ResultSet is forward only' should be throw");
+            }</div><br><br>Clone at location |project://smallsql0.21_src/src/smallsql/junit/TestStatement.java|(6979,88,<189,11>,<192,9>) looks like:<br><br><div style="background-color:#d6d6d6">{
+            st.getGeneratedKeys();
+            fail("NO_GENERATED_KEYS");
+        }</div><br><br>Clone at location |project://smallsql0.21_src/src/smallsql/junit/TestStatement.java|(9786,88,<249,11>,<252,9>) looks like:<br><br><div style="background-color:#d6d6d6">{
+            pr.getGeneratedKeys();
+            fail("NO_GENERATED_KEYS");
+        }</div><br><br>Clone at location |project://smallsql0.21_src/src/smallsql/junit/TestExceptionMethods.java|(2448,128,<68,15>,<71,13>) looks like:<br><br><div style="background-color:#d6d6d6">{
+                rs.first();
+                fail("SQLException 'ResultSet is forward only' should be throw");
+            }</div><br><br>Clone at location |project://smallsql0.21_src/src/smallsql/junit/TestExceptionMethods.java|(3395,134,<96,15>,<99,13>) looks like:<br><br><div style="background-color:#d6d6d6">{
+                rs.isAfterLast();
+                fail("SQLException 'ResultSet is forward only' should be throw");
+            }</div><br><br>Clone at location |project://smallsql0.21_src/src/smallsql/junit/TestExceptionMethods.java|(10222,89,<295,11>,<298,9>) looks like:<br><br><div style="background-color:#d6d6d6">{
+            pr.executeQuery();
+            fail("Exception should throw");
+        }</div><br><br>Clone at location |project://smallsql0.21_src/src/smallsql/junit/TestExceptionMethods.java|(3637,132,<103,15>,<106,13>) looks like:<br><br><div style="background-color:#d6d6d6">{
+                rs.afterLast();
+                fail("SQLException 'ResultSet is forward only' should be throw");
+            }</div><br><br>Clone at location |project://smallsql0.21_src/src/smallsql/junit/TestExceptionMethods.java|(2684,131,<75,15>,<78,13>) looks like:<br><br><div style="background-color:#d6d6d6">{
+                rs.previous();
+                fail("SQLException 'ResultSet is forward only' should be throw");
+            }</div><br><br>Clone at location |project://smallsql0.21_src/src/smallsql/junit/TestExceptionMethods.java|(1966,136,<54,15>,<57,13>) looks like:<br><br><div style="background-color:#d6d6d6">{
+                rs.isBeforeFirst();
+                fail("SQLException 'ResultSet is forward only' should be throw");
+            }</div><br><br>Clone at location |project://smallsql0.21_src/src/smallsql/junit/TestExceptionMethods.java|(2923,127,<82,15>,<85,13>) looks like:<br><br><div style="background-color:#d6d6d6">{
+                rs.last();
+                fail("SQLException 'ResultSet is forward only' should be throw");
+            }</div><br><br>
+    </pre>
+</body>
+
+</html>

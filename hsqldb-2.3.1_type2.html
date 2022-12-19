@@ -1,0 +1,281 @@
+<html>
+
+<head>
+    <title>
+        Software Maintainability Report of |project://hsqldb-2.3.1|
+    </title>
+    <style type="text/css">
+        
+
+        .test-result-table {
+            border: 1px solid black;
+            width: 800px;
+        }
+        
+        .test-result-table-header-cell {
+            border-bottom: 1px solid black;
+            background-color: silver;
+        }
+        
+        .test-result-step-command-cell {
+            border-bottom: 1px solid gray;
+        }
+        
+        .test-result-step-description-cell {
+            border-bottom: 1px solid gray;
+        }
+        
+        .test-result-step-result-cell-ok {
+            border-bottom: 1px solid gray;
+            background-color: green;
+        }
+        
+        .test-result-step-result-cell-failure {
+            border-bottom: 1px solid gray;
+            background-color: red;
+        }
+        
+        .test-result-step-result-cell-notperformed {
+            border-bottom: 1px solid gray;
+            background-color: white;
+        }
+        
+        .test-result-describe-cell {
+            background-color: tan;
+            font-style: italic;
+        }
+        
+        .test-cast-status-box-ok {
+            border: 1px solid black;
+            float: left;
+            margin-right: 10px;
+            width: 45px;
+            height: 25px;
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="test-results-header">
+        Software Clone Report of |project://hsqldb-2.3.1|
+    </h1>
+    <p>Test performed at $T20:31:34.170+00:00$ on the $2022-12-19$.</p>
+    <p>Overall execution time: duration(0,0,0,0,35,41,900).</p>
+    <table class="test-result-table" cellspacing="0">
+        <thead>
+            <tr>
+                <td class="test-result-table-header-cell">
+                    <b>Metric</b>
+                </td>
+                <td class="test-result-table-header-cell">
+                    <b>Value</b>
+                </td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="test-result-step-row test-result-step-row-altone">
+                <td class="test-result-step-command-cell">Relate Number Duplicates (%)</td>
+                <td class="test-result-step-command-cell">17.6192086600%</td>
+            </tr>
+            <tr class="test-result-step-row test-result-step-row-altone">
+                <td class="test-result-step-command-cell">Number of Clones</td>
+                <td class="test-result-step-command-cell">4086</td>
+            </tr>
+            <tr class="test-result-step-row test-result-step-row-altone">
+                <td class="test-result-step-command-cell">Number of Clone Classes</td>
+                <td class="test-result-step-command-cell">1404</td>
+            </tr>
+            <tr class="test-result-step-row test-result-step-row-altone">
+                <td class="test-result-step-command-cell">Biggest Clone (LOC)</td>
+                <td class="test-result-step-command-cell">82</td>
+            </tr>
+            <tr class="test-result-step-row test-result-step-row-altone">
+                <td class="test-result-step-command-cell">Biggest Clone Class</td>
+                <td class="test-result-step-command-cell">25</td>
+            </tr>
+        </tbody>
+    </table>
+    <p>In the following, we report the clones from the largest clone class</p>
+    <br>
+    <pre>
+        Clone at location |project://hsqldb-2.3.1/hsqldb/src/org/hsqldb/lib/IntKeyHashMapConcurrent.java|(4077,107,<149,24>,<156,5>) looks like:<br><br><div style="background-color:#d6d6d6">{
+
+        if (keySet == null) {
+            keySet = new KeySet();
+        }
+
+        return keySet;
+    }</div><br><br>Clone at location |project://hsqldb-2.3.1/hsqldb/src/org/hsqldb/lib/IntKeyIntValueHashMap.java|(3355,107,<120,31>,<127,5>) looks like:<br><br><div style="background-color:#d6d6d6">{
+
+        if (values == null) {
+            values = new Values();
+        }
+
+        return values;
+    }</div><br><br>Clone at location |project://hsqldb-2.3.1/hsqldb/src/org/hsqldb/ClientConnection.java|(16585,111,<550,32>,<557,5>) looks like:<br><br><div style="background-color:#d6d6d6">{
+
+        if (scanner == null) {
+            scanner = new Scanner();
+        }
+
+        return scanner;
+    }</div><br><br>Clone at location |project://hsqldb-2.3.1/hsqldb/src/org/hsqldb/lib/IntValueHashMap.java|(4210,107,<155,24>,<162,5>) looks like:<br><br><div style="background-color:#d6d6d6">{
+
+        if (keySet == null) {
+            keySet = new KeySet();
+        }
+
+        return keySet;
+    }</div><br><br>Clone at location |project://hsqldb-2.3.1/hsqldb/src/org/hsqldb/lib/LongKeyHashMap.java|(4829,107,<192,31>,<199,5>) looks like:<br><br><div style="background-color:#d6d6d6">{
+
+        if (values == null) {
+            values = new Values();
+        }
+
+        return values;
+    }</div><br><br>Clone at location |project://hsqldb-2.3.1/hsqldb/src/org/hsqldb/lib/LongValueHashMap.java|(4087,107,<150,24>,<157,5>) looks like:<br><br><div style="background-color:#d6d6d6">{
+
+        if (keySet == null) {
+            keySet = new KeySet();
+        }
+
+        return keySet;
+    }</div><br><br>Clone at location |project://hsqldb-2.3.1/hsqldb/src/org/hsqldb/lib/LongKeyHashMap.java|(4689,107,<183,24>,<190,5>) looks like:<br><br><div style="background-color:#d6d6d6">{
+
+        if (keySet == null) {
+            keySet = new KeySet();
+        }
+
+        return keySet;
+    }</div><br><br>Clone at location |project://hsqldb-2.3.1/hsqldb/src/org/hsqldb/lib/OrderedLongKeyHashMap.java|(4587,107,<162,31>,<169,5>) looks like:<br><br><div style="background-color:#d6d6d6">{
+
+        if (values == null) {
+            values = new Values();
+        }
+
+        return values;
+    }</div><br><br>Clone at location |project://hsqldb-2.3.1/hsqldb/src/org/hsqldb/lib/IntKeyHashMapConcurrent.java|(4217,107,<158,31>,<165,5>) looks like:<br><br><div style="background-color:#d6d6d6">{
+
+        if (values == null) {
+            values = new Values();
+        }
+
+        return values;
+    }</div><br><br>Clone at location |project://hsqldb-2.3.1/hsqldb/src/org/hsqldb/lib/IntKeyHashMap.java|(3075,107,<104,31>,<111,5>) looks like:<br><br><div style="background-color:#d6d6d6">{
+
+        if (values == null) {
+            values = new Values();
+        }
+
+        return values;
+    }</div><br><br>Clone at location |project://hsqldb-2.3.1/hsqldb/src/org/hsqldb/lib/MultiValueHashMap.java|(3367,107,<108,24>,<115,5>) looks like:<br><br><div style="background-color:#d6d6d6">{
+
+        if (keySet == null) {
+            keySet = new KeySet();
+        }
+
+        return keySet;
+    }</div><br><br>Clone at location |project://hsqldb-2.3.1/hsqldb/src/org/hsqldb/lib/IntKeyHashMap.java|(2935,107,<95,24>,<102,5>) looks like:<br><br><div style="background-color:#d6d6d6">{
+
+        if (keySet == null) {
+            keySet = new KeySet();
+        }
+
+        return keySet;
+    }</div><br><br>Clone at location |project://hsqldb-2.3.1/hsqldb/src/org/hsqldb/lib/HashMap.java|(3563,107,<129,31>,<136,5>) looks like:<br><br><div style="background-color:#d6d6d6">{
+
+        if (values == null) {
+            values = new Values();
+        }
+
+        return values;
+    }</div><br><br>Clone at location |project://hsqldb-2.3.1/hsqldb/src/org/hsqldb/lib/OrderedLongKeyHashMap.java|(4447,107,<153,24>,<160,5>) looks like:<br><br><div style="background-color:#d6d6d6">{
+
+        if (keySet == null) {
+            keySet = new KeySet();
+        }
+
+        return keySet;
+    }</div><br><br>Clone at location |project://hsqldb-2.3.1/hsqldb/src/org/hsqldb/Session.java|(63805,138,<2126,32>,<2133,5>) looks like:<br><br><div style="background-color:#d6d6d6">{
+
+        if (secondaryScanner == null) {
+            secondaryScanner = new Scanner();
+        }
+
+        return secondaryScanner;
+    }</div><br><br>Clone at location |project://hsqldb-2.3.1/hsqldb/src/org/hsqldb/lib/MultiValueHashMap.java|(3507,107,<117,31>,<124,5>) looks like:<br><br><div style="background-color:#d6d6d6">{
+
+        if (values == null) {
+            values = new Values();
+        }
+
+        return values;
+    }</div><br><br>Clone at location |project://hsqldb-2.3.1/hsqldb/src/org/hsqldb/lib/HashMap.java|(3423,107,<120,24>,<127,5>) looks like:<br><br><div style="background-color:#d6d6d6">{
+
+        if (keySet == null) {
+            keySet = new KeySet();
+        }
+
+        return keySet;
+    }</div><br><br>Clone at location |project://hsqldb-2.3.1/hsqldb/src/org/hsqldb/lib/IntValueHashMap.java|(4350,107,<164,31>,<171,5>) looks like:<br><br><div style="background-color:#d6d6d6">{
+
+        if (values == null) {
+            values = new Values();
+        }
+
+        return values;
+    }</div><br><br>Clone at location |project://hsqldb-2.3.1/hsqldb/src/org/hsqldb/lib/LongKeyLongValueHashMap.java|(3353,107,<118,24>,<125,5>) looks like:<br><br><div style="background-color:#d6d6d6">{
+
+        if (keySet == null) {
+            keySet = new KeySet();
+        }
+
+        return keySet;
+    }</div><br><br>Clone at location |project://hsqldb-2.3.1/hsqldb/src/org/hsqldb/lib/OrderedIntKeyHashMap.java|(3162,107,<110,24>,<117,5>) looks like:<br><br><div style="background-color:#d6d6d6">{
+
+        if (keySet == null) {
+            keySet = new KeySet();
+        }
+
+        return keySet;
+    }</div><br><br>Clone at location |project://hsqldb-2.3.1/hsqldb/src/org/hsqldb/lib/LongKeyIntValueHashMap.java|(3561,107,<131,31>,<138,5>) looks like:<br><br><div style="background-color:#d6d6d6">{
+
+        if (values == null) {
+            values = new Values();
+        }
+
+        return values;
+    }</div><br><br>Clone at location |project://hsqldb-2.3.1/hsqldb/src/org/hsqldb/lib/IntKeyIntValueHashMap.java|(3215,107,<111,24>,<118,5>) looks like:<br><br><div style="background-color:#d6d6d6">{
+
+        if (keySet == null) {
+            keySet = new KeySet();
+        }
+
+        return keySet;
+    }</div><br><br>Clone at location |project://hsqldb-2.3.1/hsqldb/src/org/hsqldb/lib/LongKeyLongValueHashMap.java|(3493,107,<127,31>,<134,5>) looks like:<br><br><div style="background-color:#d6d6d6">{
+
+        if (values == null) {
+            values = new Values();
+        }
+
+        return values;
+    }</div><br><br>Clone at location |project://hsqldb-2.3.1/hsqldb/src/org/hsqldb/lib/LongKeyIntValueHashMap.java|(3421,107,<122,24>,<129,5>) looks like:<br><br><div style="background-color:#d6d6d6">{
+
+        if (keySet == null) {
+            keySet = new KeySet();
+        }
+
+        return keySet;
+    }</div><br><br>Clone at location |project://hsqldb-2.3.1/hsqldb/src/org/hsqldb/lib/OrderedIntKeyHashMap.java|(3302,107,<119,31>,<126,5>) looks like:<br><br><div style="background-color:#d6d6d6">{
+
+        if (values == null) {
+            values = new Values();
+        }
+
+        return values;
+    }</div><br><br>
+    </pre>
+</body>
+
+</html>

@@ -1,0 +1,145 @@
+<html>
+
+<head>
+    <title>
+        Software Maintainability Report of |project://smallsql0.21_src|
+    </title>
+    <style type="text/css">
+        
+
+        .test-result-table {
+            border: 1px solid black;
+            width: 800px;
+        }
+        
+        .test-result-table-header-cell {
+            border-bottom: 1px solid black;
+            background-color: silver;
+        }
+        
+        .test-result-step-command-cell {
+            border-bottom: 1px solid gray;
+        }
+        
+        .test-result-step-description-cell {
+            border-bottom: 1px solid gray;
+        }
+        
+        .test-result-step-result-cell-ok {
+            border-bottom: 1px solid gray;
+            background-color: green;
+        }
+        
+        .test-result-step-result-cell-failure {
+            border-bottom: 1px solid gray;
+            background-color: red;
+        }
+        
+        .test-result-step-result-cell-notperformed {
+            border-bottom: 1px solid gray;
+            background-color: white;
+        }
+        
+        .test-result-describe-cell {
+            background-color: tan;
+            font-style: italic;
+        }
+        
+        .test-cast-status-box-ok {
+            border: 1px solid black;
+            float: left;
+            margin-right: 10px;
+            width: 45px;
+            height: 25px;
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="test-results-header">
+        Software Clone Report of |project://smallsql0.21_src|
+    </h1>
+    <p>Test performed at $T21:29:40.966+00:00$ on the $2022-12-19$.</p>
+    <p>Overall execution time: duration(0,0,0,0,0,50,834).</p>
+    <table class="test-result-table" cellspacing="0">
+        <thead>
+            <tr>
+                <td class="test-result-table-header-cell">
+                    <b>Metric</b>
+                </td>
+                <td class="test-result-table-header-cell">
+                    <b>Value</b>
+                </td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="test-result-step-row test-result-step-row-altone">
+                <td class="test-result-step-command-cell">Relate Number Duplicates (%)</td>
+                <td class="test-result-step-command-cell">3.88491006000%</td>
+            </tr>
+            <tr class="test-result-step-row test-result-step-row-altone">
+                <td class="test-result-step-command-cell">Number of Clones</td>
+                <td class="test-result-step-command-cell">192</td>
+            </tr>
+            <tr class="test-result-step-row test-result-step-row-altone">
+                <td class="test-result-step-command-cell">Number of Clone Classes</td>
+                <td class="test-result-step-command-cell">79</td>
+            </tr>
+            <tr class="test-result-step-row test-result-step-row-altone">
+                <td class="test-result-step-command-cell">Biggest Clone (LOC)</td>
+                <td class="test-result-step-command-cell">11</td>
+            </tr>
+            <tr class="test-result-step-row test-result-step-row-altone">
+                <td class="test-result-step-command-cell">Biggest Clone Class</td>
+                <td class="test-result-step-command-cell">13</td>
+            </tr>
+        </tbody>
+    </table>
+    <p>In the following, we report the clones from the largest clone class</p>
+    <br>
+    <pre>
+        Clone at location |project://smallsql0.21_src/src/smallsql/junit/BenchTest.java|(12369,151,<299,16>,<302,9>) looks like:<br><br><div style="background-color:#d6d6d6">{
+            System.out.println();
+            System.out.println("===================================================================");
+        }</div><br><br>Clone at location |project://smallsql0.21_src/src/smallsql/junit/BenchTest.java|(23983,151,<555,16>,<558,9>) looks like:<br><br><div style="background-color:#d6d6d6">{
+            System.out.println();
+            System.out.println("===================================================================");
+        }</div><br><br>Clone at location |project://smallsql0.21_src/src/smallsql/junit/BenchTest.java|(9648,151,<239,16>,<242,9>) looks like:<br><br><div style="background-color:#d6d6d6">{
+            System.out.println();
+            System.out.println("===================================================================");
+        }</div><br><br>Clone at location |project://smallsql0.21_src/src/smallsql/junit/BenchTest.java|(5284,151,<127,16>,<130,9>) looks like:<br><br><div style="background-color:#d6d6d6">{
+            System.out.println();
+            System.out.println("===================================================================");
+        }</div><br><br>Clone at location |project://smallsql0.21_src/src/smallsql/junit/BenchTest.java|(25726,151,<602,16>,<605,9>) looks like:<br><br><div style="background-color:#d6d6d6">{
+            System.out.println();
+            System.out.println("===================================================================");
+        }</div><br><br>Clone at location |project://smallsql0.21_src/src/smallsql/junit/BenchTest.java|(28800,151,<678,16>,<681,9>) looks like:<br><br><div style="background-color:#d6d6d6">{
+            System.out.println();
+            System.out.println("===================================================================");
+        }</div><br><br>Clone at location |project://smallsql0.21_src/src/smallsql/junit/BenchTest.java|(7518,151,<186,16>,<189,9>) looks like:<br><br><div style="background-color:#d6d6d6">{
+            System.out.println();
+            System.out.println("===================================================================");
+        }</div><br><br>Clone at location |project://smallsql0.21_src/src/smallsql/junit/BenchTest.java|(18560,151,<445,16>,<448,9>) looks like:<br><br><div style="background-color:#d6d6d6">{
+            System.out.println();
+            System.out.println("===================================================================");
+        }</div><br><br>Clone at location |project://smallsql0.21_src/src/smallsql/junit/BenchTest.java|(27124,151,<637,16>,<640,9>) looks like:<br><br><div style="background-color:#d6d6d6">{
+            System.out.println();
+            System.out.println("===================================================================");
+        }</div><br><br>Clone at location |project://smallsql0.21_src/src/smallsql/junit/BenchTest.java|(14959,151,<360,16>,<363,9>) looks like:<br><br><div style="background-color:#d6d6d6">{
+            System.out.println();
+            System.out.println("===================================================================");
+        }</div><br><br>Clone at location |project://smallsql0.21_src/src/smallsql/junit/BenchTest.java|(6125,151,<152,16>,<155,9>) looks like:<br><br><div style="background-color:#d6d6d6">{
+            System.out.println();
+            System.out.println("===================================================================");
+        }</div><br><br>Clone at location |project://smallsql0.21_src/src/smallsql/junit/BenchTest.java|(16351,151,<396,16>,<399,9>) looks like:<br><br><div style="background-color:#d6d6d6">{
+            System.out.println();
+            System.out.println("===================================================================");
+        }</div><br><br>Clone at location |project://smallsql0.21_src/src/smallsql/junit/BenchTest.java|(21404,151,<500,16>,<503,9>) looks like:<br><br><div style="background-color:#d6d6d6">{
+            System.out.println();
+            System.out.println("===================================================================");
+        }</div><br><br>
+    </pre>
+</body>
+
+</html>
