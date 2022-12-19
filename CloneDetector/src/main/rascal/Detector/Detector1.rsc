@@ -160,7 +160,7 @@ void writeClassesToFile(map[loc, CloneClass] classes, map[str, value] metaData, 
 
     bool firstClass = true;
     int classCount = 2;
-    int numClone = 3;
+    int numClone = 2;
     int numClasses = size(classes);
     for (key <- classes) {
         
@@ -191,7 +191,7 @@ void writeClassesToFile(map[loc, CloneClass] classes, map[str, value] metaData, 
 
             ret += "{\n";
             ret += "\"id\": <numClasses + numClone>,\n";
-            ret += "\"parent\": <1000 * classCount>,\n";
+            ret += "\"parent\": <classCount-1>,\n";
             ret += "\"name\": \"<className><locat>\",\n";
             ret += "\"location\": \"<clone>\",\n";
             ret += "\"size\": <locClones[clone]>\n}";
