@@ -13,21 +13,21 @@ void main() {
     // change call "runDetector1" to "runDetector2" (same parameters)
     // AND: change the outputPaths, such that they end in "_type2.json" or "_type2.html".
     // IF YOU DON'T DO THAT, IT WILL OVERWRITE THE TYPE 1 REPORTS
-    loc projectPath = |project://Series2/Benchmark/CloneBenchmark|;
-    loc outputPathClones = |project://Series2/benchmark_type1.json|;
-    loc outputPathReport = |project://Series2/benchmark_type1.html|;
+    // loc projectPath = |project://Series2/Benchmark/CloneBenchmark|;
+    // loc outputPathClones = |project://Series2/benchmark_type2.json|;
+    // loc outputPathReport = |project://Series2/benchmark_type2.html|;
 
-    //loc projectPath = |project://hsqldb-2.3.1|;
-    //loc outputPathClones = |project://Series2/hsqldb-2.3.1_type1.json|;
-    //loc outputPathReport = |project://Series2/hsqldb-2.3.1_type1.html|;
+    // loc outputPathClones = |project://Series2/hsqldb-2.3.1_type1.json|;
+    // loc outputPathReport = |project://Series2/hsqldb-2.3.1_type1.html|;
+    // loc projectPath = |project://hsqldb-2.3.1|;
     
-    //loc projectPath = |project://smallsql0.21_src|;
-    //loc outputPathClones = |project://Series2/smallsql0.21_src_type1.json|;
-    //loc outputPathReport = |project://Series2/smallsql0.21_src_type1.html|;
+    loc projectPath = |project://smallsql0.21_src|;
+    loc outputPathClones = |project://Series2/smallsql0.21_src_type2.json|;
+    loc outputPathReport = |project://Series2/smallsql0.21_src_type2.html|;
 
 
     set[Declaration] asts = createAstsFromMavenProject(projectPath, true);
-    runDetector1(asts, projectPath, outputPathClones, outputPathReport);
+    runDetector2(asts, projectPath, outputPathClones, outputPathReport);
 }
 
 void runDetector1(set[Declaration] asts, loc projectPath, loc outputPath, loc outputPathReport) {

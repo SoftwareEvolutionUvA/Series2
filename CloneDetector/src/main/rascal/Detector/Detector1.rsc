@@ -170,6 +170,7 @@ void writeClassesToFile(map[loc, CloneClass] classes, map[str, value] metaData, 
         if (firstClass) firstClass = false;
         ret += "{\n";
         ret += "\"id\": <classCount>,\n";
+        ret += "\"parent\": 1,\n";
         ret += "\"name\": \"cloneClass<classCount>\"\n";
         ret += "},\n";
         classCount += 1;
