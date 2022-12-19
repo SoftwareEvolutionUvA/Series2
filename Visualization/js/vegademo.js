@@ -2,7 +2,7 @@ function init() {
     var vegaOptions = {}
     var connector = new MapdCon()
       .protocol("http")
-      .host("my.host.com")
+      .host("http://[::]:8000/")
       .port("6273")
       .dbName("linessa")
       .user("linessa")

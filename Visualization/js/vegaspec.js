@@ -1,6 +1,6 @@
 const series2Visual = {
     "$schema": "https://vega.github.io/schema/vega/v5.json",
-    "width": 800,
+    "width": 600,
     "height": 500,
     "padding": {"left": 5, "right": 5, "top": 20, "bottom": 0},
     "autosize": "none",
@@ -63,7 +63,7 @@ const series2Visual = {
     ],
     "marks": [
       {
-        "name": "nodes",
+        "name": "rect",
         "type": "symbol",
         "from": {"data": "table"},
         "encode": {
@@ -79,23 +79,23 @@ const series2Visual = {
             "tooltip": {"signal": "datum"}
           }
         },
-        "transform": [
-          {
-            "type": "force",
-            "iterations": 100,
-            "static": false,
-            "forces": [
-              {
-                "force": "collide",
-                "iterations": 2,
-                "radius": {"expr": "sqrt(datum.size) / 2"}
-              },
-              {"force": "center", "x": {"signal": "cx"}, "y": {"signal": "cy"}},
-              {"force": "x", "x": "xfocus", "strength": {"signal": "gravityX"}},
-              {"force": "y", "y": "yfocus", "strength": {"signal": "gravityY"}}
-            ]
-          }
-        ]
+        // "transform": [
+        //   {
+        //     "type": "force",
+        //     "iterations": 100,
+        //     "static": false,
+        //     "forces": [
+        //       {
+        //         "force": "collide",
+        //         "iterations": 2,
+        //         "radius": {"expr": "sqrt(datum.size) / 2"}
+        //       },
+        //       {"force": "center", "x": {"signal": "cx"}, "y": {"signal": "cy"}},
+        //       {"force": "x", "x": "xfocus", "strength": {"signal": "gravityX"}},
+        //       {"force": "y", "y": "yfocus", "strength": {"signal": "gravityY"}}
+        //     ]
+        //   }
+        // ]
       },
       {
         "type": "text",
