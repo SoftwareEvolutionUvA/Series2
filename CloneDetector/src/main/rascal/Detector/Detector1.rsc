@@ -135,7 +135,7 @@ map[loc, CloneClass] detector(set[Declaration] asts, tuple[int lower, int upper]
     return classes;
 }
 
-void writeClassesToFile(map[loc, CloneClass] classes, map[str, value] metaData, loc outputFile) {
+void writeClassesToFile(map[loc, CloneClass] classes, map[str, value] metaData, map[loc, int] locClones,loc outputFile) {
     str ret = "{\n\"metaData\": {\n";
     bool firstElem = true;
     for (key <- metaData) {
@@ -168,7 +168,11 @@ void writeClassesToFile(map[loc, CloneClass] classes, map[str, value] metaData, 
                 ret += ",\n"; // I hate JSON
             }
             if (firstElem) firstElem = false;
-            ret += "\"<clone>\"";
+            // create clone object
+            ret += "{\n";
+            ret += "\"location\": \"<clone>\",\n";
+            ret += "\"length\": <locClones[clone]>\n}";
+            
         }
         ret += "]";
     }
@@ -178,7 +182,7 @@ void writeClassesToFile(map[loc, CloneClass] classes, map[str, value] metaData, 
     writeFile(outputFile, ret);
 }
 
-map[str, value] calculateMetaData(map[loc, CloneClass] classes, loc projectPath) {
+tuple[map[str, value], map[loc, int]] calculateMetaData(map[loc, CloneClass] classes, loc projectPath) {
     map[str, value] ret = ();
         
     map[loc, int] cloneLength = ();
@@ -214,28 +218,31 @@ map[str, value] calculateMetaData(map[loc, CloneClass] classes, loc projectPath)
     ret["biggestCloneLOC"] = biggestCloneLOC.representant;
     ret["biggestCloneClassMembers"] = biggestCloneClassMembers.representant;
     ret["numberClones"] = numClones;
-    ret["numCloneClasses"] = size(classes);
 
 
     // duplicate lines (relative)
     int totalLoc = calculateProjectLOC(projectPath);
     ret["relativeDuplicateLines"] = (1.0 * totalLinesClones) / totalLoc;
+    ret["projectLoc"] = totalLoc;
+
 
     // number of cloneClasses
     ret["numberCloneClasses"] = size(classes);
 
     // TODO: example clones
 
-    return ret;
+    return <ret, cloneLength>;
 }
 
 void main() {
-    loc projectPath = |project://Series2/Benchmark/CloneBenchmark|;
+    loc projectPath = |project://hsqldb-2.3.1|;
     set[Declaration] asts = createAstsFromMavenProject(projectPath, true);
     map[loc, CloneClass] classes = detector(asts, <3, 100>);
 
-    map[str, value] metaData = calculateMetaData(classes, projectPath);
-    writeClassesToFile(classes, metaData, |project://Series2/report.json|);
+    tuple[map[str, value], map[loc, int]] stuff = calculateMetaData(classes, projectPath);
+    map[str, value] metaData = stuff[0];
+    map[loc, int] locClones = stuff[1];
+    writeClassesToFile(classes, metaData, locClones, |project://Series2/hsqldb-2.3.1.json|);
     // TODO: file output
 
     // TODO: statistics
