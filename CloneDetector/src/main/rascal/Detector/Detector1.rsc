@@ -155,22 +155,27 @@ void writeClassesToFile(map[loc, CloneClass] classes, map[str, value] metaData, 
 
     // start classes
     ret += "\"cloneClasses\":[\n";
+    // add root node
+    ret += "{\n\"id\": 1,\n\"name\": \"root\"\n},\n";
+
     bool firstClass = true;
-    int classCount = 0;
+    int classCount = 2;
+    int numClone = 3;
+    int numClasses = size(classes);
     for (key <- classes) {
-        classCount += 1;
+        
         if (!firstClass) {
             ret += ",\n"; // I hate JSON
         }
         if (firstClass) firstClass = false;
         ret += "{\n";
-        ret += "\"id\": <1000 * classCount>,\n";
+        ret += "\"id\": <classCount>,\n";
         ret += "\"name\": \"cloneClass<classCount>\"\n";
         ret += "},\n";
+        classCount += 1;
+
         bool firstElem = true;
-        int cloneCount = 0;
         for (clone <- classes[key]) {
-            cloneCount += 1;
             if(!firstElem) {
                 ret += ",\n"; // I hate JSON
             }
@@ -185,11 +190,12 @@ void writeClassesToFile(map[loc, CloneClass] classes, map[str, value] metaData, 
 
 
             ret += "{\n";
-            ret += "\"id\": <1000 * classCount + cloneCount>,\n";
+            ret += "\"id\": <numClasses + numClone>,\n";
             ret += "\"parent\": <1000 * classCount>,\n";
             ret += "\"name\": \"<className><locat>\",\n";
             ret += "\"location\": \"<clone>\",\n";
             ret += "\"size\": <locClones[clone]>\n}";
+            numClone += 1;
         }       
     }
     ret += "\n]\n"; // end classes
@@ -198,9 +204,9 @@ void writeClassesToFile(map[loc, CloneClass] classes, map[str, value] metaData, 
     writeFile(outputFile, ret);
 }
 
-tuple[map[str, value], map[loc, int]] calculateMetaData(map[loc, CloneClass] classes, loc projectPath) {
+tuple[map[str, value], map[loc, int], map[str, str]] calculateMetaData(map[loc, CloneClass] classes, loc projectPath) {
     map[str, value] ret = ();
-        
+            
     map[loc, int] cloneLength = ();
     int totalLinesClones = 0;
     int numClones = 0;
@@ -227,12 +233,10 @@ tuple[map[str, value], map[loc, int]] calculateMetaData(map[loc, CloneClass] cla
             }
         }
         totalLinesClones += locCloneClass;
-
-        
     }
 
-    ret["biggestCloneLOC"] = biggestCloneLOC.representant;
-    ret["biggestCloneClassMembers"] = biggestCloneClassMembers.representant;
+    ret["biggestCloneLOC"] = biggestCloneLOC.len;
+    ret["biggestCloneClassMembers"] = biggestCloneClassMembers.len;
     ret["numberClones"] = numClones;
 
 
@@ -245,7 +249,27 @@ tuple[map[str, value], map[loc, int]] calculateMetaData(map[loc, CloneClass] cla
     // number of cloneClasses
     ret["numberCloneClasses"] = size(classes);
 
-    // TODO: example clones
+    // create report data
+    map[str, str] reportData = ();
+    reportData["APPLICATION"] = "<projectPath>";
+    reportData["REL_DUPLICATES"] = "<((1.0 * totalLinesClones) / totalLoc) * 100>%";
+    reportData["NUM_CLONES"] = "<ret["numberClones"]>";
+    reportData["NUM_CLASSES"] = "<ret["numberCloneClasses"]>";
+    reportData["BIGGEST_CLONE_LOC"] = "<biggestCloneLOC.len>";
+    reportData["BIGGEST_CLONE_CLASS"] = "<biggestCloneClassMembers.len>";
 
-    return <ret, cloneLength>;
+    // build examples
+    // TODO: example clones
+    exampleClones = "";
+    for (clone <- classes[biggestCloneClassMembers.representant]) {
+        exampleClones += "Clone at location <clone> looks like:\<br\>\<br\><readFile(clone)>\<br\>\<br\>";
+    }
+    reportData["CLONE_EXAMPLES"] = exampleClones;
+
+
+    return <ret, cloneLength, reportData>;
+}
+
+void reportvalues(map[str, value] vals) {
+
 }
