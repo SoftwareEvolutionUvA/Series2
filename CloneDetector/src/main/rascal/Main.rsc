@@ -5,6 +5,7 @@ import Detector::Detector1;
 import Detector::Detector2;
 import lang::java::m3::AST;
 import Report;
+import DateTime;
 
 void main() {
     // To run stuff, pick one of the blocks below and uncomment them
@@ -30,12 +31,23 @@ void main() {
 }
 
 void runDetector1(set[Declaration] asts, loc projectPath, loc outputPath, loc outputPathReport) {
+    datetime begin1 = now();
     map[loc, CloneClass] classes = detector(asts, <3, 100>);
 
     tuple[map[str, value], map[loc, int], map[str, str]] stuff = calculateMetaData(classes, projectPath);
+    datetime end1 = now();
+    dur = createDuration(begin1, end1);
+
     map[str, value] metaData = stuff[0];
     map[loc, int] locClones = stuff[1];
+
+
     map[str, str] reportData = stuff[2];
+    todayDate = splitDateTime(begin1);
+    reportData["DATE"] = "<todayDate[0]>";
+    reportData["STARTTIME"] = "<todayDate[1]>";
+    reportData["EXECUTION_TIME"] = "<dur>";
+
     writeClassesToFile(classes, metaData, locClones, outputPath);
     createReport(reportData, outputPathReport);
 }
