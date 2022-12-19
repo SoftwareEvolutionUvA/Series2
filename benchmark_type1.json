@@ -13,6 +13,7 @@
 },
 {
 "id": 2,
+"parent": 1,
 "name": "cloneClass2"
 },
 {
@@ -31,6 +32,7 @@
 },
 {
 "id": 3,
+"parent": 1,
 "name": "cloneClass3"
 },
 {
@@ -56,6 +58,7 @@
 },
 {
 "id": 4,
+"parent": 1,
 "name": "cloneClass4"
 },
 {
@@ -74,6 +77,7 @@
 },
 {
 "id": 5,
+"parent": 1,
 "name": "cloneClass5"
 },
 {
