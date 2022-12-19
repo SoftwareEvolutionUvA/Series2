@@ -262,7 +262,7 @@ tuple[map[str, value], map[loc, int], map[str, str]] calculateMetaData(map[loc, 
     // TODO: example clones
     exampleClones = "";
     for (clone <- classes[biggestCloneClassMembers.representant]) {
-        exampleClones += "Clone at location <clone> looks like:\<br\>\<br\><readFile(clone)>\<br\>\<br\>";
+        exampleClones += "Clone at location <clone> looks like:\<br\>\<br\>\<div style=\"background-color:#d6d6d6\"\><readFile(clone)>\</div\>\<br\>\<br\>";
     }
     reportData["CLONE_EXAMPLES"] = exampleClones;
 
