@@ -233,17 +233,3 @@ tuple[map[str, value], map[loc, int]] calculateMetaData(map[loc, CloneClass] cla
 
     return <ret, cloneLength>;
 }
-
-void main() {
-    loc projectPath = |project://hsqldb-2.3.1|;
-    set[Declaration] asts = createAstsFromMavenProject(projectPath, true);
-    map[loc, CloneClass] classes = detector(asts, <3, 100>);
-
-    tuple[map[str, value], map[loc, int]] stuff = calculateMetaData(classes, projectPath);
-    map[str, value] metaData = stuff[0];
-    map[loc, int] locClones = stuff[1];
-    writeClassesToFile(classes, metaData, locClones, |project://Series2/hsqldb-2.3.1.json|);
-    // TODO: file output
-
-    // TODO: statistics
-}
