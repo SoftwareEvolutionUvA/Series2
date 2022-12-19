@@ -9,7 +9,8 @@
 "cloneClasses":[
 {
 "id": 1000,
-"clones": [
+"name": "cloneClass1"
+},
 {
 "id": 1001,
 "parent": 1000,
@@ -23,11 +24,11 @@
 "name": "NoClass.java(2218,206,<85,38>,<95,5>)",
 "location": "|project://Series2/Benchmark/CloneBenchmark/src/main/java/org/example/NoClass.java|(2218,206,<85,38>,<95,5>)",
 "size": 11
-}
-]},
+},
 {
 "id": 2000,
-"clones": [
+"name": "cloneClass2"
+},
 {
 "id": 2001,
 "parent": 2000,
@@ -48,11 +49,11 @@
 "name": "NoClass.java(6923,237,<258,79>,<264,9>)",
 "location": "|project://Series2/Benchmark/CloneBenchmark/src/main/java/org/example/NoClass.java|(6923,237,<258,79>,<264,9>)",
 "size": 7
-}
-]},
+},
 {
 "id": 3000,
-"clones": [
+"name": "cloneClass3"
+},
 {
 "id": 3001,
 "parent": 3000,
@@ -66,11 +67,11 @@
 "name": "NoClass.java(14942,277,<524,53>,<532,13>)",
 "location": "|project://Series2/Benchmark/CloneBenchmark/src/main/java/org/example/NoClass.java|(14942,277,<524,53>,<532,13>)",
 "size": 9
-}
-]},
+},
 {
 "id": 4000,
-"clones": [
+"name": "cloneClass4"
+},
 {
 "id": 4001,
 "parent": 4000,
@@ -106,6 +107,5 @@
 "location": "|project://Series2/Benchmark/CloneBenchmark/src/main/java/org/example/BoxClass.java|(1282,481,<53,44>,<72,5>)",
 "size": 17
 }
-]}
 ]
 }
